@@ -1,0 +1,91 @@
+[
+    {
+        "Name": "Main Camera",
+        "Transform": {
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 3.2004, 1.8, 1 ],
+            "rotation": 0
+        },
+        "Camera": {
+            "priority": 0
+        },
+        "Physics": {
+            "acceleration": [ 0.0, 0.0, 0 ],
+            "velocity": [ 0, 0, 0 ]
+        },
+        "CameraBehavior": {
+            "InitPosition": [ 0.6, -0.25, 0 ],
+            "Bounds": [ -0.425, -0.130, 0.435, 0.12]
+        },
+        "Sprite": {
+            "tex_path": "./Assets/DemoLevel/DetectiveModeBg_Base.png",
+            "z_priority": 0,
+            "opacity": 0
+        }
+    },
+    {
+        "Name": "TeleportBG",
+        "Transform": {
+            "translation": [ 0.0, -0.425, 0 ],
+            "scale": [ 0.045, 0.15, 0 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/UI_DashIcon_Asset_002.png",
+            "z_priority": 11,
+            "static": true
+        }
+    },
+    {
+        "Name": "PassengerRoom1Background",
+        "Transform": {
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 5, 2, 1 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/KitchenLevel/Kitchen_Room_1.png",
+            "z_priority": -1000
+        }
+    },
+    {
+        "Name": "PassengerRoom1Background_2",
+        "Transform": {
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 4, 2, 1 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/PassengerLevel/PassengerRoom1/lamp2.png",
+            "z_priority": 999,
+            "opacity": 1
+        }
+    },
+    {
+        "Name": "PassengerRoom1Background_3",
+        "Transform": {
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 4, 2, 1 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/PassengerLevel/PassengerRoom1/filter_for_pc.png",
+            "z_priority": 998,
+            "opacity": 1,
+            "overlay": true
+        }
+    },
+    {
+        "Name": "PassengerRoom1Background_4",
+        "Transform": {
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 4, 2, 1 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/PassengerLevel/PassengerRoom1/daylight2.png",
+            "z_priority": 997,
+            "opacity": 0.2
+        }
+    }
+]

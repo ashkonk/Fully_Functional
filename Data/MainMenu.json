@@ -1,0 +1,118 @@
+[
+    {
+      "Name": "Main Camera",
+      "Transform": {
+          "translation": [ 0, 0, 0 ],
+          "scale": [ 1.0, 1.0, 1 ],
+          "rotation": 0
+      },
+      "Camera": {
+          "priority": 0
+      },
+      "Physics": {
+          "acceleration": [ 0.0, 0.0, 0 ],
+          "velocity": [ 0, 0, 0 ]
+      }
+  },
+  {
+    "Name": "SplashScreen",
+    "Transform": {
+        "translation": [0.0, 0.0, 0],
+        "scale": [1.0, 1.0, 0],
+        "rotation": 0
+    },
+    "Sprite": {
+        "tex_path": "./Assets/UI_SpashScreen_001.png",
+        "z_priority": 0.0
+    }
+  },
+  {
+    "Name": "Play",
+    "Transform": {
+        "translation": [0.0, 0.31, 0],
+        "scale": [0.15, 0.15, 0],
+        "rotation": 0
+    },
+    "Sprite": {
+        "tex_path": "./Assets/UI_MenuButton_Asset_Play.png",
+        "z_priority": 1.0,
+        "UVs": [0.0, 0.0, 1.0, 0.33]
+    },
+    "Button": {
+        "Function": 3,
+        "BaseUV": [0.0, 0.0, 1.0, 0.33],
+        "Offset": 0.33
+    }
+  }, 
+  {
+    "Name": "Controls",
+    "Transform": {
+        "translation": [0.0, 0.14, 0],
+        "scale": [0.15, 0.15, 0],
+        "rotation": 0
+    },
+    "Sprite": {
+        "tex_path": "./Assets/UI_MenuButton_Asset_controls.png",
+        "z_priority": 1.0,
+        "UVs": [0.0, 0.0, 1.0, 0.33]
+    },
+    "Button": {
+        "Function": 13,
+        "BaseUV": [0.0, 0.0, 1.0, 0.33],
+        "Offset": 0.33
+    },
+    "Sound": {
+        "Name": "Click",
+        "FilePath" : "./Audio/buttonSound.mp3",
+        "Volume": 0.1,
+        "Looping": false,
+        "Type": "Music",
+        "MaxDistance": 5.0
+    }
+  }, 
+  {
+    "Name": "Credits",
+    "Transform": {
+        "translation": [0.0, -0.03, 0],
+        "scale": [0.165, 0.16, 0],
+        "rotation": 0
+    },
+    "Sprite": {
+        "tex_path": "./Assets/UI_MenuButton_Asset_004.png",
+        "z_priority": 1.0,
+        "UVs": [0.0, 0.0, 1.0, 0.33]
+    },
+    "Button": {
+        "Function": 11,
+        "BaseUV": [0.0, 0.0, 1.0, 0.33],
+        "Offset": 0.33
+    }
+  }, 
+  {
+    "Name": "Quit",
+    "Transform": {
+        "translation": [0.0, -0.2, 0],
+        "scale": [0.15, 0.15, 0],
+        "rotation": 0
+    },
+    "Sprite": {
+        "tex_path": "./Assets/UI_MenuButton_Asset_Quit.png",
+        "z_priority": 1.0,
+        "UVs": [0.0, 0.22, 1.0, 0.11]
+    },
+    "Button": {
+        "Function": 1,
+        "BaseUV": [0.0, 0.0, 1.0, 0.33],
+        "Offset": 0.33
+    }
+  },
+  {
+      "Name": "SoundHold",
+      "SoundBehavior":{
+          "WaitTime": 0.0,
+          "FilePath": "MenuMusic",
+          "InRange": true
+      }
+  }
+  
+]

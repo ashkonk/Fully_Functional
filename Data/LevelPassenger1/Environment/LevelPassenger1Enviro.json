@@ -1,0 +1,578 @@
+[
+    {
+        "Name": "Main Camera",
+        "Transform": {
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 3.2004, 1.8, 1 ],
+            "rotation": 0
+        },
+        "Camera": {
+            "priority": 0
+        },
+        "Physics": {
+            "acceleration": [ 0.0, 0.0, 0 ],
+            "velocity": [ 0, 0, 0 ]
+        },
+        "CameraBehavior": {
+            "InitPosition": [ 0.6, -0.25, 0 ],
+            "Bounds": [ -0.425, -0.130, 0.435, 0.12 ]
+        },
+        "Sprite": {
+            "tex_path": "./Assets/DemoLevel/DetectiveModeBg_Base.png",
+            "z_priority": 0,
+            "opacity": 0
+        }
+    },
+    {
+      "Name":  "FadeIn",
+      "Transform": {
+            "translation": [ 0.0, 0.0, 0 ],
+            "scale": [ 2.0, 2.0, 0 ],
+        "rotation": 0
+      },
+      "Sprite": {
+        "tex_path": "./Assets/black.png",
+        "z_priority": 1001,
+        "static": true
+      },
+      "FadeController": {
+        "duration": 2.0,
+        "scenePath": "./Data/LevelPassenger2/Passenger2Primary.json"
+      }
+    },
+    {
+        "Name": "BackgroundLeft1",
+        "Transform": {
+            "translation": [ -1.40, 0.75, 0 ],
+            "scale": [ 0.77, 0.4, 0 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/PassengerLevel/ENV_SpriteSheet_PassengerCarBackground_001.png",
+            "z_priority": -1100
+        },
+        "Animation": {
+            "Sequences": [
+                {
+                    "Name": "TutBG",
+                    "FrameDuration": 0.0625,
+                    "Rows": 8.0,
+                    "Columns": 4.0,
+                    "Looping": true
+                }
+            ]
+        }
+    },
+    {
+        "Name": "BackgroundLeft1",
+        "Transform": {
+            "translation": [ -0.59, 0.75, 0 ],
+            "scale": [ 0.77, 0.4, 0 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/PassengerLevel/ENV_SpriteSheet_PassengerCarBackground_001.png",
+            "z_priority": -1100
+        },
+        "Animation": {
+            "Sequences": [
+                {
+                    "Name": "TutBG",
+                    "FrameDuration": 0.0625,
+                    "Rows": 8.0,
+                    "Columns": 4.0,
+                    "Looping": true
+                }
+            ]
+        }
+    }, 
+    {
+        "Name": "BackgroundLeft2",
+        "Transform": {
+            "translation": [ 0.59, 0.75, 0 ],
+            "scale": [ 0.77, 0.4, 0 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/PassengerLevel/ENV_SpriteSheet_PassengerCarBackground_001.png",
+            "z_priority": -1100
+        },
+        "Animation": {
+            "Sequences": [
+                {
+                    "Name": "TutBG",
+                    "FrameDuration": 0.0625,
+                    "Rows": 8.0,
+                    "Columns": 4.0,
+                    "Looping": true
+                }
+            ]
+        }
+    },  
+    {
+        "Name": "BackgroundRight1",
+        "Transform": {
+            "translation": [ 1.4, 0.75, 0 ],
+            "scale": [ 0.77, 0.4, 0 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/PassengerLevel/ENV_SpriteSheet_PassengerCarBackground_001.png",
+            "z_priority": -1100
+        },
+        "Animation": {
+            "Sequences": [
+                {
+                    "Name": "TutBG",
+                    "FrameDuration": 0.0625,
+                    "Rows": 8.0,
+                    "Columns": 4.0,
+                    "Looping": true
+                }
+            ]
+        }
+    },
+    {
+        "Name": "GoldenBox",
+        "Transform": {
+            "translation": [ -1.0, 0.25, 0 ],
+            "scale": [ 1.2, 0.2, 0 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/UI_TextBox_Asset_001.PNG",
+            "z_priority": 200
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": false,
+            "Type": "Box",
+            "Width": 0.5,
+            "Height": 12,
+            "Offset": [ 0.15, -4.0, 0 ]
+        },
+        "TutorialText": {
+
+        }
+    },
+    {
+        "Name": "GoldenTextA",
+        "Transform": {
+            "translation": [ -1.5, 0.25, 0 ],
+            "scale": [ 0.04, 0.04, 0 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/Roboto_Mono_white.png",
+            "z_priority": 201,
+            "Rows": 8,
+            "Cols": 16,
+            "Text": "Use teleport to pass"
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": false,
+            "Type": "Box",
+            "Width": 15.0,
+            "Height": 40,
+            "Offset": [ 17.46, -15.0, 0 ]
+        },
+        "TutorialText": {
+
+        }
+    },
+    {
+        "Name": "GoldenTextB",
+        "Transform": {
+            "translation": [ -1.5, 0.2, 0 ],
+            "scale": [ 0.04, 0.04, 0 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/Roboto_Mono_white.png",
+            "z_priority": 201,
+            "Rows": 8,
+            "Cols": 16,
+            "Text": "through golden terrain"
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": false,
+            "Type": "Box",
+            "Width": 15.0,
+            "Height": 40,
+            "Offset": [ 17.46, -15.0, 0 ]
+        },
+        "TutorialText": {
+
+        }
+    },
+    {
+        "Name": "TeleportBG",
+        "Transform": {
+            "translation": [ 0.0, -0.425, 0 ],
+            "scale": [ 0.045, 0.15, 0 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/UI_DashIcon_Asset_001.png",
+            "z_priority": 10,
+            "static": true
+        }
+    },
+    {
+        "Name": "PassengerRoom1Background",
+        "Transform": {
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 4, 2, 1 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/PassengerLevel/PassengerRoom1/PassengerCar3_ShadowRun.png",
+            "z_priority": -999,
+            "opacity": 1
+        }
+    },
+    {
+        "Name": "PassengerRoom1_SeatRow_Top",
+        "Transform": {
+            "translation": [ -0.92, 0.025, 0 ],
+            "scale": [ 1.6, 0.4, 1 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/PassengerLevel/PassengerRoom1/SeatRow.png",
+            "z_priority": -5
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 0.8,
+            "Height": 0.5,
+            "Offset": [ 0.0, -0.18, 0 ]
+        }
+    },
+    {
+        "Name": "PassengerRoom1_SeatRow_Bottom",
+        "Transform": {
+            "translation": [ -0.92, -0.575, 0 ],
+            "scale": [ 1.6, 0.4, 1 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/PassengerLevel/PassengerRoom1/SeatRow.png",
+            "z_priority": -5
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 0.8,
+            "Height": 0.5,
+            "Offset": [ 0.0, -0.18, 0 ]
+        }
+    },
+    {
+        "Name": "PassengerRoom1_SeatRow_Top_Right",
+        "Transform": {
+            "translation": [ 0.92, 0.025, 0 ],
+            "scale": [ 1.6, 0.4, 1 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/PassengerLevel/PassengerRoom1/SeatRow.png",
+            "z_priority": -5
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 0.8,
+            "Height": 0.5,
+            "Offset": [ 0.0, -0.18, 0 ]
+        }
+    },
+    {
+        "Name": "PassengerRoom1_SeatRow_Bottom_Right",
+        "Transform": {
+            "translation": [ 0.92, -0.575, 0 ],
+            "scale": [ 1.6, 0.4, 1 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/PassengerLevel/PassengerRoom1/SeatRow.png",
+            "z_priority": -5
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 0.8,
+            "Height": 0.5,
+            "Offset": [ 0.0, -0.18, 0 ]
+        }
+    },
+    {
+        "Name": "PassengerRoom1_WallBottom",
+        "Transform": {
+            "translation": [ 0.0, -0.6, 0 ],
+            "scale": [ 0.16, 1.2, 1 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/PassengerLevel/PassengerRoom1/WallBottom.png",
+            "z_priority": -4
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 0.9,
+            "Height": 0.5,
+            "Offset": [ 0.0, -0.2, 0 ]
+        }
+    },
+    {
+        "Name": "PassengerRoom1_WallTop",
+        "Transform": {
+            "translation": [ 0.0, 0.576, 0 ],
+            "scale": [ 0.16, 1.6, 1 ],
+            "rotation": 0
+        }
+    },
+    {
+        "Name": "PassengerRoom1_WallTop_Collider",
+        "Transform": {
+            "translation": [ 0.0, 0.576, 0 ],
+            "scale": [ 0.16, 1.6, 1 ],
+            "rotation": 0
+        },
+
+        "Sprite": {
+            "tex_path": "./Assets/PassengerLevel/PassengerRoom1/WallTop.png",
+            "z_priority": -6
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 0.9,
+            "Height": 0.5,
+            "Offset": [ 0.0, -0.2, 0 ]
+        }
+    },
+    {
+        "Name": "JonsCollider",
+        "Transform": {
+            "translation": [ 0.0, -0.21, 0 ],
+            "scale": [ 0.16, 0.6, 1 ],
+            "rotation": 0
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 0.9,
+            "Height": 0.5,
+            "Offset": [ 0.0, -0.18, 0 ]
+        },
+        "BrokenDoorBehavior": {
+            "DtThresh": 0.9
+        },
+        "Sprite": {
+            "tex_path": "./Assets/PassengerLevel/PassengerRoom1/GoldenWall.png",
+            "z_priority": -5.5
+        }
+    },
+    {
+
+        "Name": "PassengerRoom1_WallTop_Collider",
+        "Transform": {
+            "translation": [ -0.55, -0.02, 0 ],
+            "scale": [ 0.24, 0.38, 1 ],
+            "rotation": 0
+        },
+
+        "Sprite": {
+            "tex_path": "./Assets/ENV_CivilianD_Asset_001.png",
+            "z_priority": -5
+        }
+    },
+    {
+
+        "Name": "PassengerRoom1_WallTop_Collider",
+        "Transform": {
+            "translation": [ -1.11, -0.02, 0 ],
+            "scale": [ 0.22, 0.4, 1 ],
+            "rotation": 0
+        },
+
+        "Sprite": {
+            "tex_path": "./Assets/ENV_CivilianE_Asset_001.png",
+            "z_priority": -5
+        }
+    },
+    {
+
+        "Name": "PassengerRoom1_WallTop_Collider",
+        "Transform": {
+            "translation": [ -0.92, -0.64, 0 ],
+            "scale": [ 0.24, 0.4, 1 ],
+            "rotation": 0
+        },
+
+        "Sprite": {
+            "tex_path": "./Assets/ENV_CivilianA_Asset_001.png",
+            "z_priority": -5
+        }
+    },
+    {
+
+        "Name": "PassengerRoom1_WallTop_Collider",
+        "Transform": {
+            "translation": [ 0.356, -0.64, 0 ],
+            "scale": [ 0.24, 0.4, 1 ],
+            "rotation": 0
+        },
+
+        "Sprite": {
+            "tex_path": "./Assets/ENV_CivilianE_Asset_001.png",
+            "z_priority": -5
+        }
+    },
+    {
+        "Name": "WallColliderLeft",
+        "Transform": {
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 4, 2, 1 ],
+            "rotation": 0
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 0.05,
+            "Height": 0.75,
+            "Offset": [ -0.525, -0.08, 0 ]
+        }
+    },
+    {
+        "Name": "WallColliderBottom",
+        "Transform": {
+            "translation": [ -1.0, 0, 0 ],
+            "scale": [ 6, 2, 1 ],
+            "rotation": 0
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 1.0,
+            "Height": 0.1,
+            "Offset": [ 0.15, -0.55, 0 ]
+        },
+        "Occluder": {
+            "Offset": [ 0, -1.45, 0 ],
+            "Width": 1.0,
+            "Height": 0.5,
+            "Depth": 0.5
+        }
+    },
+    {
+        "Name": "WallColliderUp",
+        "Transform": {
+            "translation": [ -1.0, 1.65, 0 ],
+            "scale": [ 6, 2, 1 ],
+            "rotation": 0
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 1.0,
+            "Height": 0.1,
+            "Offset": [ 0.15, -0.55, 0 ]
+        },
+        "Occluder": {
+            "Offset": [ 0, -1.45, 0 ],
+            "Width": 1.0,
+            "Height": 0.5,
+            "Depth": 0.5
+        }
+    },
+    {
+        "Name": "WallColliderRight",
+        "Transform": {
+            "translation": [ 4.6, 0.2, 0 ],
+            "scale": [ 4, 2, 1 ],
+            "rotation": 0
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 0.25,
+            "Height": 0.25,
+            "Offset": [ -0.525, -0.08, 0 ]
+        }
+    },
+    {
+        "Name": "WallColliderRight2",
+        "Transform": {
+            "translation": [ 4.6, -0.5, 0 ],
+            "scale": [ 4, 2, 1 ],
+            "rotation": 0
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 0.25,
+            "Height": 0.25,
+            "Offset": [ -0.525, -0.08, 0 ]
+        }
+    },
+    {
+        "Name": "RoomDoor",
+        "Transform": {
+            "translation": [ 2.437, -0.15, 0 ],
+            "scale": [ 1.0, 1.0, 1 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/TutorialRoom/ENV_Tile_TutorialRoomDoor_001.png",
+            "z_priority": 0
+        }
+    },
+    {
+        "Name": "StealthbarBack",
+        "Transform": {
+            "translation": [ 0.0, 0.45, 0 ],
+            "scale": [ 0.2, 0.05, 0 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/UI_UndetectedMeter_Asset_001.png",
+            "z_priority": 101,
+            "static": true
+        }
+    },
+    {
+        "Name": "StealthEye",
+        "Transform": {
+            "translation": [ -0.13, 0.45, 0 ],
+            "scale": [ 0.05, 0.05, 0 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/UI_DetectEye_Asset_001.png",
+            "z_priority": 103,
+            "static": true
+        },
+        "StealthBarBG": {
+
+        }
+
+    }
+]

@@ -1,0 +1,19 @@
+{
+    "Name": "CarDoor2",
+    "DoorBehavior":
+  {
+    "Filepath": "./Data/LevelPassenger1/PassengerRoom1Primary.json",
+    "EntryPosition": [-0.24, -0.2, 0]
+  },
+    "Transform": {
+      "translation": [ 2.4, -0.2, 0 ],
+      "scale": [0.25, 0.25, 0],
+      "rotation": 0
+    },
+    "Collider": {
+        "Static": true,
+        "Solid": false,
+        "Type": "Circle",
+        "Radius": 0.5
+    }
+  }

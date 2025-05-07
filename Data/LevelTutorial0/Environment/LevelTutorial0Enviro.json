@@ -1,0 +1,484 @@
+[
+    {
+        "Name": "Main Camera",
+        "Transform": {
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 3.2004, 1.8, 1 ],
+            "rotation": 0
+        },
+        "Camera": {
+            "priority": 0
+        },
+        "Physics": {
+            "acceleration": [ 0.0, 0.0, 0 ],
+            "velocity": [ 0, 0, 0 ]
+        },
+        "CameraBehavior": {
+            "InitPosition": [ 0.6, -0.25, 0 ],
+            "Bounds": [ -0.425, -0.130, 0.435, 0.12]
+        },
+        "Sprite": {
+            "tex_path": "./Assets/DemoLevel/DetectiveModeBg_Base.png",
+            "z_priority": 0,
+            "opacity": 0
+        }
+    },
+    {
+        "Name": "MovementBox",
+        "Transform": {
+            "translation": [ -1.53, -0.29, 0],
+            "scale": [0.9, 0.1, 0],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/UI_TextBox_Asset_001.PNG",
+            "z_priority": 200
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": false,
+            "Type": "Box",
+            "Width": 0.9,
+            "Height": 4,
+            "Offset": [ -0.05, 1.4, 0 ]
+        },
+        "TutorialText": {
+
+        }
+    },
+    {
+        "Name": "MovementText",
+        "Transform": {
+            "translation": [ -1.9, -0.3, 0],
+            "scale": [0.05, 0.05, 0],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/Roboto_Mono_white.png",
+            "z_priority": 201,
+            "Rows": 8,
+            "Cols": 16,
+            "Text": "Use WASD to move"
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": false,
+            "Type": "Box",
+            "Width": 12.0,
+            "Height": 8,
+            "Offset": [ 6.0, 3.0, 0 ]
+        },
+        "TutorialText": {
+
+        }
+    },
+    {
+      "Name":  "FadeIn",
+      "Transform": {
+            "translation": [ 0.0, 0.0, 0 ],
+            "scale": [ 2.0, 2.0, 0 ],
+        "rotation": 0
+      },
+      "Sprite": {
+        "tex_path": "./Assets/black.png",
+        "z_priority": 1001,
+        "static": true
+      },
+      "FadeController": {
+        "duration": 2.0,
+        "scenePath": "./Data/LevelTutorial1/TutorialRoom1Primary.json"
+      }
+    },
+    {
+        "Name": "BackgroundLeft",
+        "Transform": {
+            "translation": [ -0.23, 0.75, 0 ],
+            "scale": [ 0.77, 0.4, 0 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/TutorialRoom/BG_Spritesheet.png",
+            "z_priority": -1100
+        },
+        "Animation": {
+            "Sequences": [
+                {
+                    "Name": "TutBG",
+                    "FrameDuration": 0.0625,
+                    "Rows": 8.0,
+                    "Columns": 4.0,
+                    "Looping": true
+                }
+            ]
+        }
+    },
+    {
+        "Name": "DoorBackground",
+        "Transform": {
+            "translation": [ -1.5, 0.7, 0 ],
+            "scale": [ 0.6, 0.7, 0 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/TutorialRoom/BG_Spritesheet.png",
+            "z_priority": -1100
+        },
+        "Animation": {
+            "Sequences": [
+                {
+                    "Name": "TutBG",
+                    "FrameDuration": 0.0625,
+                    "Rows": 8.0,
+                    "Columns": 4.0,
+                    "Looping": true
+                }
+            ]
+        }
+    },
+    {
+        "Name": "BackgroundRight",
+        "Transform": {
+            "translation": [ 1.19, 0.75, 0 ],
+            "scale": [ 0.77, 0.4, 0 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/TutorialRoom/BG_Spritesheet.png",
+            "z_priority": -1100
+        },
+        "Animation": {
+            "Sequences": [
+                {
+                    "Name": "TutBG",
+                    "FrameDuration": 0.0625,
+                    "Rows": 8.0,
+                    "Columns": 4.0,
+                    "Looping": true
+                }
+            ]
+        }
+    },
+    {
+        "Name": "TutorialRoomBackground",
+        "Transform": {
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 4, 2, 1 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/TutorialRoom/Room0/TutorialRoom0_BG.png",
+            "z_priority": -1000
+        }
+    },
+    {
+        "Name": "TutorialRoomBackground2",
+        "Transform": {
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 4, 2, 1 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/TutorialRoom/light_for_1_64.png",
+            "z_priority": 0,
+            "opacity": 1,
+            "overlay": true
+        }
+    },
+    {
+        "Name": "StealthbarBack",
+        "Transform": {
+            "translation": [ 0.0, 0.45, 0 ],
+            "scale": [ 0.2, 0.05, 0 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/UI_UndetectedMeter_Asset_001.png",
+            "z_priority": 101,
+            "static": true
+        }
+    },
+    {
+        "Name": "StealthEye",
+        "Transform": {
+            "translation": [ -0.13, 0.45, 0 ],
+            "scale": [ 0.05, 0.05, 0 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/UI_DetectEye_Asset_001.png",
+            "z_priority": 103,
+            "static": true
+        },
+        "StealthBarBG": {
+
+        }
+    },
+    {
+        "Name": "StealthbarBack",
+        "Transform": {
+            "translation": [ 0.0, 0.45, 0 ],
+            "scale": [ 0.2, 0.05, 0 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/UI_UndetectedMeter_Asset_001.png",
+            "z_priority": 101,
+            "static": true
+        }
+    },
+    {
+        "Name": "RoomDoor",
+        "Transform": {
+            "translation": [ 2.437, -0.2, 0 ],
+            "scale": [ 1.0, 1.0, 1 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/TutorialRoom/ENV_Tile_TutorialRoomDoor_001.png",
+            "z_priority": 0
+        }
+    },
+    {
+        "Name": "StealthbarBack",
+        "Transform": {
+            "translation": [ 0.0, 0.45, 0 ],
+            "scale": [ 0.2, 0.05, 0 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/UI_UndetectedMeter_Asset_001.png",
+            "z_priority": 101,
+            "static": true
+        }
+    },
+    {
+        "Name": "PropCrates_Top",
+        "Transform": {
+            "translation": [ -1.51, 0.45, 0 ],
+            "scale": [ 1.05, 1.0, 0 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/TutorialRoom/Room0/PropCrates_Top.png",
+            "z_priority": -5.05
+                }
+    },
+    {
+        "Name": "PropCrates_Bottom",
+        "Transform": {
+            "translation": [ -0.95, -0.55, 0 ],
+            "scale": [ 2.2, 0.9, 0 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/TutorialRoom/Room0/PropCrates_Bottom.png",
+            "z_priority": -4
+                }
+    },
+    {
+        "Name": "CratePile",
+        "Transform": {
+            "translation": [ 0.45, 0.4, 0 ],
+            "scale": [ 2.5, 0.7, 0 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/TutorialRoom/Room0/CratePile.png",
+            "z_priority": -7
+                }
+    },
+    {
+        "Name": "ConveyorBelt",
+        "Transform": {
+            "translation": [ 0.45, 0.3, 0 ],
+            "scale": [ 3.0, 0.9, 0 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/TutorialRoom/Room0/ConveyorBelt.png",
+            "z_priority": -7
+                }
+    },
+    {
+        "Name": "WallColliderBottom",
+        "Transform": {
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 4, 2, 1 ],
+            "rotation": 0
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 1.5,
+            "Height": 0.1,
+            "Offset": [ 0.15, -0.55, 0 ]
+        },
+        "Occluder": {
+            "Offset": [ 0, -1.45, 0 ],
+            "Width": 1.0,
+            "Height": 0.5,
+            "Depth": 0.5
+        }
+    },
+    {
+        "Name": "WallColliderRight",
+        "Transform": {
+            "translation": [ 4.6, -0.4, 0 ],
+            "scale": [ 4, 2, 1 ],
+            "rotation": 0
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 0.25,
+            "Height": 0.1,
+            "Offset": [ -0.525, -0.08, 0 ]
+        }
+    },
+    {
+        "Name": "WallColliderRight",
+        "Transform": {
+            "translation": [ 4.6, 0.15, 0 ],
+            "scale": [ 4, 2, 1 ],
+            "rotation": 0
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 0.25,
+            "Height": 0.25,
+            "Offset": [ -0.525, -0.08, 0 ]
+        }
+    },
+    {
+        "Name": "WallColliderLeft",
+        "Transform": {
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 4, 2, 1 ],
+            "rotation": 0
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 0.05,
+            "Height": 0.75,
+            "Offset": [ -0.525, -0.08, 0 ]
+        }
+    },
+    {
+        "Name": "ConveyerBeltCollider",
+        "Transform": {
+            "translation": [ 2.6, 0.2, 0 ],
+            "scale": [ 4, 2, 1 ],
+            "rotation": 0
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 0.75,
+            "Height": 0.1,
+            "Offset": [ -0.525, -0.08, 0 ]
+        }
+    },
+    {
+        "Name": "BoxLeft",
+        "Transform": {
+            "translation": [ 0.2, 0.6, 0 ],
+            "scale": [ 4, 2, 1 ],
+            "rotation": 0
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 0.05,
+            "Height": 0.25,
+            "Offset": [ -0.525, -0.08, 0 ]
+        }
+    },
+    {
+        "Name": "BoxRight",
+        "Transform": {
+            "translation": [ 0.96, 0.45, 0 ],
+            "scale": [ 4, 2, 1 ],
+            "rotation": 0
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 0.05,
+            "Height": 0.25,
+            "Offset": [ -0.525, -0.08, 0 ]
+        }
+    },
+    {
+        "Name": "WallColliderUp",
+        "Transform": {
+            "translation": [ 0, 1.65, 0 ],
+            "scale": [ 4, 2, 1 ],
+            "rotation": 0
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 1.5,
+            "Height": 0.1,
+            "Offset": [ 0.15, -0.55, 0 ]
+        }
+    },
+    {
+        "Name": "BoxBelowCollider",
+        "Transform": {
+            "translation": [ -1.5, -0.9, 0 ],
+            "scale": [ 4, 2, 1 ],
+            "rotation": 0
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 0.8,
+            "Height": 0.2,
+            "Offset": [ 0, 0, 0 ]
+        }
+    },
+    {
+        "Name": "BoxBelowCollider2",
+        "Transform": {
+            "translation": [ -1.5, -0.7, 0 ],
+            "scale": [ 4, 2, 1 ],
+            "rotation": 0
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 0.2,
+            "Height": 0.2,
+            "Offset": [ 0, 0, 0 ]
+        }
+    },
+    {
+        "Name": "WallColliderRight2",
+        "Transform": {
+            "translation": [ 4.6, -0.6, 0 ],
+            "scale": [ 4, 2, 1 ],
+            "rotation": 0
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 0.25,
+            "Height": 0.15,
+            "Offset": [ -0.525, -0.08, 0 ]
+        }
+    }
+]

@@ -1,0 +1,14 @@
+{
+    "Sounds": [
+        {
+            "Name": "backgroundMusic",
+            "fileName": "./Audio/ambrose.mp3"
+        },
+        {
+            "Name": "walk",
+            "fileName": "./Audio/walk.mp3"
+        }
+
+    ]
+
+}

@@ -1,0 +1,13 @@
+{
+    "Name": "VisionConeVFX",
+    "Transform": {
+        "translation": [ -1.21, -0.16, 0 ],
+        "scale": [ 0.6, 0.6, 0 ],
+        "rotation": -45
+    },
+    "Sprite": {
+        "tex_path": "./Assets/DroneLOS.png",
+        "z_priority": 5.0,
+        "opacity": 0.5
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "Name": "SmokeVFX",
+    "Transform": {
+        "translation": [ 1.0, 0.0, 0 ],
+        "scale": [ 0.125, 0.5, 0 ],
+        "rotation": 0
+    },
+    "Sprite": {
+        "tex_path": "./Assets/VFX_Smoke_SpriteSheet_001.png",
+        "z_priority": 15.0
+    },
+    "Animation": {
+        "Sequences": [
+            {
+                "Name": "Active",                "FrameDuration": 0.25,
+                "Rows": 2.0,
+                "Columns": 2.0,
+                "Looping": true
+            }
+        ]
+    }
+}

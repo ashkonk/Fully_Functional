@@ -1,0 +1,780 @@
+[
+    {
+        "Name": "Main Camera",
+        "Transform": {
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 3.2004, 1.8, 1 ],
+            "rotation": 0
+        },
+        "Camera": {
+            "priority": 0
+        },
+        "Physics": {
+            "acceleration": [ 0.0, 0.0, 0 ],
+            "velocity": [ 0, 0, 0 ]
+        },
+        "CameraBehavior": {
+            "InitPosition": [ 0.6, -0.25, 0 ],
+          "Bounds": [ -0.425, -0.130, 0.435, 0.12 ]
+        },
+        "Sprite": {
+            "tex_path": "./Assets/DemoLevel/DetectiveModeBg_Base.png",
+            "z_priority": 0,
+            "opacity": 0
+        }
+    },
+    {
+        "Name": "TeleportBG",
+        "Transform": {
+            "translation": [ 0.0, -0.425, 0 ],
+            "scale": [ 0.045, 0.15, 0 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/UI_DashIcon_Asset_001.png",
+            "z_priority": 10,
+            "static": true
+        }
+    },
+    {
+        "Name": "TutorialRoomBackground",
+        "Transform": {
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 4, 2, 1 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/TutorialRoom/TutorialRoom1_ShadowRun.png",
+            "z_priority": -1000
+        }
+    },
+    {
+        "Name": "TutorialRoomBackground2",
+        "Transform": {
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 4, 2, 1 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/TutorialRoom/light_for_1_64.png",
+            "z_priority": 0,
+            "opacity": 1,
+            "overlay": true
+        }
+    },
+    {
+        "Name": "MovementBox",
+        "Transform": {
+            "translation": [ -1.53, -0.29, 0],
+            "scale": [0.9, 0.1, 0],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/UI_TextBox_Asset_001.PNG",
+            "z_priority": 200
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": false,
+            "Type": "Box",
+            "Width": 0.9,
+            "Height": 4,
+            "Offset": [ -0.05, 1.4, 0 ]
+        },
+        "TutorialText": {
+
+        }
+    },
+    {
+        "Name": "MovementText",
+        "Transform": {
+            "translation": [ -1.9, -0.3, 0],
+            "scale": [0.05, 0.05, 0],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/Roboto_Mono_white.png",
+            "z_priority": 201,
+            "Rows": 8,
+            "Cols": 16,
+            "Text": "Use WASD to move"
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": false,
+            "Type": "Box",
+            "Width": 12.0,
+            "Height": 8,
+            "Offset": [ 6.0, 3.0, 0 ]
+        },
+        "TutorialText": {
+
+        }
+    },
+    {
+        "Name": "CrouchBox",
+        "Transform": {
+            "translation": [ -1.5, -0.3, 0],
+            "scale": [1.0, 0.2, 0],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/UI_TextBox_Asset_001.PNG",
+            "z_priority": 200
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": false,
+            "Type": "Box",
+            "Width": 0.3,
+            "Height": 4,
+            "Offset": [ 0.75, -2, 0 ]
+        },
+        "TutorialText": {
+
+        }
+    },
+    {
+        "Name": "CrouchTextA",
+        "Transform": {
+            "translation": [ -1.875, -0.275, 0],
+            "scale": [0.04, 0.04, 0],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/Roboto_Mono_white.png",
+            "z_priority": 201,
+            "Rows": 8,
+            "Cols": 16,
+            "Text": "Crouch (ctrl) behind"
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": false,
+            "Type": "Box",
+            "Width": 8.0,
+            "Height": 18,
+            "Offset": [ 28, -10.0, 0 ]
+        },
+        "TutorialText": {
+
+        }
+    },
+    {
+        "Name": "CrouchTextB",
+        "Transform": {
+            "translation": [ -1.875, -0.35, 0],
+            "scale": [0.04, 0.04, 0],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/Roboto_Mono_white.png",
+            "z_priority": 201,
+            "Rows": 8,
+            "Cols": 16,
+            "Text": "golden objects."
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": false,
+            "Type": "Box",
+            "Width": 8.0,
+            "Height": 18,
+            "Offset": [ 28.0, -10.0, 0 ]
+        },
+        "TutorialText": {
+
+        }
+    },
+    {
+        "Name": "ConveyerBelt",
+        "Transform": {
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 4, 2, 1 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/TutorialRoom/TutorialRoom_ConveyerBelt.png",
+            "z_priority": -12
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 0.875,
+            "Height": 0.225,
+            "Offset": [ 0.1, 0.1, 0 ]
+        }
+    },
+    {
+        "Name": "Luggage",
+        "Transform": {
+            "translation": [ 0.425, 0.275, 0 ],
+            "scale": [ 2.4, 0.6, 1 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/TutorialRoom/Room1/Luggage.png",
+            "z_priority": -15
+        }
+    },
+    {
+        "Name": "Crate1",
+        "Transform": {
+            "translation": [ 0.01, 0, 0 ],
+            "scale": [ 4, 2, 1 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/TutorialRoom/TutorialRoom_Crate1.png",
+            "z_priority": -6
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 0.07,
+            "Height": 0.12,
+            "Offset": [ -0.19, -0.08, 0 ]
+        },
+        "Occluder": {
+            "Offset": [ -0.98, -0.145, 0 ],
+            "Width": 0.19,
+            "Height": 0.18
+        },
+        "BrokenDoorBehavior":{
+            
+        }
+    },
+    {
+        "Name": "StealthbarBack",
+        "Transform": {
+            "translation": [ 0.0, 0.45, 0 ],
+            "scale": [ 0.2, 0.05, 0 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/UI_UndetectedMeter_Asset_001.png",
+            "z_priority": 101,
+            "static": true
+        }
+    },
+    {
+        "Name": "StealthEye",
+        "Transform": {
+            "translation": [ -0.13, 0.45, 0 ],
+            "scale": [ 0.05, 0.05, 0 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/UI_DetectEye_Asset_001.png",
+            "z_priority": 103,
+            "static": true
+        },
+        "StealthBarBG": {
+
+        }
+
+    },
+    {
+        "Name": "Crate2",
+        "Transform": {
+            "translation": [ -0.07, -0.03, 0 ],
+            "scale": [ 4, 2, 1 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/TutorialRoom/TutorialRoom_Crate2_colored.png",
+            "z_priority": -8
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 0.07,
+            "Height": 0.10,
+            "Offset": [ -0.105, -0.225, 0 ]
+        },
+        "Occluder": {
+            "Offset": [ -0.39, -0.45, 0 ],
+            "Width": 0.05,
+            "Height": 0.115,
+            "Depth": 0.5
+        }
+    },
+    {
+        "Name": "Crate2AboveOccluder",
+        "Transform": {
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 4, 2, 1 ],
+            "rotation": 0
+        },
+        "Occluder": {
+            "Offset": [ -0.485, -0.5, 0 ],
+            "Width": 0.047,
+            "Height": 0.22,
+            "Depth": 0.5
+        }
+    },
+    {
+        "Name": "Crate3",
+        "Transform": {
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 4, 2, 1 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/TutorialRoom/TutorialRoom_Crate3_colored.png",
+            "z_priority": -10
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 0.05,
+            "Height": 0.1,
+            "Offset": [ -0.035, -0.05, 0 ]
+        },
+        "Occluder": {
+            "Offset": [ -0.16, -0.1825, 0 ],
+            "Width": 0.048,
+            "Height": 0.15,
+            "Depth": 0.5
+        }
+    },
+    {
+        "Name": "Crate3AboveOccluder",
+        "Transform": {
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 4, 2, 1 ],
+            "rotation": 0
+        },
+        "Occluder": {
+            "Offset": [ -0.158, -0.14, 0],
+            "Width": 0.0325,
+            "Height": 0.15,
+            "Depth": 0.5
+        }
+    },
+    {
+        "Name": "Crate4",
+        "Transform": {
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 4, 2, 1 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/TutorialRoom/TutorialRoom_Crate4_colored.png",
+            "z_priority": -5.25
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 0.05,
+            "Height": 0.035,
+            "Offset": [ 0.024, -0.325, 0 ]
+        },
+        "Occluder": {
+            "Offset": [ 0.0745, -0.675, 0 ],
+            "Width": 0.055,
+            "Height": 0.15,
+            "Depth": 0.5
+        }
+    },
+    {
+        "Name": "Crate4AboveOccluder",
+        "Transform": {
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 4, 2, 1 ],
+            "rotation": 0
+        },
+        "Occluder": {
+            "Offset": [ 0.0515, -0.605, 0 ],
+            "Width": 0.045,
+            "Height": 0.125,
+            "Depth": 0.5
+        }
+    },
+    {
+        "Name": "Crate5",
+        "Transform": {
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 4, 2, 1 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/TutorialRoom/TutorialRoom_Crate5_colored.png",
+            "z_priority": -10
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 0.08,
+            "Height": 0.1,
+            "Offset": [ 0.095, -0.05, 0 ]
+        },
+        "Occluder": {
+            "Offset": [ 0.39, -0.155, 0 ],
+            "Width": 0.095,
+            "Height": 0.0725,
+            "Depth": 0.5
+        }
+    },
+    {
+        "Name": "Crate5AboveOccluder",
+        "Transform": {
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 4, 2, 1 ],
+            "rotation": 0
+        },
+        "Occluder": {
+            "Offset": [ 0.388, -0.049, 0 ],
+            "Width": 0.08,
+            "Height": 0.035,
+            "Depth": 0.5
+        }
+    },
+    {
+        "Name": "Crate7",
+        "Transform": {
+            "translation": [ 0.85, 0, 0 ],
+            "scale": [ 4, 2, 1 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/TutorialRoom/TutorialRoom_Crate3_colored.png",
+            "z_priority": -10
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 0.08,
+            "Height": 0.1,
+            "Offset": [ 0.2, -0.145, 0 ]
+        },
+        "Occluder": {
+            "Offset": [ -0.2, -0.145, 0 ],
+            "Width": 0.09,
+            "Height": 0.105,
+            "Depth": 0.5
+        }
+    },
+    {
+        "Name": "Crate7AboveOccluder",
+        "Transform": {
+            "translation": [ 0.34, 0.0, 0 ],
+            "scale": [ 4, 2, 1 ],
+            "rotation": 0
+        },
+        "Occluder": {
+            "Offset": [ 0.388, -0.045, 0 ],
+            "Width": 0.034,
+            "Height": 0.05,
+            "Depth": 0.5
+        }
+    },
+    {
+        "Name": "Crate8",
+        "Transform": {
+            "translation": [ 0.65, 0, 0 ],
+            "scale": [ 4, 2, 1 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/TutorialRoom/TutorialRoom_Crate5_colored.png",
+            "z_priority": -10
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 0.08,
+            "Height": 0.1,
+            "Offset": [ 0.095, -0.05, 0 ]
+        },
+        "Occluder": {
+            "Offset": [ 0.39, -0.155, 0 ],
+            "Width": 0.095,
+            "Height": 0.0725,
+            "Depth": 0.5
+        }
+    },
+    {
+        "Name": "Crate8AboveOccluder",
+        "Transform": {
+            "translation": [ 0.65, 0, 0 ],
+            "scale": [ 4, 2, 1 ],
+            "rotation": 0
+        },
+        "Occluder": {
+            "Offset": [ 0.388, -0.049, 0 ],
+            "Width": 0.08,
+            "Height": 0.035,
+            "Depth": 0.5
+        }
+    },
+    {
+        "Name": "Crate6",
+        "Transform": {
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 4, 2, 1 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/TutorialRoom/TutorialRoom_Crate6.png",
+            "z_priority": -10
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 0.082,
+            "Height": 0.12,
+            "Offset": [ 0.345, -0.028, 0 ]
+        },
+        "Occluder": {
+            "Offset": [ 1.3525, -0.03725, 0 ],
+            "Width": 0.077,
+            "Height": 0.17,
+            "Depth": 1.0
+        }
+    },
+    {
+        "Name": "PropCrates",
+        "Transform": {
+            "translation": [ -1.26, -0.61, 0 ],
+            "scale": [ 1.5, 0.8, 1 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/TutorialRoom/Room1/Crates_LeftSide.png",
+            "z_priority": -2
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 0.225,
+            "Height": 0.13,
+            "Offset": [ -0.43, -0.4, 0 ]
+        }
+    },
+    {
+        "Name": "MidwayCrates",
+        "Transform": {
+            "translation": [ 0, 0, 0],
+            "scale": [ 4, 2, 1 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/TutorialRoom/TutorialRoom_MidwayCrate.png",
+            "z_priority": -2
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 0.17,
+            "Height": 0.15,
+            "Offset": [ 0.18, -0.35, 0 ]
+        },
+        "Occluder": {
+            "Offset": [ 0.71, -0.82, 0 ],
+            "Width": 0.192,
+            "Height": 0.5,
+            "Depth": 0.5
+        }
+    },
+    {
+        "Name": "Door",
+        "Transform": {
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 4, 2, 1 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/TutorialRoom/TutorialRoom_PropDoor.png",
+            "z_priority": -10
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 0.18,
+            "Height": 0.1,
+            "Offset": [ -0.4, 0.25, 0 ]
+        }
+    },
+    {
+        "Name": "Walls",
+        "Transform": {
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 4, 2, 1 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/TutorialRoom/TutorialRoom_LuggageWalls.png",
+            "z_priority": -8
+        }
+    },
+    {
+        "Name": "StealthbarBack",
+        "Transform": {
+            "translation": [ 0.0, 0.45, 0 ],
+            "scale": [ 0.2, 0.05, 0 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/UI_UndetectedMeter_Asset_001.png",
+            "z_priority": 101,
+            "static": true
+        }
+    },
+    {
+        "Name": "WallColliderLeft",
+        "Transform": {
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 4, 2, 1 ],
+            "rotation": 0
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 0.05,
+            "Height": 0.75,
+            "Offset": [ -0.525, -0.08, 0 ]
+        }
+    },
+    {
+        "Name": "WallColliderBottom",
+        "Transform": {
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 4, 2, 1 ],
+            "rotation": 0
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 1.0,
+            "Height": 0.1,
+            "Offset": [ 0.15, -0.55, 0 ]
+        },
+        "Occluder": {
+            "Offset": [ 0, -1.45, 0 ],
+            "Width": 1.0,
+            "Height": 0.5,
+            "Depth": 0.5
+        }
+    },
+    {
+        "Name": "RoomDoor",
+        "Transform": {
+            "translation": [ 2.437, -0.5, 0 ],
+            "scale": [ 1.0, 1.0, 1 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/TutorialRoom/ENV_Tile_TutorialRoomDoor_001.png",
+            "z_priority": 0
+        }
+    },
+    {
+        "Name": "WallColliderRight",
+        "Transform": {
+            "translation": [ 4.6, -0.725, 0 ],
+            "scale": [ 4, 2, 1 ],
+            "rotation": 0
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 0.25,
+            "Height": 0.1,
+            "Offset": [ -0.525, -0.08, 0 ]
+        }
+    },
+    {
+        "Name": "CarouselWallLeft",
+        "Transform": {
+            "translation": [ -1.0, 0.275, 0 ],
+            "scale": [ 4, 2, 1 ],
+            "rotation": 0
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 0.05,
+            "Height": 0.38,
+            "Offset": [ 0, 0, 0 ]
+        }
+    },
+    {
+        "Name": "WallColliderRight",
+        "Transform": {
+            "translation": [ 4.6, -0.17, 0 ],
+            "scale": [ 4, 2, 1 ],
+            "rotation": 0
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 0.25,
+            "Height": 0.25,
+            "Offset": [ -0.525, -0.08, 0 ]
+        }
+    },
+    {
+        "Name": "StealthbarBack",
+        "Transform": {
+            "translation": [ 0.0, 0.45, 0 ],
+            "scale": [ 0.2, 0.05, 0 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/UI_UndetectedMeter_Asset_001.png",
+            "z_priority": 101,
+            "static": true
+        }
+    },
+    {
+        "Name": "Crate7",
+        "Transform": {
+            "translation": [ 2.525, 0, 0 ],
+            "scale": [ 4, 2, 1 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/TutorialRoom/TutorialRoom_Crate1.png",
+            "z_priority": -6
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 0.07,
+            "Height": 0.12,
+            "Offset": [ -0.19, -0.08, 0 ]
+        },
+        "Occluder": {
+            "Offset": [ -0.95, -0.15, 0 ],
+            "Width": 0.18,
+            "Height": 0.18
+        }
+    },
+    {
+        "Name": "AmbientTrains",
+        "SoundBehavior":{
+            "WaitTime": 0.0,
+            "FilePath": "./Data/Audio/SFX/Lose2.json",
+            "InRange": true
+        }
+    }
+]

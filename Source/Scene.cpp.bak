@@ -1,0 +1,281 @@
+/*!*****************************************************************************
+\par filename: Scene.cpp
+\par  authors: Ashkon Khalkhali
+\par     date: 09/17/2022
+\brief
+  Cpp file for Scene class. Contains Init, Draw, Update
+  Copyright © 2022 DigiPen (USA) Corporation.
+*******************************************************************************/
+
+#include <rapidjson/document.h>
+#include "Engine.h"
+#include "Scene.h"
+#include "Transform.h"
+#include "Physics.h"
+#include "Factory.h"
+#include "SetupFactory.h"
+#include "Entity.h"
+#include "Button.h"
+#include "SceneLoader.h"
+#include "PoisonVial.h"
+#include "PlayerController.h"
+#include "CameraBehavior.h"
+#include "Camera.h"
+#include "AttendantA.h"
+#include "Animation.h"
+#include "DoorBehavior.h"
+#include "CCTV.h"
+#include "Collider.h"
+#include "GuardBehavior.h"
+#include "RoomCover.h"
+#include "TrashFire.h"
+#include "VisionCone.h"
+#include "FuseboxKey.h"
+#include "Lighter.h"
+#include "FootstepEmitter.h"
+#include "ParticleEmitter.h"
+#include "Inventory.h"
+#include "Disruptions.h"
+#include "VisionMode.h"
+#include "Detection.h"
+#include "TendrilBehavior.h"
+#include "Interactable.h"
+#include "Armament.h"
+#include "Vision.h"
+#include "Occluder.h"
+#include "StealthBar.h"
+#include "StealthBarBG.h"
+#include "MovingObject.h"
+#include "TutorialText.h"
+#include "Teleport.h"
+#include "LoadBehavior.h"
+#include "AntagBehavior.h"
+#include "Detected.h"
+#include "Shadow.h"
+#include "Volume.h"
+#include "TeleportUI.h"
+
+namespace FFunctional
+{
+  void CheckCollisions(ECS& ecs);
+
+  void Scene::SetManager(Manager<FFunctional::Scene>* parent)
+  {
+    parent_ = parent;
+  }
+
+  Manager<FFunctional::Scene>* Scene::GetManager()
+  {
+    return parent_;
+  }
+
+  const ECS* Scene::getECS() const
+  {
+    return &sceneEcs_;
+  }
+
+  ECS& Scene::getECS()
+  {
+    return sceneEcs_;
+  }
+
+  void Scene::Stop()
+  {
+    Running_ = false;
+  }
+
+  //no ew
+  void Scene::SetNextScene(std::shared_ptr<FFunctional::Scene> nextScene)
+  {
+    using SceneManager = FFunctional::Manager<FFunctional::Scene>;
+    SceneManager* scenes = GetManager();
+
+    if (scenes)
+    {
+      scenes->Clear();
+      scenes->Add(nextScene);
+      nextScene->SetManager(scenes);
+    }
+  }
+
+  void Scene::Init()
+  {
+
+  }
+
+  void Scene::Destroy()
+  {
+    parent_->Delete(this);
+  }
+
+  void Scene::SetName(const char* fp)
+  {
+    sceneName_ = fp;
+  }
+
+  void Scene::Reload()
+  {
+    Input* input = parent_->GetParent()->GetSystem<Input>();
+
+    if (input->GetKeyState(GLFW_KEY_K) == Keystate::Down)
+    {
+      reload_ = true;
+    }
+
+  }
+
+  void Scene::Draw() const
+  {
+    sceneEcs_.Draw();
+  }
+
+  std::string Scene::GetName() const
+  {
+    return sceneName_;
+  }
+
+  void Scene::Read(const rapidjson::Value& value)
+  {
+    auto factory = parent_->GetParent()->GetSystem<ComponentFactory>();
+    
+    if (value.HasMember("Entities"))
+    {
+      auto entityList = value["Entities"].GetString();
+      rapidjson::Document docu = OpenJson(entityList);
+
+      for (unsigned j = 0; j < docu.GetArray().Size(); j++)
+      {
+        EntityID id = sceneEcs_.EntityCreate();
+        Entity entity(&sceneEcs_, id);
+
+        rapidjson::Document entityFile = OpenJson(docu[j]["FilePath"].GetString());
+
+        const auto& obj = entityFile.GetObj();
+        for (const auto& member : obj)
+        {
+          factory->Create(member.name.GetString(), parent_->GetParent(), entity, member.value);
+        }
+        entity.Init();
+      }
+    }
+    if (value.HasMember("Environment"))
+    {
+      auto enviroList = value["Environment"].GetString();
+      rapidjson::Document docu = OpenJson(enviroList);
+
+      for (unsigned j = 0; j < docu.Size(); j++)
+      {
+        EntityID id = sceneEcs_.EntityCreate();
+        Entity entity(&sceneEcs_, id);
+
+        const auto& obj = docu[j].GetObj();
+        for (const auto& member : obj)
+        {
+          factory->Create(member.name.GetString(), parent_->GetParent(), entity, member.value);
+        }
+        entity.Init();
+      }
+    }
+  }
+
+  bool wasNotDown = false;
+  void Scene::Update(float dt)
+  {
+    //THIS ORDER MATTERS!
+    //update animations
+    if (sceneEcs_.GetActive())
+    {
+      Input* input = parent_->GetParent()->GetSystem<Input>();
+
+      if (input->GetKeyState(GLFW_KEY_K) == Keystate::Down)
+      {
+        Reloading();
+      }
+      //wasNotDown = input->GetKeyState(GLFW_KEY_K) == Keystate::Up;
+
+      sceneEcs_.Update<LoadBehavior>(dt);
+      sceneEcs_.Update<StealthBar>(dt);
+      sceneEcs_.Update<Detected>(dt);
+      sceneEcs_.Update<RoomCover>(dt);
+      sceneEcs_.Update<PlayerController>(dt);
+      sceneEcs_.Update<DoorBehavior>(dt);
+      sceneEcs_.Update<CameraBehavior>(dt);
+      sceneEcs_.Update<Camera>(dt);
+      sceneEcs_.Update<Occluder>(dt);
+      sceneEcs_.Update<Transform>(dt);
+      sceneEcs_.Update<Physics>(dt);
+      sceneEcs_.Update<Collider>(dt);
+      sceneEcs_.Update<Collider>(dt);
+      sceneEcs_.Update<TrashFireBehavior>(dt);
+      sceneEcs_.Update<FuseboxKeyBehavior>(dt);
+      sceneEcs_.Update<Animation>(dt);
+      sceneEcs_.Update<AttendantBehavior>(dt);
+      sceneEcs_.Update<PoisonVialBehavior>(dt);
+      sceneEcs_.Update<VisionConeBehavior>(dt);
+      sceneEcs_.Update<MovingObject>(dt);
+      sceneEcs_.Update<TutorialText>(dt);
+      sceneEcs_.Update<TeleportBehavior>(dt);
+      sceneEcs_.Update<TeleportUI>(dt);
+	  sceneEcs_.Update<Shadow>(dt);
+      //sceneEcs_.Update<FuseBoxBehavior>(dt);
+      sceneEcs_.Update<CCTVBehavior>(dt);
+      sceneEcs_.Update<GuardBehavior>(dt);
+      sceneEcs_.Update<AntagBehavior>(dt);
+      sceneEcs_.Update<Button>(dt);
+      sceneEcs_.Update<VolumeBehavior>(dt);
+      sceneEcs_.Update<LighterBehavior>(dt);
+      sceneEcs_.Update<FootstepEmitter>(dt);
+      sceneEcs_.Update<ParticleEmitter>(dt);
+      //CheckCollisions(sceneEcs_);
+      sceneEcs_.Update<Disruptions>(dt);
+      sceneEcs_.Update<VisionMode>(dt);
+      sceneEcs_.Update<Vision>(dt);
+      sceneEcs_.Update<Detection>(dt);
+      sceneEcs_.Update<Inventory>(dt);
+      sceneEcs_.Update<Interactable>(dt);
+      sceneEcs_.Update<Armament>(dt);
+      sceneEcs_.Update<StealthBarBG>(dt);
+      // sceneEcs_.Update<TendrilBehavior>(dt);
+      sceneEcs_.DestroyQueuedEntities();
+
+    }
+
+    //update
+    //sceneEcs_.Update<Behavior>(dt);
+    //update collision
+  }
+
+  void Scene::Reloading()
+  {
+    Armament::ResetArmament();
+
+    rapidjson::Document doc = OpenJson(sceneName_.c_str());
+
+    Audio& audio = *parent_->GetParent()->GetSystem<Audio>();
+    std::unordered_map<std::string, std::unique_ptr<Sound>>* library = audio.GetLibrary();
+
+    for (auto it = library->begin(); it != library->end(); it++)
+    {
+      Sound& sound = *it->second;
+      sound.Stop();
+    }
+    //SetECSState(sceneEcs_, true);
+    sceneEcs_.ForceClear();
+    Read(doc);
+  }
+
+  void Scene::Exit()
+  {
+    Armament::ResetArmament();
+    //!< since entities are Shared Ptrs no cleanup necessary
+  }
+
+
+  Scene::~Scene()
+  {
+    Armament::ResetArmament();
+  }
+
+
+
+}

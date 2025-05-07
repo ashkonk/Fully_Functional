@@ -1,0 +1,41 @@
+{
+    "Name": "GuardBehavior",
+    "Transform": {
+        "translation": [ -1.0, 0.0, 0 ],
+        "scale": [ 0.25, 0.25, 0 ],
+        "rotation": 0
+    },
+    "Sprite": {
+        "tex_path": "./Assets/PROP_Drone_Asset_001.PNG",
+        "z_priority": -3
+    },
+    "Physics": {
+        "acceleration": [ 0.0, 0.0, 0 ],
+        "velocity": [ 0, 0, 0 ]
+
+    },
+    "GuardBehavior": {
+        "GuardMovement": {
+            "MoveSpeed": 1.0,
+
+            "BehaviorState": 0,
+
+            "WalkingPoints": [
+                [ -1.18, 0.36, 0 ],
+                [ -1.18, -0.5, 0 ],
+                [ 1.18, -0.5, 0 ],
+                [ 1.18, 0.36, 0 ]
+            ]
+        }
+    },
+    "Collider": {
+        "Static": true,
+        "Solid": false,
+        "Type": "Circle",
+        "Radius": 1.00
+    },
+    "Detection": {
+        "tex_path": "./Assets/UI_Status_Seen_001.png",
+        "tex_path2": "./Assets/UI_Status_Caught_001.png"
+    }
+}

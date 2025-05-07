@@ -1,0 +1,42 @@
+[
+    {
+        "Name": "Ambrose Doppler",
+        "FilePath": "./Data/LevelKitchen/Entities/AmbroseDoppler.json"
+    },
+    {
+        "Name": "TeleportUI",
+        "FilePath": "./Data/LevelKitchen/Entities/TeleportUI.json"
+    },
+    {
+        "Name": "CarDoor",
+        "FilePath": "./Data/LevelKitchen/Entities/CarDoor.json"
+    },
+    {
+        "Name": "Chef",
+        "FilePath": "./Data/LevelKitchen/Entities/ChefOne.json"
+    },
+    {
+        "Name": "ShadowAmbrose",
+        "FilePath": "./Data/LevelTutorial/Entities/ShadowAmbrose.json"
+    },
+    {
+        "Name": "StealthBar",
+        "FilePath": "./Data/LevelKitchen/Entities/StealthBar.json"
+    },
+    {
+        "Name": "TeleportBehavior",
+        "FilePath": "./Data/LevelKitchen/Entities/TeleportBehavior.json"
+    },
+    {
+        "Name": "CCTVLeft",
+        "FilePath": "./Data/LevelKitchen/Entities/CCTVLeft.json"
+    },
+    {
+        "Name": "Antag",
+        "FilePath": "./Data/LevelKitchen/Entities/Antag.json"
+    },
+    {
+        "Name": "ShadowAntag",
+        "FilePath": "./Data/LevelTutorial/Entities/ShadowAntag.json"
+    }
+]

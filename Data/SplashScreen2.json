@@ -1,0 +1,47 @@
+[
+  {
+    "Name": "Main Camera",
+    "Transform": {
+      "translation": [ 0, 0, 0 ],
+      "scale": [ 1.0, 1.0, 1 ],
+      "rotation": 0
+    },
+    "Camera": {
+      "priority": 0
+    },
+    "Physics": {
+      "acceleration": [ 0.0, 0.0, 0 ],
+      "velocity": [ 0, 0, 0 ]
+    }
+  },
+  {
+    "Name": "Splash",
+    "Transform": {
+      "translation": [ 0.0, 0.0, 0 ],
+      "scale": [ 0.5, 0.888, 0 ],
+      "rotation": 0
+    },
+    "Sprite": {
+      "tex_path": "./Assets/perfectlynormal-logo.png",
+      "z_priority": 0.0
+    }
+  },
+  {
+    "Name": "Fade",
+    "Transform": {
+      "translation": [ 0.0, 0.0, 0 ],
+      "scale": [ 1.0, 1.0, 0 ],
+      "rotation": 0
+    },
+    "Sprite": {
+      "tex_path": "./Assets/black.png",
+      "z_priority": 0.0
+    },
+    "FadeController": {
+      "duration": 1.0,
+      "wait": 4.0,
+      "scenePath": "./Data/MainMenuMain.json",
+      "Intro":true
+    }
+  }
+]

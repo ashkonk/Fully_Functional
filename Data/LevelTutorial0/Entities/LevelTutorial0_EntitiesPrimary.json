@@ -1,0 +1,26 @@
+[
+    {
+        "Name": "Ambrose Doppler",
+        "FilePath": "./Data/LevelTutorial0/Entities/AmbroseDoppler.json"
+    },
+    {
+        "Name": "Stealth Bar",
+        "FilePath": "./Data/LevelTutorial0/Entities/StealthBar.json"
+    },
+    {
+        "Name": "CarDoor",
+        "FilePath": "./Data/LevelTutorial0/Entities/CarDoor.json"
+    },
+    {
+        "Name": "Antag",
+        "FilePath": "./Data/LevelTutorial0/Entities/Antag.json"
+    },
+    {
+        "Name": "ShadowAmbrose",
+        "FilePath": "./Data/LevelTutorial/Entities/ShadowAmbrose.json"
+    },
+    {
+        "Name": "ShadowAntag",
+        "FilePath": "./Data/LevelTutorial/Entities/ShadowAntag.json"
+    }
+]

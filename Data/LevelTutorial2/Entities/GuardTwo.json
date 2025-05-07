@@ -1,0 +1,32 @@
+{
+    "Name": "GuardTwo",
+    "CCTVBehavior": {
+        "Active": true,
+        "RotateSpeed": 0.0,
+        "MaxRotation": 0.0,
+        "RotateDirection": -1.0,
+        "DetectTime" : 0.5
+    },
+    "Transform": {
+        "translation": [ 0.925, 0.41, 0 ],
+        "scale": [ 0.2, 0.4, 1 ],
+        "rotation": 0
+    },
+    "Sprite": {
+        "tex_path": "./Assets/ENV_CivilianB_Asset_001.png",
+        "z_priority": -9
+    },
+    "Physics": {
+        "acceleration": [ 0.0, 0.0, 0 ],
+        "velocity": [ 0, 0, 0 ]
+    },
+    "Detection": {
+        "tex_path": "./Assets/UI_Status_Seen_001.png",
+        "tex_path2": "./Assets/UI_Status_Caught_001.png"
+    },
+    "Vision": {
+        "Angle": 270,
+        "Distance": 1.2,
+        "FOV": 90
+    }
+}

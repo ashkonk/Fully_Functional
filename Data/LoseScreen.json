@@ -1,0 +1,74 @@
+[
+    {
+        "Name": "Main Camera",
+        "Transform": {
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1.0, 1.0, 1 ],
+            "rotation": 0
+        },
+        "Camera": {
+            "priority": 0
+        },
+        "Physics": {
+            "acceleration": [ 0.0, 0.0, 0 ],
+            "velocity": [ 0, 0, 0 ]
+        }
+    },
+    {
+        "Name": "MainBackground",
+        "Transform": {
+            "translation": [ 0.0, 0.0, 0 ],
+            "scale": [ 1.0, 1.0, 0 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/UI_LoseScreen_001.png",
+            "z_priority": 0.0
+        }
+    },
+    {
+        "Name": "Retry",
+        "Transform": {
+            "translation": [ 0.0, 0.1, 0 ],
+            "scale": [ 0.15, 0.15, 0 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/UI_MenuButton_Asset_Retry.png",
+            "z_priority": 1.0,
+            "UVs": [ 0.0, 0.0, 1.0, 0.33 ]
+        },
+        "Button": {
+            "Function": 4,
+            "BaseUV": [ 0.0, 0.0, 1.0, 0.33 ],
+            "Offset": 0.33,
+            "Filepath": "./Data/LevelTutorial/TutorialPrimary.json"
+        }
+    },
+    {
+        "Name": "Quit",
+        "Transform": {
+            "translation": [ 0.0, -0.3, 0 ],
+            "scale": [ 0.15, 0.15, 0 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/UI_MenuButton_Asset_Quit.png",
+            "z_priority": 1.0,
+            "UVs": [ 0.0, 0.22, 1.0, 0.11 ]
+        },
+        "Button": {
+            "Function": 1,
+            "BaseUV": [ 0.0, 0.0, 1.0, 0.33 ],
+            "Offset": 0.33
+        }
+    },
+    {
+        "Name": "SoundHold",
+        "SoundBehavior":{
+            "WaitTime": 0.0,
+            "FilePath": "./Data/Audio/SFX/AmbientTrains.json",
+            "InRange": true
+        }
+    }
+]

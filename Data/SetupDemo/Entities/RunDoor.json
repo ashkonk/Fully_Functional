@@ -1,0 +1,23 @@
+{
+    "Name": "RunDoor",
+    "Transform": {
+        "translation": [ -0.8, -0.4, 0 ],
+        "scale": [ 0.25, 0.25, 0 ],
+        "rotation": 0
+    },
+    "Sprite": {
+        "tex_path": "./Assets/Goal LOS TXT.png",
+        "z_priority": -4
+    },
+    "Collider": {
+        "Static": true,
+        "Solid": false,
+        "Type": "Box",
+        "Width": 1,
+        "Height": 1
+    },
+    "DoorBehavior": {
+        "Filepath": "./Data/DemoLevel.json",
+        "EntryPosition": [ -1.0, 0, 0 ]
+    }
+}

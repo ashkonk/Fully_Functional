@@ -1,0 +1,719 @@
+[
+    {
+        "Name": "Main Camera",
+        "Transform": {
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 3.2004, 1.8, 1 ],
+            "rotation": 0
+        },
+        "Camera": {
+            "priority": 0
+        },
+        "Physics": {
+            "acceleration": [ 0.0, 0.0, 0 ],
+            "velocity": [ 0, 0, 0 ]
+        },
+        "CameraBehavior": {
+            "InitPosition": [ 0.6, -0.25, 0 ],
+            "Bounds": [ -0.425, -0.130, 0.435, 0.12]
+        },
+        "Sprite": {
+            "tex_path": "./Assets/DemoLevel/DetectiveModeBg_Base.png",
+            "z_priority": 0,
+            "opacity": 0
+        }
+    },
+    {
+      "Name":  "FadeIn",
+      "Transform": {
+            "translation": [ 0.0, 0.0, 0 ],
+            "scale": [ 2.0, 2.0, 0 ],
+        "rotation": 0
+      },
+      "Sprite": {
+        "tex_path": "./Assets/black.png",
+        "z_priority": 1001,
+        "static": true
+      },
+      "FadeController": {
+        "duration": 2.0,
+        "scenePath": "./Data/LevelPassenger1/PassengerRoom1Primary.json"
+      }
+    },
+    {
+        "Name": "TeleportBG",
+        "Transform": {
+            "translation": [ 0.0, -0.425, 0 ],
+            "scale": [ 0.045, 0.15, 0 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/UI_DashIcon_Asset_001.png",
+            "z_priority": 10,
+            "static": true
+        }
+    },
+    {
+        "Name": "TutorialRoomBackground",
+        "Transform": {
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 4, 2, 1 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/TutorialRoom/Room2/TutorialRoom2_ShadowRun.png",
+            "z_priority": -1000
+        }
+    },
+    {
+        "Name": "TutorialRoomBackground2",
+        "Transform": {
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 4, 2, 1 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/TutorialRoom/light_for_1_64.png",
+            "z_priority": 0,
+            "opacity": 1,
+            "overlay": true
+        }
+    },
+    {
+        "Name": "ConveyerBelt",
+        "Transform": {
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 4, 2, 1 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/TutorialRoom/Room2/TutorialRoom_ConveyerBelt1.png",
+            "z_priority": -10
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 0.25,
+            "Height": 0.01,
+            "Offset": [ -0.4, 0.23, 0 ]
+        }
+    },
+    {
+        "Name": "TeleportBox",
+        "Transform": {
+            "translation": [ -1.5, 0.4, 0],
+            "scale": [1.2, 0.2, 0],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/UI_TextBox_Asset_001.PNG",
+            "z_priority": 200
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": false,
+            "Type": "Box",
+            "Width": 0.25,
+            "Height": 6,
+            "Offset": [ 0.27, -5.0, 0 ]
+        },
+        "TutorialText": {
+
+        }
+    },
+    {
+        "Name": "TeleportTextA",
+        "Transform": {
+            "translation": [ -2.0, 0.4, 0],
+            "scale": [0.04, 0.04, 0],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/Roboto_Mono_white.png",
+            "z_priority": 201,
+            "Rows": 8,
+            "Cols": 16,
+            "Text": "Hold space to teleport"
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": false,
+            "Type": "Box",
+            "Width": 8.0,
+            "Height": 19,
+            "Offset": [ 20.5, -20.0, 0 ]
+        },
+        "TutorialText": {
+
+        }
+    },
+    {
+        "Name": "TeleportTextB",
+        "Transform": {
+            "translation": [ -2.0, 0.35, 0],
+            "scale": [0.04, 0.04, 0],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/Roboto_Mono_white.png",
+            "z_priority": 201,
+            "Rows": 8,
+            "Cols": 16,
+            "Text": "WASD to control direction."
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": false,
+            "Type": "Box",
+            "Width": 8.0,
+            "Height": 19,
+            "Offset": [ 20.5, -20.0, 0 ]
+        },
+        "TutorialText": {
+
+        }
+    },
+    {
+        "Name": "GuardBox",
+        "Transform": {
+            "translation": [ -1.5, 0.2, 0],
+            "scale": [1.2, 0.2, 0],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/UI_TextBox_Asset_001.PNG",
+            "z_priority": 200
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": false,
+            "Type": "Box",
+            "Width": 0.25,
+            "Height": 6,
+            "Offset": [ 0.27, -4.0, 0 ]
+        },
+        "TutorialText": {
+
+        }
+    },
+    {
+        "Name": "GuardTextA",
+        "Transform": {
+            "translation": [ -2.0, 0.2, 0],
+            "scale": [0.04, 0.04, 0],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/Roboto_Mono_white.png",
+            "z_priority": 201,
+            "Rows": 8,
+            "Cols": 16,
+            "Text": "WATCH OUT! Guards detect"
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": false,
+            "Type": "Box",
+            "Width": 8.0,
+            "Height": 19,
+            "Offset": [ 20.5, -15.0, 0 ]
+        },
+        "TutorialText": {
+
+        }
+    },
+    {
+        "Name": "GuardTextB",
+        "Transform": {
+            "translation": [ -2.0, 0.15, 0],
+            "scale": [0.04, 0.04, 0],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/Roboto_Mono_white.png",
+            "z_priority": 201,
+            "Rows": 8,
+            "Cols": 16,
+            "Text": "you much faster!"
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": false,
+            "Type": "Box",
+            "Width": 8.0,
+            "Height": 19,
+            "Offset": [ 20.5, -15.0, 0 ]
+        },
+        "TutorialText": {
+
+        }
+    },
+    {
+        "Name": "TeleportCDBox",
+        "Transform": {
+            "translation": [ 0.5, -0.4, 0],
+            "scale": [1.2, 0.3, 0],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/UI_TextBox_Asset_001.PNG",
+            "z_priority": 200
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": false,
+            "Type": "Box",
+            "Width": 0.3,
+            "Height": 4,
+            "Offset": [ -0.57, 0.0, 0 ]
+        },
+        "TutorialText": {
+
+        }
+    },
+    {
+        "Name": "TeleportCDTextA",
+        "Transform": {
+            "translation": [ 0.0, -0.4, 0],
+            "scale": [0.04, 0.04, 0],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/Roboto_Mono_white.png",
+            "z_priority": 201,
+            "Rows": 8,
+            "Cols": 16,
+            "Text": "Teleport can only be used"
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": false,
+            "Type": "Box",
+            "Width": 9.0,
+            "Height": 25,
+            "Offset": [ -5.0, 0, 0 ]
+        },
+        "TutorialText": {
+
+        }
+    },
+    {
+        "Name": "TeleportCDTextB",
+        "Transform": {
+            "translation": [ 0.0, -0.45, 0],
+            "scale": [0.04, 0.04, 0],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/Roboto_Mono_white.png",
+            "z_priority": 201,
+            "Rows": 8,
+            "Cols": 16,
+            "Text": "when the icon at the bottom"
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": false,
+            "Type": "Box",
+            "Width": 9.0,
+            "Height": 25,
+            "Offset": [ -5.0, 0, 0 ]
+        },
+        "TutorialText": {
+
+        }
+    },
+    {
+        "Name": "TeleportCDTextC",
+        "Transform": {
+            "translation": [ 0.0, -0.5, 0],
+            "scale": [0.04, 0.04, 0],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/Roboto_Mono_white.png",
+            "z_priority": 201,
+            "Rows": 8,
+            "Cols": 16,
+            "Text": "of your screen is blue."
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": false,
+            "Type": "Box",
+            "Width": 9.0,
+            "Height": 25,
+            "Offset": [ -5.0, 2.0, 0 ]
+        },
+        "TutorialText": {
+
+        }
+    },
+    {
+        "Name": "SecurityDeskOne",
+        "Transform": {
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 4, 2, 1 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/TutorialRoom/Room2/TutorialRoom_GuardStation_Desk.png",
+            "z_priority": -9.1
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 0.25,
+            "Height": 0.01,
+            "Offset": [ -0.4, 0.03, 0 ]
+        }
+    },
+    {
+        "Name": "SecurityChairOne",
+        "Transform": {
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 4, 2, 1 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/TutorialRoom/Room2/TutorialRoom_GuardStation_Chair.png",
+            "z_priority": -10.3
+        }
+    },
+    {
+        "Name": "SecurityDeskTwo",
+        "Transform": {
+            "translation": [ 0.0, 0.0, 0 ],
+            "scale": [ 4.0, 2.0, 1 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/TutorialRoom/Room2/TutorialRoom_GuardStation2_Desk.png",
+            "z_priority": -9.1
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 0.25,
+            "Height": 0.01,
+            "Offset": [ -0.4, 0.03, 0 ]
+        }
+    },
+    {
+        "Name": "SecurityChairTwo",
+        "Transform": {
+            "translation": [ 0.0, 0.0, 0 ],
+            "scale": [ 4.0, 2.0, 1 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/TutorialRoom/Room2/TutorialRoom_GuardStation2_Chair.png",
+            "z_priority": -10.3
+        }
+    },
+	{
+		"Name" : "ConveyerCatcherLeftUp",
+		"Transform": {
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 4, 2, 1 ],
+            "rotation": 0
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": false,
+            "Type": "Box",
+            "Width": 0.05,
+            "Height": 0.1,
+            "Offset": [ -0.28, 0.35, 0 ]
+        }
+	},
+    {
+        "Name": "ConveyerBeltTwo",
+        "Transform": {
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 4, 2, 1 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/TutorialRoom/Room2/TutorialRoom_ConveyorBelt_2.png",
+            "z_priority": -10
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 0.5,
+            "Height": 0.01,
+            "Offset": [ 0.25, 0.03, 0 ]
+        }
+    },
+    {
+        "Name": "Luggage",
+        "Transform": {
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 4, 2, 1 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/TutorialRoom/Room2/TutorialRoom_Luggage.png",
+            "z_priority": -15
+        }
+    },
+    {
+        "Name": "StealthbarBack",
+        "Transform": {
+            "translation": [ 0.0, 0.45, 0 ],
+            "scale": [ 0.2, 0.05, 0 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/UI_UndetectedMeter_Asset_001.png",
+            "z_priority": 101,
+            "static": true
+        }
+    },
+    {
+        "Name": "StealthEye",
+        "Transform": {
+            "translation": [ -0.13, 0.45, 0 ],
+            "scale": [ 0.05, 0.05, 0 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/UI_DetectEye_Asset_001.png",
+            "z_priority": 103,
+            "static": true
+        },
+        "StealthBarBG": {
+
+        }
+    },
+    {
+        "Name": "PropCrates",
+        "Transform": {
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 4, 2, 1 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/TutorialRoom/Room2/TutorialRoom_PropCrates.png",
+            "z_priority": -2
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 1.1,
+            "Height": 0.2,
+            "Offset": [ -0.05, -0.45, 0 ]
+        },
+		"Occluder": {
+			"Offset": [ 0.53, -0.75, 0 ],
+			"Width": 0.5,
+			"Height": 0.1
+		}
+
+    },
+    {
+        "Name": "Walls",
+        "Transform": {
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 4, 2, 1 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/TutorialRoom/Room2/TutorialRoom_LuggageWalls.png",
+            "z_priority": -8
+        },
+		"Occluder": {
+			"Offset": [ -0.94, 0, 0 ],
+			"Width": 0.03,
+			"Height": 0.14
+		},
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 0.03,
+            "Height": 0.1,
+            "Offset": [ -0.245, 0, 0 ]
+        }
+    },
+    {
+        "Name": "Wall2",
+        "Transform": {
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 4, 2, 1 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/TutorialRoom/Room2/TutorialRoom_LuggageWalls2.png",
+            "z_priority": -8
+        },
+		"Occluder": {
+			"Offset": [ 0.54, 0.08, 0 ],
+			"Width": 0.042,
+			"Height": 0.2
+		},
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 0.03,
+            "Height": 0.1,
+            "Offset": [ 0.13, -0.01, 0 ]
+        }
+    },
+    {
+        "Name": "Wall3",
+        "Transform": {
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 4, 2, 1 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/TutorialRoom/Room2/TutorialRoom_LuggageWalls3.png",
+            "z_priority": -100
+        },
+		"Occluder": {
+			"Offset": [ -0.215, 0.1, 0 ],
+			"Width": 0.0435,
+			"Height": 0.25
+		},
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 0.03,
+            "Height": 0.1,
+            "Offset": [ -0.05, -0.01, 0 ]
+        }
+    },
+    {
+        "Name": "StealthbarBack",
+        "Transform": {
+            "translation": [ 0.0, 0.45, 0 ],
+            "scale": [ 0.2, 0.05, 0 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/UI_UndetectedMeter_Asset_001.png",
+            "z_priority": 101,
+            "static": true
+        }
+    },
+    {
+        "Name": "WallColliderLeft",
+        "Transform": {
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 4, 2, 1 ],
+            "rotation": 0
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 0.05,
+            "Height": 0.75,
+            "Offset": [ -0.525, -0.08, 0 ]
+        }
+    },
+    {
+        "Name": "WallColliderBottom",
+        "Transform": {
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 4, 2, 1 ],
+            "rotation": 0
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 1.0,
+            "Height": 0.1,
+            "Offset": [ 0.15, -0.55, 0 ]
+        },
+        "Occluder": {
+            "Offset": [ 0, -1.45, 0 ],
+            "Width": 1.0,
+            "Height": 0.5,
+            "Depth": 0.5
+        }
+    },
+    {
+        "Name": "RoomDoor",
+        "Transform": {
+            "translation": [ 2.437, 0, 0 ],
+            "scale": [ 1.0, 1.0, 1 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/TutorialRoom/ENV_Tile_TutorialRoomDoor_001.png",
+            "z_priority": 0
+        }
+    },
+    {
+        "Name": "WallColliderRightBottom",
+        "Transform": {
+            "translation": [ 4.6, -0.3, 0 ],
+            "scale": [ 4, 2, 1 ],
+            "rotation": 0
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 0.25,
+            "Height": 0.25,
+            "Offset": [ -0.525, -0.11, 0 ]
+        }
+    },
+    {
+        "Name": "WallColliderRightUp",
+        "Transform": {
+            "translation": [ 4.6, 0.25, 0 ],
+            "scale": [ 4, 2, 1 ],
+            "rotation": 0
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 0.25,
+            "Height": 0.25,
+            "Offset": [ -0.525, -0.05, 0 ]
+        }
+    },
+    {
+        "Name": "StealthbarBack",
+        "Transform": {
+            "translation": [ 0.0, 0.45, 0 ],
+            "scale": [ 0.2, 0.05, 0 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/UI_UndetectedMeter_Asset_001.png",
+            "z_priority": 101,
+            "static": true
+        }
+    },
+    {
+        "Name": "DeskCollider",
+        "Transform": {
+            "translation": [ -0.4, 0.25, 0 ],
+            "scale": [ 4, 2, 1 ],
+            "rotation": 0
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 0.25,
+            "Height": 0.25,
+            "Offset": [ 0, 0, 0 ]
+        }
+    }
+]

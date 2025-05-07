@@ -1,0 +1,18 @@
+[
+    {
+    "Name": "Ambrose Doppler",
+    "FilePath": "./Data/LevelTutorial/Entities/AmbroseDoppler.json"
+    },
+    {
+        "Name": "FuseboxKeyBehavior",
+        "FilePath":"./Data/LevelPassenger1/Entities/FuseboxKey.json"
+    },
+    {
+        "Name": "TeleportUI",
+        "FilePath": "./Data/LevelTutorial/Entities/TeleportUI.json"
+    },
+    {
+        "Name": "CarDoor",
+        "FilePath": "./Data/LevelPassenger1/Entities/CarDoor.json"
+    }
+]

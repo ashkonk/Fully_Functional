@@ -1,0 +1,9 @@
+.vs
+x64
+Assets
+GLFW
+Audio
+FMOD
+glew-2.2.0-win32
+glew-2.1.0-win32
+glm

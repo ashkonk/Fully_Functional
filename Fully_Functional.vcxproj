@@ -1,0 +1,355 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{3c6fd340-8ae5-47e2-9b40-0e21183bc010}</ProjectGuid>
+    <RootNamespace>FullyFunctional</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>.\GLFW\glfw-file\include;$(IncludePath)</IncludePath>
+    <LibraryPath>.\FMOD\lib;.\glew-2.1.0-win32\glew-2.1.0\lib\Release\x64;.\GLFW\glfw-file\lib-vc2019;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>.\GLFW\glfw-file\include;$(IncludePath)</IncludePath>
+    <LibraryPath>.\FMOD\lib;.\glew-2.1.0-win32\glew-2.1.0\lib\Release\x64;.\GLFW\glfw-file\lib-vc2019;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <Profile>true</Profile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(solutiondir);.\FMOD\inc;.\glew-2.1.0-win32\glew-2.1.0\include;.\stb-master\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>glfw3.lib;glfw3dll.lib;glew32.lib;fmod_vc.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <Profile>true</Profile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(solutiondir);.\FMOD\inc;.\glew-2.1.0-win32\glew-2.1.0\include;.\stb-master\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>glfw3.lib;glfw3dll.lib;glew32.lib;fmod_vc.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="framework.h" />
+    <ClInclude Include="Fully_Functional.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="Source\BrokenDoorBehavior.h" />
+    <ClInclude Include="Source\DestroyTimer.h" />
+    <ClInclude Include="Source\FadeController.h" />
+    <ClInclude Include="Source\Shadow.h" />
+    <ClInclude Include="Source\Animation.h" />
+    <ClInclude Include="Source\AntagBehavior.h" />
+    <ClInclude Include="Source\Armament.h" />
+    <ClInclude Include="Source\AttendantA.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="Source\Audio.h" />
+    <ClInclude Include="Source\CCTV.h" />
+    <ClInclude Include="Source\Detected.h" />
+    <ClInclude Include="Source\Detection.h" />
+    <ClInclude Include="Source\Disruptions.h" />
+    <ClInclude Include="Source\DoorCollider.h" />
+    <ClInclude Include="Source\Behavior.h" />
+    <ClInclude Include="Source\CameraBehavior.h" />
+    <ClInclude Include="Source\DoorBehavior.h" />
+    <ClInclude Include="Source\Button.h" />
+    <ClInclude Include="Source\Camera.h" />
+    <ClInclude Include="Source\EntityID.h" />
+    <ClInclude Include="Source\FuseboxKey.h" />
+    <ClInclude Include="Source\FootstepEmitter.h" />
+    <ClInclude Include="Source\GuardBehavior.h" />
+    <ClInclude Include="Source\IBehavior.h" />
+    <ClInclude Include="Source\Interactable.h" />
+    <ClInclude Include="Source\InteractableState.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="Source\Inventory.h" />
+    <ClInclude Include="Source\Lighter.h" />
+    <ClInclude Include="Source\LoadBehavior.h" />
+    <ClInclude Include="Source\MovingObject.h" />
+    <ClInclude Include="Source\Occluder.h" />
+    <ClInclude Include="Source\PoisonVial.h" />
+    <ClInclude Include="Source\RoomCover.h" />
+    <ClInclude Include="Source\ParticleEmitter.h" />
+    <ClInclude Include="Source\Sound.h" />
+    <ClInclude Include="Source\SoundBehavior.h" />
+    <ClInclude Include="Source\StateMachine.h" />
+    <ClInclude Include="Source\Collider.h" />
+    <ClInclude Include="Source\Component.h" />
+    <ClInclude Include="Source\ComponentManager.h" />
+    <ClInclude Include="Source\PlayerController.h" />
+    <ClInclude Include="Source\ECS.h" />
+    <ClInclude Include="Source\Engine.h" />
+    <ClInclude Include="Source\Entity.h" />
+    <ClInclude Include="Source\Factory.h" />
+    <ClInclude Include="Source\framework.h" />
+    <ClInclude Include="Source\Graphics.h" />
+    <ClInclude Include="Source\IComponentManager.h" />
+    <ClInclude Include="Source\Input.h" />
+    <ClInclude Include="Source\ISystem.h" />
+    <ClInclude Include="Source\Physics.h" />
+    <ClInclude Include="Source\QuickMaths.h" />
+    <ClInclude Include="Source\Renderer.h" />
+    <ClInclude Include="Source\Resource.h" />
+    <ClInclude Include="Source\Scene.h" />
+    <ClInclude Include="Source\Manager.h" />
+    <ClInclude Include="Source\SceneLoader.h" />
+    <ClInclude Include="Source\SceneMain.h" />
+    <ClInclude Include="Source\SetupFactory.h" />
+    <ClInclude Include="Source\Sprite.h" />
+    <ClInclude Include="Source\StealthBar.h" />
+    <ClInclude Include="Source\StealthBarBG.h" />
+    <ClInclude Include="Source\Stream.h" />
+    <ClInclude Include="Source\stub.h" />
+    <ClInclude Include="Source\targetver.h" />
+    <ClInclude Include="Source\Teleport.h" />
+    <ClInclude Include="Source\TeleportUI.h" />
+    <ClInclude Include="Source\TendrilBehavior.h" />
+    <ClInclude Include="Source\Trace.h" />
+    <ClInclude Include="Source\Transform.h" />
+    <ClInclude Include="Source\TrashFire.h" />
+    <ClInclude Include="Source\TutorialText.h" />
+    <ClInclude Include="Source\Vision.h" />
+    <ClInclude Include="Source\VisionCone.h" />
+    <ClInclude Include="Source\VisionMode.h" />
+    <ClInclude Include="Source\Volume.h" />
+    <ClInclude Include="Source\Window.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\BrokenDoorBehavior.cpp" />
+    <ClCompile Include="Source\DestroyTimer.cpp" />
+    <ClCompile Include="Source\FadeController.cpp" />
+    <ClCompile Include="Source\Graphics.cpp" />
+    <ClCompile Include="Source\SetupFactoryEngine.cpp" />
+    <ClCompile Include="Source\Shadow.cpp" />
+    <ClCompile Include="Source\Animation.cpp" />
+    <ClCompile Include="Source\AntagBehavior.cpp" />
+    <ClCompile Include="Source\Armament.cpp" />
+    <ClCompile Include="Source\AttendantA.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Source\Audio.cpp" />
+    <ClCompile Include="Source\CCTV.cpp" />
+    <ClCompile Include="Source\Button.cpp" />
+    <ClCompile Include="Source\Camera.cpp" />
+    <ClCompile Include="Source\ComponentManager.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Source\Detected.cpp" />
+    <ClCompile Include="Source\Detection.cpp" />
+    <ClCompile Include="Source\Disruptions.cpp" />
+    <ClCompile Include="Source\FuseboxKey.cpp" />
+    <ClCompile Include="Source\FootstepEmitter.cpp" />
+    <ClCompile Include="Source\GuardBehavior.cpp" />
+    <ClCompile Include="Source\Interactable.cpp" />
+    <ClCompile Include="Source\InteractableState.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Source\Inventory.cpp" />
+    <ClCompile Include="Source\Lighter.cpp" />
+    <ClCompile Include="Source\LoadBehavior.cpp" />
+    <ClCompile Include="Source\Manager.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Source\MovingObject.cpp" />
+    <ClCompile Include="Source\Occluder.cpp" />
+    <ClCompile Include="Source\PoisonVial.cpp" />
+    <ClCompile Include="Source\CameraBehavior.cpp" />
+    <ClCompile Include="Source\DoorBehavior.cpp" />
+    <ClCompile Include="Source\ECS.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Source\RoomCover.cpp" />
+    <ClCompile Include="Source\ParticleEmitter.cpp" />
+    <ClCompile Include="Source\Sound.cpp" />
+    <ClCompile Include="Source\SoundBehavior.cpp" />
+    <ClCompile Include="Source\StateMachine.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Source\Collider.cpp" />
+    <ClCompile Include="Source\Component.cpp" />
+    <ClCompile Include="Source\PlayerController.cpp" />
+    <ClCompile Include="Source\Engine.cpp" />
+    <ClCompile Include="Source\Entity.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Source\Factory.cpp" />
+    <ClCompile Include="Source\Input.cpp" />
+    <ClCompile Include="Source\ISystem.cpp" />
+    <ClCompile Include="Source\Main.cpp" />
+    <ClCompile Include="Source\Renderer.cpp" />
+    <ClCompile Include="Source\Scene.cpp" />
+    <ClCompile Include="Source\Physics.cpp" />
+    <ClCompile Include="Source\QuickMaths.cpp" />
+    <ClCompile Include="Source\SceneLoader.cpp" />
+    <ClCompile Include="Source\SceneMain.cpp" />
+    <ClCompile Include="Source\SetupFactory.cpp" />
+    <ClCompile Include="Source\Sprite.cpp" />
+    <ClCompile Include="Source\StealthBar.cpp" />
+    <ClCompile Include="Source\StealthBarBG.cpp" />
+    <ClCompile Include="Source\Stream.cpp" />
+    <ClCompile Include="Source\stub.cpp" />
+    <ClCompile Include="Source\Teleport.cpp" />
+    <ClCompile Include="Source\TeleportUI.cpp" />
+    <ClCompile Include="Source\TendrilBehavior.cpp" />
+    <ClCompile Include="Source\Trace.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Source\Transform.cpp" />
+    <ClCompile Include="Source\TrashFire.cpp" />
+    <ClCompile Include="Source\TutorialText.cpp" />
+    <ClCompile Include="Source\Vision.cpp" />
+    <ClCompile Include="Source\VisionCone.cpp" />
+    <ClCompile Include="Source\VisionMode.cpp" />
+    <ClCompile Include="Source\Volume.cpp" />
+    <ClCompile Include="Source\Window.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Fully_Functional.ico" />
+    <Image Include="small.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

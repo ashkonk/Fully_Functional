@@ -1,0 +1,31 @@
+{
+    "Name": "LuggageOne",
+    "Transform": {
+        "translation": [ -1.76, 0.3, 0 ],
+        "scale": [ 0.3, 0.3, 0 ],
+        "rotation": 0
+    },
+    "Sprite": {
+        "tex_path": "./Assets/TutorialRoom/PROP_Luggage_Asset_006_Colored.png",
+        "z_priority": -8
+    },
+    "Physics": {
+        "acceleration": [ 0.0, 0.0, 0 ],
+        "velocity": [ 0, 0, 0 ]
+    },
+    "Occluder": {
+        "Offset": [ 0, 0, 0 ],
+        "Width": 0.62,
+        "Height": 1,
+        "Depth": 0.5
+    },
+    "MovingObject": {
+            "MoveSpeed": 0.2,
+            "WalkingPoints": [
+                [ -1.75, 0.2, 0 ],
+                [ -1.1, 0.2, 0 ],
+				[ -1.15, 0.5, 0 ],
+                [ -1.15, 0.7, 0]
+            ]
+    }
+}

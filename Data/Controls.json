@@ -1,0 +1,169 @@
+[
+    {
+      "Name": "Main Camera",
+      "Transform": {
+          "translation": [ 0, 0, 0 ],
+          "scale": [ 1.0, 1.0, 1 ],
+          "rotation": 0
+      },
+      "Camera": {
+          "priority": 0
+      },
+      "Physics": {
+          "acceleration": [ 0.0, 0.0, 0 ],
+          "velocity": [ 0, 0, 0 ]
+      }
+  },
+  {
+    "Name": "BlackBG",
+    "Transform": { 
+        "translation": [0.0, 0.0, 0],
+        "scale": [1.0, 1.0, 0],
+        "rotation": 0
+    },
+    "Sprite": {
+        "tex_path": "./Assets/demo_map_Storage_Cover.PNG",
+        "z_priority": 0.0,
+        "static": true
+    }
+  },
+  {
+    "Name": "Back",
+    "Transform": {
+        "translation": [-0.2, -0.45, 0],
+        "scale": [0.12, 0.125, 0],
+        "rotation": 0
+    },
+    "Sprite": {
+        "tex_path": "./Assets/UI_MenuButton_Asset_005.png",
+        "z_priority": 2.0,
+        "UVs": [0.0, 0.0, 1.0, 0.33]
+    },
+    "Button": {
+        "Function": 8,
+        "BaseUV": [0.0, 0.0, 1.0, 0.33],
+        "Offset": 0.33
+    },
+    "Sound": {
+        "Name": "Click",
+        "FilePath" : "./Audio/buttonSound.mp3",
+        "Volume": 0.1,
+        "Looping": false,
+        "Type": "Music",
+        "MaxDistance": 5.0
+    }
+  }, 
+  {
+    "Name": "Quit",
+    "Transform": {
+        "translation": [0.2, -0.45, 0],
+        "scale": [0.12, 0.12, 0],
+        "rotation": 0
+    },
+    "Sprite": {
+        "tex_path": "./Assets/UI_MenuButton_Asset_Quit.png",
+        "z_priority": 2.0,
+        "UVs": [0.0, 0.22, 1.0, 0.11]
+    },
+    "Button": {
+        "Function": 1,
+        "BaseUV": [0.0, 0.0, 1.0, 0.33],
+        "Offset": 0.33
+    },
+    "Sound": {
+        "Name": "Click",
+        "FilePath" : "./Audio/buttonSound.mp3",
+        "Volume": 0.1,
+        "Looping": false,
+        "Type": "Music",
+        "MaxDistance": 5.0
+    }
+  },
+  {
+    "Name": "TextBackground",
+    "Transform": {
+        "translation": [ 0.0, 0.05, 0],
+        "scale": [ 1.0, 0.9, 0],
+        "rotation": 0
+    },
+    "Sprite": {
+        "tex_path": "./Assets/UI_TextBox_Asset_001.PNG",
+        "z_priority": 1.0
+    }
+  },
+  {
+    "Name": "TextLine1",
+    "Transform": {
+        "translation": [ -0.14, 0.38, 0],
+        "scale": [0.05, 0.07, 0],
+        "rotation": 0
+    },
+    "Sprite": {
+        "tex_path": "./Assets/Roboto_Mono_white.png",
+        "z_priority": 2.0,
+        "Rows": 8,
+        "Cols": 16,
+        "Text": "Controls"
+    }
+  },
+  {
+    "Name": "TextLine1",
+    "Transform": {
+        "translation": [ -0.4, 0.2, 0],
+        "scale": [0.02, 0.028, 0],
+        "rotation": 0
+    },
+    "Sprite": {
+        "tex_path": "./Assets/Roboto_Mono_white.png",
+        "z_priority": 2.0,
+        "Rows": 8,
+        "Cols": 16,
+        "Text": "WASD - Move up, left, down, right"
+    }
+  },
+  {
+    "Name": "TextLine2",
+    "Transform": {
+        "translation": [ -0.4, 0.1, 0],
+        "scale": [0.02, 0.028, 0],
+        "rotation": 0
+    },
+    "Sprite": {
+        "tex_path": "./Assets/Roboto_Mono_white.png",
+        "z_priority": 2.0,
+        "Rows": 8,
+        "Cols": 16,
+        "Text": "CTRL - Crouch"
+    }
+  },
+  {
+    "Name": "TextLine3",
+    "Transform": {
+        "translation": [ -0.4, 0.0, 0],
+        "scale": [0.02, 0.028, 0],
+        "rotation": 0
+    },
+    "Sprite": {
+        "tex_path": "./Assets/Roboto_Mono_white.png",
+        "z_priority": 2.0,
+        "Rows": 8,
+        "Cols": 16,
+        "Text": "SPACE - Hold to teleport"
+    }
+  },
+  {
+    "Name": "TextLine4",
+    "Transform": {
+        "translation": [ -0.4, -0.1, 0],
+        "scale": [0.02, 0.028, 0],
+        "rotation": 0
+    },
+    "Sprite": {
+        "tex_path": "./Assets/Roboto_Mono_white.png",
+        "z_priority": 2.0,
+        "Rows": 8,
+        "Cols": 16,
+        "Text": "K - restart current level"
+    }
+  }
+]

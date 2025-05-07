@@ -1,0 +1,54 @@
+[
+    {
+        "Name": "Ambrose Doppler",
+        "FilePath": "./Data/LevelPassenger2/Entities/AmbroseDoppler.json"
+    },
+    {
+        "Name": "DetectedAnimation",
+        "FilePath": "./Data/LevelTutorial/Entities/DetectedAnimation.json"
+    },
+    {
+        "Name": "Stealth Bar",
+        "FilePath": "./Data/LevelOne/Entities/StealthBar.json"
+    },
+    {
+        "Name": "TeleportBehavior",
+        "FilePath": "./Data/LevelTutorial/Entities/TeleportBehavior.json"
+    },
+    {
+        "Name": "ShadowAmbrose",
+        "FilePath": "./Data/LevelTutorial/Entities/ShadowAmbrose.json"
+    },
+    {
+        "Name": "TeleportUI",
+        "FilePath": "./Data/LevelPassenger2/Entities/TeleportUI.json"
+    },
+    {
+        "Name": "CCTVRight",
+        "FilePath": "./Data/LevelPassenger2/Entities/CCTVRight.json"
+    },
+    {
+        "Name": "CCTVLeft",
+        "FilePath": "./Data/LevelPassenger2/Entities/CCTVLeft.json"
+    },
+    {
+        "Name": "PlateOne",
+        "FilePath": "./Data/LevelPassenger2/Entities/PlateOne.json"
+    },
+    {
+        "Name": "PlateTwo",
+        "FilePath": "./Data/LevelPassenger2/Entities/PlateTwo.json"
+    },
+    {
+        "Name": "CarDoor",
+        "FilePath": "./Data/LevelPassenger2/Entities/CarDoor.json"
+    },
+    {
+        "Name": "Antag",
+        "FilePath": "./Data/LevelPassenger2/Entities/Antag.json"
+    },
+    {
+        "Name": "ShadowAntag",
+        "FilePath": "./Data/LevelTutorial/Entities/ShadowAntag.json"
+    }
+]

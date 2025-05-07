@@ -1,0 +1,36 @@
+{
+    "Name": "HexFlash",
+    "Transform": {
+        "translation": [ 0.0, 0.0, 0 ],
+        "scale": [ 0.25, 0.25, 0 ],
+        "rotation": 0
+    },
+    "Sprite": {
+        "tex_path": "./Assets/VFX_Teleport_SpriteSheet_001.png",
+        "z_priority": 0,
+        "static": false
+    },
+    "Animation": {
+        "Sequences": [
+            {
+                "Name": "Active",
+                "FrameDuration": 0.0625,
+                "Rows": 8.0,
+                "Columns": 8.0,
+                "Looping": true
+            }
+        ]
+    },
+    "Physics": {
+        "acceleration": [ 0.0, 0.0, 0 ],
+        "velocity": [ 0, 0, 0 ]
+    },
+    "Collider": {
+        "Static": false,
+        "Solid": false,
+        "Type": "Circle",
+        "Radius": 0.25,
+        "Offset": [ 0.0, 0.0, 0 ],
+        "Tag": "Teleporter"
+    }
+}

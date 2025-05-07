@@ -1,0 +1,23 @@
+{
+    "Name": "PoisonVFX",
+    "Transform": {
+        "translation": [ 1.0, 0.0, 0 ],
+        "scale": [ 0.25, 0.25, 0 ],
+        "rotation": 0
+    },
+    "Sprite": {
+        "tex_path": "./Assets/VFX_Poison_SpriteSheet_002.png",
+        "z_priority": 15.0
+    },
+    "Animation": {
+        "Sequences": [
+            {
+                "Name": "Active",
+                "looping": false,
+                "FrameDuration": 0.25,
+                "Rows": 2.0,
+                "Columns": 4.0
+            }
+        ]
+    }
+}

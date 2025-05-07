@@ -1,0 +1,124 @@
+{
+    "Name": "Ambrose Doppler",
+    "Transform": {
+        "translation": [ -1.9, 0, 0 ],
+        "scale": [ 0.4, 0.4, 0 ],
+        "rotation": 0
+    },
+    "Sprite": {
+        "tex_path": "./Assets/ANI_Detec_FULL_SpriteSheet_003.PNG",
+        "z_priority": -4.9
+    },
+    "Animation": {
+        "Sequences": [
+            {
+                "Name": "FrontWalk",
+                "FrameDuration": 0.0625,
+                "Rows": 4.0,
+                "Columns": 4.0,
+                "SequenceUVs": [ 0.30769, 0.0, 0.30769, 0.25 ]
+            },
+            {
+                "Name": "BackWalk",
+                "FrameDuration": 0.0625,
+                "Rows": 4.0,
+                "Columns": 4.0,
+                "SequenceUVs": [ 0, 0, 0.30769, 0.25 ]
+            },
+            {
+                "Name": "SideWalk",
+                "FrameDuration": 0.0625,
+                "Rows": 2.0,
+                "Columns": 11.0,
+                "SequenceUVs": [ 0, 0.6875, 0.84615, 0.125 ]
+            },
+            {
+                "Name": "FrontIdle",
+                "FrameDuration": 0.0625,
+                "Rows": 3.0,
+                "Columns": 5.0,
+                "SequenceUVs": [ 0, 0.25, 0.38462, 0.1875 ]
+            },
+            {
+                "Name": "BackIdle",
+                "FrameDuration": 0.0625,
+                "Rows": 3.0,
+                "Columns": 5.0,
+                "SequenceUVs": [ 0.61538, 0, 0.38462, 0.1875 ]
+            },
+            {
+                "Name": "SideIdle",
+                "FrameDuration": 0.0625,
+                "Rows": 3.0,
+                "Columns": 5.0,
+                "SequenceUVs": [ 0.38462, 0.25, 0.38462, 0.1875 ]
+            },
+            {
+                "Name": "FrontInteract",
+                "FrameDuration": 0.0625,
+                "Rows": 1.0,
+                "Columns": 11.0,
+                "SequenceUVs": [ 0, 0.625, 0.84615, 0.0625 ]
+            },
+            {
+                "Name": "BackInteract",
+                "FrameDuration": 0.0625,
+                "Rows": 1.0,
+                "Columns": 10.0,
+                "SequenceUVs": [ 0, 0.5625, 0.76923, 0.0625 ]
+            },
+            {
+                "Name": "SideInteract",
+                "FrameDuration": 0.0625,
+                "Rows": 2.0,
+                "Columns": 6.0,
+                "SequenceUVs": [ 0, 0.4375, 0.46154, 0.125 ]
+            },
+            {
+                "Name": "Crouch",
+                "FrameDuration": 0.0625,
+                "Rows": 3.0,
+                "Columns": 9.0,
+                "SequenceUVs": [ 0, 0.8125, 0.6923, 0.1875 ]
+            },
+            {
+                "Name": "CrouchIdle",
+                "FrameDuration": 0.0625,
+                "Rows": 1.0,
+                "Columns": 1.0,
+                "SequenceUVs": [ 0, 0.8125, 0.07142, 0.07142 ]
+            }
+        ]
+    },
+    "Physics": {
+        "acceleration": [ 0.0, 0.0, 0 ],
+        "velocity": [ 0, 0, 0 ]
+    },
+    "PlayerController": {
+        "PlayerMovement": {
+            "MaxSpeed": 0.75,
+            "CrouchSpeed": 0.45,
+            "Acceleration": 8.0,
+            "MoveState": 0,
+            "Teleport":true
+        },
+        "PlayerVision": {
+            "VisionState": 0
+        }
+    },
+    "Collider": {
+        "Static": false,
+        "Solid": false,
+        "Type": "Circle",
+        "Radius": 0.15,
+        "Offset": [ 0.0, -0.35, 0.0 ]
+    },
+    "Sound": {
+        "Name": "Walk",
+        "FilePath" : "./Audio/attendantWalk.mp3",
+        "Volume": 0.5,
+        "Looping": true,
+        "Type": "Music",
+        "MaxDistance": 5.0
+    }
+}

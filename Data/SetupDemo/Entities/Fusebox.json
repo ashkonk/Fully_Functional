@@ -1,0 +1,22 @@
+{
+    "Name": "FuseBoxBehavior",
+    "FuseBoxBehavior": {
+        "active": true
+    },
+    "Transform": {
+        "translation": [ -1.8, -0.22, 0 ],
+        "scale": [ 0.18, 0.18, 0 ],
+        "rotation": 0
+    },
+    "Collider": {
+        "Static": true,
+        "Solid": false,
+        "Type": "Box",
+        "Width": 0.5,
+        "Height": 0.5
+    },
+    "Sprite": {
+        "tex_path": "./Assets/PROP_FuseBox_Asset_001.png",
+        "z_priority": -5
+    }
+}

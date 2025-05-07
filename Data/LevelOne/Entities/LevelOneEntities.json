@@ -1,0 +1,58 @@
+[
+    {
+        "Name": "Ambrose Doppler",
+        "FilePath": "./Data/LevelOne/Entities/AmbroseDoppler.json"
+    },
+    {
+        "Name": "Attendant A",
+        "FilePath": "./Data/LevelOne/Entities/AttendantA.json"
+    },
+    {
+        "Name": "Attendant A VisionCone",
+        "FilePath": "./Data/LevelOne/Entities/AttendantVisionCone.json"
+    },
+    {
+        "Name": "Drone",
+        "FilePath": "./Data/LevelOne/Entities/Drone.json"
+    },
+    {
+        "Name": "Drone 2",
+        "FilePath": "./Data/LevelOne/Entities/Drone2.json"
+    },
+    {
+        "Name": "Lighter",
+        "FilePath": "./Data/LevelOne/Entities/Lighter.json"
+    },
+    {
+        "Name": "TrashFire",
+        "FilePath": "./Data/LevelOne/Entities/TrashFire.json"
+    },
+    {
+        "Name": "CCTV",
+        "FilePath": "./Data/LevelOne/Entities/CCTV.json"
+    },
+    {
+        "Name": "Fusebox",
+        "FilePath": "./Data/LevelOne/Entities/Fusebox.json"
+    },
+    {
+        "Name": "FuseboxKey",
+        "FilePath": "./Data/LevelOne/Entities/FuseboxKey.json"
+    },
+    {
+      "Name": "Poison Vial",
+      "FilePath": "./Data/LevelOne/Entities/PoisonVial.json"
+    },
+    {
+      "Name": "Temp Occluder",
+      "FilePath": "./Data/LevelOne/Entities/TempOccluder.json"
+    },
+    {
+      "Name": "Temp Occluder 2",
+      "FilePath": "./Data/LevelOne/Entities/TempOccluder2.json"
+    },
+    {
+        "Name": "Stealth Bar",
+        "FilePath": "./Data/LevelOne/Entities/StealthBar.json"
+      }
+]

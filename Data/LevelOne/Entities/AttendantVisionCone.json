@@ -1,0 +1,29 @@
+{
+    "Name": "VisionCone",
+    "Transform": {
+        "translation": [ 0.0, 0.0, 0 ],
+        "scale": [ 0.5, 0.5, 0 ],
+        "rotation": 0
+    },
+    "Sprite": {
+        "tex_path": "./Assets/PROP_CCTV_View_001.png",
+        "z_priority": 5
+    },
+    "Physics": {
+        "acceleration": [ 0.0, 0.0, 0 ],
+        "velocity": [ 0, 0, 0 ]
+    },
+    "VisionConeBehavior": {
+
+    },
+    "Collider": {
+        "Static": true,
+        "Solid": false,
+        "Type": "Shape",
+        "Mesh": [
+            [ -0.5, 0.0, 0.0 ],
+            [ 0.3, 0.3, 0.0 ],
+            [ 0.3, -0.3, 0.0 ]
+        ]
+    }
+}

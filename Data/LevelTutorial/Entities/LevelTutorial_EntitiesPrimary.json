@@ -1,0 +1,38 @@
+[
+    {
+        "Name": "Ambrose Doppler",
+        "FilePath": "./Data/LevelTutorial/Entities/AmbroseDoppler.json"
+    },
+    {
+        "Name": "DetectedAnimation",
+        "FilePath": "./Data/LevelTutorial/Entities/DetectedAnimation.json"
+    },
+    {
+        "Name": "Stealth Bar",
+        "FilePath": "./Data/LevelOne/Entities/StealthBar.json"
+    },
+    {
+        "Name": "CCTVLeft",
+        "FilePath": "./Data/LevelTutorial/Entities/CCTVLeft.json"
+    },
+    {
+        "Name": "CCTVRight",
+        "FilePath": "./Data/LevelTutorial/Entities/CCTVRight.json"
+    },
+    {
+        "Name": "Door",
+        "FilePath": "./Data/LevelTutorial/Entities/CarDoor.json"
+    },
+    {
+        "Name": "TeleportBehavior",
+        "FilePath": "./Data/LevelTutorial/Entities/TeleportBehavior.json"
+    },
+    {
+        "Name": "ShadowAmbrose",
+        "FilePath": "./Data/LevelTutorial/Entities/ShadowAmbrose.json"
+    },
+    {
+        "Name": "TeleportUI",
+        "FilePath": "./Data/LevelTutorial/Entities/TeleportUI.json"
+    }
+]

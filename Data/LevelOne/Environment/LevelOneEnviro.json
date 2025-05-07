@@ -1,0 +1,917 @@
+[
+    {
+        "Name": "Main Camera",
+        "Transform": {
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 3.556, 2.0, 1 ],
+            "rotation": 0
+        },
+        "Camera": {
+            "priority": 0
+        },
+        "Physics": {
+            "acceleration": [ 0.0, 0.0, 0 ],
+            "velocity": [ 0, 0, 0 ]
+        },
+        "CameraBehavior": {
+            "InitPosition": [ 0.6, -0.25, 0 ]
+        },
+        "Sprite": {
+            "tex_path": "./Assets/DemoLevel/DetectiveModeBg_Base.png",
+            "z_priority": 0,
+            "opacity": 0
+        }
+    },
+    {
+        "Name": "TendrilBehavior",
+        "Transform": {
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 2.8, 2.0, 1 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/DemoLevel/DetectiveModeBg_Tendrils.png",
+            "z_priority": 0,
+            "opacity": 0
+        },
+        "TendrilBehavior": {
+
+        }
+    },
+    {
+        "Name": "BackroundLeft",
+        "Transform": {
+            "translation": [ -0.5, 0.60, 0 ],
+            "scale": [ 1.4, 1.0, 0 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/ENV_Background_001.png",
+            "z_priority": -1100
+        },
+        "Animation": {
+            "Sequences": [
+                {
+                    "Name": "Active",
+                    "FrameDuration": 0.0625,
+                    "Rows": 3.0,
+                    "Columns": 3.0,
+                    "Looping": true
+                }
+            ]
+        }
+    },
+    {
+        "Name": "BackgroundRight",
+        "Transform": {
+            "translation": [ 0.6, 0.60, 0 ],
+            "scale": [ 1.2, 1.0, 0 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/ENV_Background_001.png",
+            "z_priority": -1100
+        },
+        "Animation": {
+            "Sequences": [
+                {
+                    "Name": "Active",
+                    "FrameDuration": 0.0625,
+                    "Rows": 3.0,
+                    "Columns": 3.0,
+                    "Looping": true
+                }
+            ]
+        }
+    },
+    {
+        "Name": "BackgroundCover",
+        "Transform": {
+            "translation": [ 0.0, 1.0, 0 ],
+            "scale": [ 2.4, 0.4, 0 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/DemoLevel/demo_map_Passenger_Cover.png",
+            "z_priority": -1000
+        }
+    },
+    {
+        "Name": "Passenger Room",
+        "Transform": {
+            "translation": [ 0.0, 0.0, 0 ],
+            "scale": [ 2.6, 1.8, 0 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/DemoLevel/demo_map_Passenger_Room.png",
+            "z_priority": -1000
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 2.0,
+            "Height": 0.02,
+            "Offset": [ 0.0, 0.36, 0 ]
+        }
+    },
+    {
+        "Name": "Passenger Room Lower Collider",
+        "Transform": {
+            "translation": [ 0.0, 0.0, 0 ],
+            "scale": [ 2.6, 1.8, 0 ],
+            "rotation": 0
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 2.0,
+            "Height": 0.02,
+            "Offset": [ 0.0, -0.46, 0 ]
+        }
+    },
+    {
+        "Name": "Upper Row Right",
+        "Transform": {
+            "translation": [ 0.74, 0.42, 0 ],
+            "scale": [ 0.72, 0.4, 0 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/DemoLevel/PROP_ChairRow_Front.png",
+            "z_priority": -5.0
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 0.68,
+            "Height": 0.4,
+            "Offset": [ 0.0, 0.16, 0 ]
+        }
+    },
+    {
+        "Name": "Upper Row",
+        "Transform": {
+            "translation": [ 0.0, 0.42, 0 ],
+            "scale": [ 0.72, 0.4, 0 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/DemoLevel/PROP_ChairRow_Front.png",
+            "z_priority": -5.0
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 0.68,
+            "Height": 0.4,
+            "Offset": [ 0.0, 0.16, 0 ]
+        }
+    },
+    {
+        "Name": "Upper Row Left",
+        "Transform": {
+            "translation": [ -0.74, 0.42, 0 ],
+            "scale": [ 0.72, 0.4, 0 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/DemoLevel/PROP_ChairRow_Front.png",
+            "z_priority": -5.0
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 0.68,
+            "Height": 0.4,
+            "Offset": [ 0.0, 0.16, 0 ]
+        }
+    },
+    {
+        "Name": "Middle Row Right",
+        "Transform": {
+            "translation": [ 0.74, -0.18, 0 ],
+            "scale": [ 0.8, 0.6, 0 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/DemoLevel/PROP_SeatRow_Middle.png",
+            "z_priority": -5.0
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 0.64,
+            "Height": 0.32,
+            "Offset": [ 0.0, 0.16, 0 ]
+        }
+    },
+    {
+        "Name": "Middle Row",
+        "Transform": {
+            "translation": [ 0.0, -0.18, 0 ],
+            "scale": [ 0.8, 0.6, 0 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/DemoLevel/PROP_SeatRow_Middle.png",
+            "z_priority": -5.0
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 0.64,
+            "Height": 0.32,
+            "Offset": [ 0.0, 0.16, 0 ]
+        }
+    },
+    {
+        "Name": "Middle Row Left",
+        "Transform": {
+            "translation": [ -0.74, -0.18, 0 ],
+            "scale": [ 0.8, 0.6, 0 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/DemoLevel/PROP_SeatRow_Middle.png",
+            "z_priority": -5.0
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 0.64,
+            "Height": 0.32,
+            "Offset": [ 0.0, 0.16, 0 ]
+        }
+    },
+    {
+        "Name": "Lower Row Right",
+        "Transform": {
+            "translation": [ 0.74, -0.7, 0 ],
+            "scale": [ 0.7, 0.4, 0 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/DemoLevel/PROP_ChairRow_Back.png",
+            "z_priority": -5.0
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 0.7,
+            "Height": 0.4,
+            "Offset": [ 0.0, 0.16, 0 ]
+        }
+    },
+    {
+        "Name": "Lower Row",
+        "Transform": {
+            "translation": [ 0.0, -0.7, 0 ],
+            "scale": [ 0.7, 0.4, 0 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/DemoLevel/PROP_ChairRow_Back.png",
+            "z_priority": -5.0
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 0.7,
+            "Height": 0.4,
+            "Offset": [ 0.0, 0.16, 0 ]
+        }
+    },
+    {
+        "Name": "Lower Row Left",
+        "Transform": {
+            "translation": [ -0.74, -0.7, 0 ],
+            "scale": [ 0.7, 0.4, 0 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/DemoLevel/PROP_ChairRow_Back.png",
+            "z_priority": -5.0
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 0.7,
+            "Height": 0.4,
+            "Offset": [ 0.0, 0.16, 0 ]
+        }
+    },
+    {
+        "Name": "Storage Room",
+        "Transform": {
+            "translation": [ -1.98, -0.52, 0 ],
+            "scale": [ 1.0, 0.8, 0 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/DemoLevel/demo_map_Storage_Room.png",
+            "z_priority": -7
+        }
+    },
+    {
+        "Name": "BarrelOne",
+        "Transform": {
+            "translation": [ -2.39, -0.3, 0 ],
+            "scale": [ 0.3, 0.3, 0 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/PROP_Barrel_Asset_001.png",
+            "z_priority": -5
+        }
+    },
+    {
+        "Name": "Shelf One",
+        "Transform": {
+            "translation": [ -2.1, -0.25, 0 ],
+            "scale": [ 0.44, 0.36, 0 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/PROP_Shelves_Asset_001.png",
+            "z_priority": -5
+        }
+    },
+    {
+        "Name": "Vertical Shelf One",
+        "Transform": {
+            "translation": [ -2.4, -0.48, 0 ],
+            "scale": [ 0.5, 0.48, 0 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/PROP_Shelves_Asset_002.png",
+            "z_priority": -5
+        }
+    },
+    {
+        "Name": "Vertical Shelf Two",
+        "Transform": {
+            "translation": [ -2.4, -0.64, 0 ],
+            "scale": [ 0.5, 0.5, 0 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/PROP_Shelves_Asset_002.png",
+            "z_priority": -5
+        }
+    },
+    {
+        "Name": "Bathroom",
+        "Transform": {
+            "translation": [ -1.98, 0.4, 0 ],
+            "scale": [ 1.0, 1.0, 0 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/DemoLevel/demo_map_Bath_Room.png",
+            "z_priority": -7
+        }
+    },
+    {
+        "Name": "Toilet",
+        "Transform": {
+            "translation": [ -1.62, 0.48, 0 ],
+            "scale": [ 0.5, 0.5, 0 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/PROP_toilet_Asset_001.png",
+            "z_priority": -6
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 0.25,
+            "Height": 0.15
+        },
+        "BrokenDoorBehavior":  {
+            "DtThresh":  0.9
+        }
+    },
+    {
+        "Name": "Toilet2",
+        "Transform": {
+            "translation": [ -1.82, 0.48, 0 ],
+            "scale": [ 0.5, 0.5, 0 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/PROP_toilet_Asset_001.png",
+            "z_priority": -5
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 0.25,
+            "Height": 0.15
+        }
+    },
+    {
+        "Name": "Wall",
+        "Transform": {
+            "translation": [ -1.72, 0.48, 0 ],
+            "scale": [ 0.5, 0.5, 0 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/PROP_InteriorWall_Asset_001.png",
+            "z_priority": -5
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 0.05,
+            "Height": 0.25
+        }
+    },
+    {
+        "Name": "Wall2",
+        "Transform": {
+            "translation": [ -1.92, 0.48, 0 ],
+            "scale": [ 0.5, 0.5, 0 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/PROP_InteriorWall_Asset_001.png",
+            "z_priority": -5
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 0.05,
+            "Height": 0.25
+        }
+    },
+    {
+        "Name": "Toilet3",
+        "Transform": {
+            "translation": [ -2.02, 0.48, 0 ],
+            "scale": [ 0.5, 0.5, 0 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/PROP_toilet_Asset_001.png",
+            "z_priority": -5
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 0.25,
+            "Height": 0.15
+        }
+    },
+    {
+        "Name": "Wall2",
+        "Transform": {
+            "translation": [ -2.12, 0.49, 0 ],
+            "scale": [ 0.5, 0.5, 0 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/PROP_InteriorWall_Asset_001.png",
+            "z_priority": -5
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 0.05,
+            "Height": 0.25
+        }
+    },
+    {
+        "Name": "Sink",
+        "Transform": {
+            "translation": [ -2.42, 0.24, 0 ],
+            "scale": [ -0.25, 0.25, 0 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/PROP_Sink_Asset_001.png",
+            "z_priority": -5
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 0.17,
+            "Height": 0.17
+        }
+    },
+    {
+        "Name": "Sink2",
+        "Transform": {
+            "translation": [ -2.42, 0.04, 0 ],
+            "scale": [ -0.25, 0.25, 0 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/PROP_Sink_Asset_001.png",
+            "z_priority": -5
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 0.17,
+            "Height": 0.17
+        }
+    },
+    {
+        "Name": "Storage Room Corridor",
+        "Transform": {
+            "translation": [ -1.39, -0.45, 0 ],
+            "scale": [ 0.18, 0.54, 0 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/DemoLevel/Corridor.png",
+            "z_priority": -7
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 8.0,
+            "Height": 0.28,
+            "Offset": [ -3.6, 0.6, 0 ]
+        }
+    },
+    {
+        "Name": "Bathroom Corridor",
+        "Transform": {
+            "translation": [ -1.39, 0.27, 0 ],
+            "scale": [ 0.18, 0.54, 0 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/DemoLevel/Corridor.png",
+            "z_priority": -7
+        }
+    },
+    {
+        "Name": "Physician Corridor",
+        "Transform": {
+            "translation": [ 1.41, 0.05, 0 ],
+            "scale": [ 0.22, 0.6, 0 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/DemoLevel/Corridor.png",
+            "z_priority": -7
+        }
+    },
+    {
+        "Name": "Physician Room",
+        "Transform": {
+            "translation": [ 2.018, 0.0, 0 ],
+            "scale": [ 1.0, 1.8, 0 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/DemoLevel/demo_map_Physician_Room.png",
+            "z_priority": -7
+        }
+    },
+    {
+        "Name": "Passenger Room Cover",
+        "Transform": {
+            "translation": [ 0.0, 0.0, 0 ],
+            "scale": [ 2.6, 1.8, 0 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/DemoLevel/demo_map_Passenger_Cover.png",
+            "z_priority": -1,
+            "Opacity": 0
+        },
+        "CoverBehavior": {
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": false,
+            "Type": "Box",
+            "Width": 1.06,
+            "Height": 1
+        }
+    },
+    {
+        "Name": "Storage Room Cover",
+        "Transform": {
+            "translation": [ -1.98, -0.52, 0 ],
+            "scale": [ 1.0, 0.85, 0 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/DemoLevel/demo_map_Storage_Cover.png",
+            "z_priority": -4
+        },
+        "CoverBehavior": {
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": false,
+            "Type": "Box",
+            "Width": 1.0,
+            "Height": 1
+        }
+    },
+    {
+        "Name": "Level Background",
+        "Transform": {
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 20, 20, 0 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/DemoLevel/demo_map_Storage_Cover.png",
+            "z_priority": -100002
+        }
+    },
+    {
+        "Name": "Bathroom Cover",
+        "Transform": {
+            "translation": [ -1.98, 0.4, 0 ],
+            "scale": [ 1.0, 1.0, 0 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/DemoLevel/demo_map_Bathroom_Cover.png",
+            "z_priority": -5
+        },
+        "CoverBehavior": {
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": false,
+            "Type": "Box",
+            "Width": 1.02,
+            "Height": 1
+        }
+    },
+    {
+        "Name": "Physician Cover",
+        "Transform": {
+            "translation": [ 2.018, 0.0, 0 ],
+            "scale": [ 1.0, 1.8, 0 ],
+            "rotation": 0
+        },
+        "CoverBehavior": {
+        },
+        "Sprite": {
+            "tex_path": "./Assets/DemoLevel/demo_map_Physician_Cover.png",
+            "z_priority": -4
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": false,
+            "Type": "Box",
+            "Width": 1.02,
+            "Height": 1
+        }
+    },
+    {
+        "Name": "VisionModeBG",
+        "Transform": {
+            "translation": [ 0.4, -0.35, 0 ],
+            "scale": [ 0.1, 0.16, 0 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/visionModeBackground.png",
+            "z_priority": 75.0,
+            "static": true
+        }
+    },
+    {
+        "Name": "VisionMode",
+        "Transform": {
+            "translation": [ 0.4, -0.35, 0 ],
+            "scale": [ 0.08, 0.13, 0 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/UI_DetecVis_Icon_001.png",
+            "z_priority": 100.0,
+            "static": true,
+            "UVs": [ 0.0, 0.0, 0.5, 1.0 ]
+        },
+        "VisionMode": {
+
+        }
+    },
+    {
+        "Name": "Inventory",
+        "Transform": {
+            "translation": [ 0, -0.40, 0 ],
+            "scale": [ 0.35, 0.25, 0 ],
+            "rotation": 0
+        },
+      "Sprite": {
+        "tex_path": "./Assets/UI_Inventory_Asset_001.png",
+        "z_priority": 90.0,
+        "static": true
+      },
+        "Inventory": {
+
+        }
+    },
+    {
+        "Name": "PhysicianDesk",
+        "Transform": {
+            "translation": [ 2.37, -0.15, 0 ],
+            "scale": [ -0.5, 0.5, 0 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/PROP_OfficeTable_Asset_001.png",
+            "z_priority": -5
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 0.24,
+            "Height": 0.7
+        }
+    },
+    {
+        "Name": "Sconce1",
+        "Transform": {
+            "translation": [ 1.45, 0.25, 0 ],
+            "scale": [ 0.12, 0.15, 0 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/PROP_WallLamp_Asset_001.png",
+            "z_priority": -6
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 3.0,
+            "Height": 3.0,
+            "Offset": [ 0.0, 1.0, 0.0 ]
+        }
+    },
+    {
+        "Name": "BelowHallwayCollider",
+        "Transform": {
+            "translation": [ 1.45, 0.25, 0 ],
+            "scale": [ 0.1, 0.15, 0 ],
+            "rotation": 0
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 3.0,
+            "Height": 3.5,
+            "Offset": [ 0.0, -5.0, 0.0 ]
+        }
+    },
+    {
+        "Name": "PatientBed",
+        "Transform": {
+            "translation": [ 2.25, 0.30, 0 ],
+            "scale": [ -0.6, 0.6, 0 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/PROP_Bed_Asset_001.png",
+            "z_priority": -5
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 0.5,
+            "Height": 0.2
+        }
+    },
+    {
+        "Name": "MedCabinet",
+        "Transform": {
+            "translation": [ 1.8, 0.72, 0 ],
+            "scale": [ 0.3, 0.4, 0 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/PROP_Shelves_Asset_003.png",
+            "z_priority": -5
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 0.5,
+            "Height": 0.2
+        }
+    },
+    {
+        "Name": "PhysicianSink",
+        "Transform": {
+            "translation": [ 1.6, 0.55, 0 ],
+            "scale": [ 0.125, 0.2, 0 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/PROP_Sink_Asset_002.png",
+            "z_priority": -5
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Circle",
+            "Radius": 0.25
+        }
+    },
+    {
+        "Name": "PhysicianRoomRightCollider",
+        "Transform": {
+            "translation": [ 2.55, -0.15, 0 ],
+            "scale": [ 1.0, 1.0, 0.0 ],
+            "rotation": 0
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 0.02,
+            "Height": 1.5
+        }
+    },
+    {
+        "Name": "StorageBathleft",
+        "Transform": {
+            "translation": [ -2.43, -0.15, 0 ],
+            "scale": [ 1.0, 1.0, 0.0 ],
+            "rotation": 0
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 0.02,
+            "Height": 1.5
+        }
+    },
+    {
+        "Name": "PhysicianComputer",
+        "Transform": {
+            "translation": [ 2.35, -0.10, 0 ],
+            "scale": [ -0.25, 0.25, 0 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/PROP_Computer_Asset_001.png",
+            "z_priority": -4
+        }
+    },
+    {
+        "Name": "ExitDoor",
+        "Transform": {
+            "translation": [ 2.375, -0.7, 0 ],
+            "scale": [ 0.25, 0.25, 0 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/Goal LOS TXT.png",
+            "z_priority": -4
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": false,
+            "Type": "Box",
+            "Width": 1,
+            "Height": 1
+        },
+        "DoorBehavior": {
+            "Filepath": "./Data/WinScreen.json",
+            "EntryPosition": [ 0, 0, 0 ]
+        }
+    }
+]

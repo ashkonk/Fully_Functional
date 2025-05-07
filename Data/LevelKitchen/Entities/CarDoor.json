@@ -1,0 +1,19 @@
+{
+    "Name": "DoorBehavior",
+    "DoorBehavior":
+  {
+    "Filepath": "./Data/LevelPassenger1/PassengerRoom1Primary.json",
+    "EntryPosition": [0.0, 0.0, 0]
+  },
+    "Transform": {
+      "translation": [ 3.2, -0.6, 0 ],
+      "scale": [0.2, 0.2, 0],
+      "rotation": 0
+    },
+    "Collider": {
+        "Static": true,
+        "Solid": false,
+        "Type": "Circle",
+        "Radius": 0.75
+    }
+  }

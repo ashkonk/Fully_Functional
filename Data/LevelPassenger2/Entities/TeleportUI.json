@@ -1,0 +1,15 @@
+{
+    "Name": "TeleportCD",
+    "TeleportUI": {
+    },
+    "Transform": {
+        "translation": [ 0.0, -0.425, 0 ],
+        "scale": [ 0.045, 0.15, 0 ],
+        "rotation": 0
+    },
+    "Sprite": {
+        "tex_path": "./Assets/UI_DashIcon_Asset_002.png",
+        "z_priority": 11,
+        "static": true
+    }
+}

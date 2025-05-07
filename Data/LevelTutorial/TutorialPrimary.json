@@ -1,0 +1,4 @@
+{
+    "Entities": "./Data/LevelTutorial/Entities/LevelTutorial_EntitiesPrimary.json",
+    "Environment": "./Data/LevelTutorial/Environment/LevelTutorialEnviro.json"
+}

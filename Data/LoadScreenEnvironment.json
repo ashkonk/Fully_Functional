@@ -1,0 +1,22 @@
+
+[
+    {
+    "Name": "LoadScreen",
+    "Transform": {
+        "translation": [ 0, 0, 0 ],
+        "scale": [ 2.8, 2.0, 1 ],
+        "rotation": 0
+    },
+    "Sprite": {
+        "tex_path": "./Assets/anim.png",
+        "z_priority": 20,
+        "opacity": 0
+    }
+    },
+    {
+        "Name": "LoadBehavior",
+        "LoadBehavior": {
+            
+        }
+    }
+]

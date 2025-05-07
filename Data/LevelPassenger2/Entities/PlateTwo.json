@@ -1,0 +1,22 @@
+{
+    "Name": "LuggageOne",
+    "Transform": {
+        "translation": [ 0.65, -0.65, 0 ],
+        "scale": [ 0.2, 0.2, 0 ],
+        "rotation": 0
+    },
+    "Sprite": {
+        "tex_path": "./Assets/PassengerLevel/PROP_ClocheServingDish_Asset_001.png",
+        "z_priority": -4.7
+    },
+    "Physics": {
+        "acceleration": [ 0.0, 0.0, 0 ],
+        "velocity": [ 0, 0, 0 ]
+    },
+    "Occluder": {
+        "Offset": [ 0, 0.02, 0 ],
+        "Width": 0.8,
+        "Height": 0.65,
+        "Depth": 0.5
+    }
+}

@@ -1,0 +1,31 @@
+Team Perfectly Normal:
+
+Alijah Rosner    - Producer
+Ashkon Khalkhali - Tech Lead
+Jonathan Meyer   - Design Lead
+Mason Dulay      - Programmer
+
+Owen Svoboda     - Art Lead, Animator, & Rigger
+Maddie Montana   - Art Producer, VFX Artist, Secondary Animator & Rigger
+Jeff Chou        - Props & Environment Artist
+Christi Thai     - UI & Character Artist
+
+
+Digipen Sophmores 2022-2023.
+
+Game Faculty:
+
+Design and Production:  Ellen Beeman, Rachel Rutherford, Jeremy Holcomb
+Art:  Rich Werner
+Programming:  Doug Schilling
+Audio:  Lawrence Schwedler, Tacket Brown, Nick Wiswell
+Lab Management:  Christopher Onorati
+
+
+Created at Digipen Institute of Technology
+
+President Claude Comair
+
+
+Included Licenses:
+FMOD, GLM, GLEW, GLFW, RapidJSON

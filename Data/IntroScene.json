@@ -1,0 +1,211 @@
+[
+  {
+    "Name": "Main Camera",
+    "Transform": {
+        "translation": [ 0, 0, 0 ],
+        "scale": [ 1.0, 1.0, 1 ],
+        "rotation": 0
+    },
+    "Camera": {
+        "priority": 0
+    },
+    "Physics": {
+        "acceleration": [ 0.0, 0.0, 0 ],
+        "velocity": [ 0, 0, 0 ]
+    }
+  },
+  {
+    "Name": "BlackBG",
+    "Transform": { 
+        "translation": [0.0, 0.0, 0],
+        "scale": [1.0, 1.0, 0],
+        "rotation": 0
+    },
+    "Sprite": {
+        "tex_path": "./Assets/demo_map_Storage_Cover.PNG",
+        "z_priority": 9.0,
+        "static": true
+    }
+  },
+  {
+    "Name": "Sequence0",
+    "Transform": { 
+        "translation": [0.0, 0.0, 0.0],
+        "scale": [1.0, 1.0, 0.0],
+        "rotation": 0
+    },
+    "Sprite": {
+        "tex_path": "./Assets/IntroScene/4096/scene0_4096.png",
+        "z_priority": 60.0,
+        "static": true
+    },
+		"Animation": {
+			"PlayOnInit": false,
+			"Sequences": [
+				{
+					"Name": "FrameStep",
+					"FrameDuration": 0.25,
+					"Rows": 4.0,
+					"Columns": 4.0,
+					"SequenceUVs": [ 0.0, 0.0, 1.0, 1.0 ],
+					"Looping": false
+				}
+			]
+		},
+		"DestroyTimer": {
+			"spawnDelay": 0.0,
+			"destroyDelay": 4.0
+		}
+  },
+	{
+    "Name": "Sequence1",
+    "Transform": { 
+        "translation": [0.0, 0.0, 0.0],
+        "scale": [1.0, 1.0, 0.0],
+        "rotation": 0
+    },
+    "Sprite": {
+        "tex_path": "./Assets/IntroScene/4096/scene1_4096.png",
+        "z_priority": 50.0,
+        "static": true
+    },
+		"Animation": {
+			"PlayOnInit": false,
+			"Sequences": [
+				{
+					"Name": "FrameStep",
+					"FrameDuration": 0.25,
+					"Rows": 4.0,
+					"Columns": 4.0,
+					"SequenceUVs": [ 0.0, 0.0, 1.0, 1.0 ],
+					"Looping": false
+				}
+			]
+		},
+		"DestroyTimer": {
+			"spawnDelay": 4.0,
+			"destroyDelay": 8.0
+		}
+  },
+	{
+    "Name": "Sequence2",
+    "Transform": { 
+        "translation": [0.0, 0.0, 0.0],
+        "scale": [1.0, 1.0, 0.0],
+        "rotation": 0
+    },
+    "Sprite": {
+        "tex_path": "./Assets/IntroScene/4096/scene2_4096.png",
+        "z_priority": 40.0,
+        "static": true
+    },
+		"Animation": {
+			"PlayOnInit": false,
+			"Sequences": [
+				{
+					"Name": "FrameStep",
+					"FrameDuration": 0.25,
+					"Rows": 4.0,
+					"Columns": 4.0,
+					"SequenceUVs": [ 0.0, 0.0, 1.0, 1.0 ],
+					"Looping": false
+				}
+			]
+		},
+		"DestroyTimer": {
+			"spawnDelay": 8.0,
+			"destroyDelay": 12.0
+		}
+  },
+	{
+    "Name": "Sequence3",
+    "Transform": { 
+        "translation": [0.0, 0.0, 0.0],
+        "scale": [1.0, 1.0, 0.0],
+        "rotation": 0
+    },
+    "Sprite": {
+        "tex_path": "./Assets/IntroScene/4096/scene3_4096.png",
+        "z_priority": 30.0,
+        "static": true
+    },
+		"Animation": {
+			"PlayOnInit": false,
+			"Sequences": [
+				{
+					"Name": "FrameStep",
+					"FrameDuration": 0.25,
+					"Rows": 4.0,
+					"Columns": 4.0,
+					"SequenceUVs": [ 0.0, 0.0, 1.0, 1.0 ],
+					"Looping": false
+				}
+			]
+		},
+		"DestroyTimer": {
+			"spawnDelay": 12.0,
+			"destroyDelay": 16.0
+		}
+  },
+	{
+    "Name": "Sequence4",
+    "Transform": { 
+        "translation": [0.0, 0.0, 0.0],
+        "scale": [1.0, 1.0, 0.0],
+        "rotation": 0
+    },
+    "Sprite": {
+        "tex_path": "./Assets/IntroScene/4096/scene4_4096.png",
+        "z_priority": 20.0,
+        "static": true
+    },
+		"Animation": {
+			"PlayOnInit": false,
+			"Sequences": [
+				{
+					"Name": "FrameStep",
+					"FrameDuration": 0.25,
+					"Rows": 4.0,
+					"Columns": 4.0,
+					"SequenceUVs": [ 0.0, 0.0, 1.0, 1.0 ],
+					"Looping": false
+				}
+			]
+		},
+		"DestroyTimer": {
+			"spawnDelay": 16.0,
+			"destroyDelay": 20.0
+		}
+  },
+	{
+    "Name": "Sequence5",
+    "Transform": { 
+        "translation": [0.0, 0.0, 0.0],
+        "scale": [1.0, 1.0, 0.0],
+        "rotation": 0
+    },
+    "Sprite": {
+        "tex_path": "./Assets/IntroScene/4096/scene5_4096.png",
+        "z_priority": 10.0,
+        "static": true
+    },
+		"Animation": {
+			"PlayOnInit": false,
+			"Sequences": [
+				{
+					"Name": "FrameStep",
+					"FrameDuration": 0.25,
+					"Rows": 4.0,
+					"Columns": 4.0,
+					"SequenceUVs": [ 0.0, 0.0, 1.0, 1.0 ],
+					"Looping": false
+				}
+			]
+		},
+		"DestroyTimer": {
+			"spawnDelay": 20.0,
+			"destroyDelay": 24.0,
+			"sceneDelay": 24.1
+		}
+  }
+]

@@ -1,0 +1,24 @@
+{
+    "Name": "PoisonVial",
+    "Transform": {
+        "translation": [ -2.39, -0.17, 0 ],
+        "scale": [ 0.1, 0.1, 1 ],
+        "rotation": 0
+    },
+    "Sprite": {
+        "tex_path": "./Assets/PRO_Vial_002_GLOW.png",
+        "z_priority": -4.5
+    },
+    "PoisonVialBehavior": {
+        "used": false,
+        "pickup": false
+    },
+    "Collider": {
+        "Static": false,
+        "Solid": false,
+        "Type": "Box",
+        "Width": 2,
+        "Height": 1.2,
+        "Offset": [ 0.0, -1.0, 0.0 ]
+    }
+}

@@ -1,0 +1,4 @@
+{
+    "Entities": "./Data/LevelPassenger1/Entities/LevelPassenger1_EntitiesPrimary.json",
+    "Environment": "./Data/LevelPassenger1/Environment/LevelPassenger1Enviro.json"
+}

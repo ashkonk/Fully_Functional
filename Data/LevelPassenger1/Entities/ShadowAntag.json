@@ -1,0 +1,16 @@
+{
+    "Name": "Shadow",
+    "Transform": {
+        "translation": [ 0, 0, 0 ],
+        "scale": [ 0.15, 0.15, 0 ],
+        "rotation": 0
+    },
+    "Sprite": {
+        "tex_path": "./Assets/ambrose_shadow.png",
+        "z_priority": -10,
+        "opacity" : 0.5
+    },
+    "Shadow" : {
+        "ParentNumber" : 1
+    }
+}

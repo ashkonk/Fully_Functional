@@ -1,0 +1,22 @@
+{
+    "Name": "Lighter",
+    "Transform": {
+        "translation": [ -1.6, -0.3, 0 ],
+        "scale": [ 0.1, 0.1, 1 ],
+        "rotation": 0
+    },
+    "Sprite": {
+        "tex_path": "./Assets/PROP_Lighter_Asset_001_GLOW.png",
+        "z_priority": -6
+    },
+    "LighterBehavior": {
+        "pickup": false
+    },
+        "Collider": {
+        "Static": true,
+        "Solid": false,
+        "Type": "Box",
+        "Width": 1.0,
+        "Height": 1.0
+    }
+}

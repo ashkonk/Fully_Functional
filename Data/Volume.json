@@ -1,0 +1,183 @@
+[
+    {
+        "Name": "Main Camera2",
+        "Transform": {
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1.0, 1.0, 1 ],
+            "rotation": 0
+        },
+        "Camera": {
+            "priority": 0
+        },
+        "Physics": {
+            "acceleration": [ 0.0, 0.0, 0 ],
+            "velocity": [ 0, 0, 0 ]
+        }
+    },
+    {
+        "Name": "VolumeText",
+        "Transform": {
+            "translation": [0.083, 0.12, 0],
+            "scale": [0.12, 0.065, 0],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/UI_Pause_Asset_Volume.PNG",
+            "z_priority": 11.0,
+            "UVs": [0.0, 0.0, 0.33, 1.0],
+            "static": true
+        },
+        "Button": {
+            "Function": 16,
+            "BaseUV": [0.0, 0.0, 0.33, 1.0],
+            "VectorOffset": [0.33, 0.0, 0.0, 0.0]
+        },
+        "Sound": {
+            "Name": "Click",
+            "FilePath" : "./Audio/buttonSound.mp3",
+            "Volume": 0.1,
+            "Looping": false,
+            "Type": "Music",
+            "MaxDistance": 5.0
+        }
+      },
+    {
+        "Name": "VolumeBar",
+        "Transform": {
+            "translation": [0.083, 0.036, 0],
+            "scale": [0.1, 0.03, 0],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/UI_Volume_Asset_001.PNG",
+            "z_priority": 11.0,
+            "static": true
+        }
+      }, 
+      {
+        "Name": "VolumeSlider",
+        "Transform": {
+            "translation": [0.083, 0.036, 0],
+            "scale": [0.005, 0.025, 0],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/UI_Volume_Asset_004.PNG",
+            "z_priority": 12.0,
+            "static": true
+        },
+        "VolumeBehavior": {
+            "xBase": 0.087,
+            "InitialScale": [ 0.1, 0.03, 0 ],
+            "InitialTranslation": [ 0.083, 0.036, 0]
+        }
+      }, 
+      {
+        "Name": "VolumeDecrease",
+        "Transform": {
+            "translation": [0.021, 0.03, 0],
+            "scale": [0.03, 0.075, 0],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/UI_Volume_Asset_002.PNG",
+            "z_priority": 11.0,
+            "UVs": [0.0, 0.0, 0.5, 0.33],
+            "static": true
+        },
+        "Button": {
+            "Function": 10,
+            "BaseUV": [0.0, 0.0, 0.5, 0.33],
+            "Offset": 0.33
+        },
+        "Sound": {
+            "Name": "Click",
+            "FilePath" : "./Audio/buttonSound.mp3",
+            "Volume": 0.1,
+            "Looping": false,
+            "Type": "Music",
+            "MaxDistance": 5.0
+        }
+      },
+      {
+        "Name": "VolumeIncrease",
+        "Transform": {
+            "translation": [0.145, 0.03, 0],
+            "scale": [0.03, 0.075, 0],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/UI_Volume_Asset_002.PNG",
+            "z_priority": 11.0,
+            "UVs": [0.0, 0.0, 0.5, 0.33],
+            "static": true
+        },
+        "Button": {
+            "Function": 9,
+            "BaseUV": [0.5, 0.0, 0.5, 0.33],
+            "Offset": 0.33
+        },
+        "Sound": {
+            "Name": "Click",
+            "FilePath" : "./Audio/buttonSound.mp3",
+            "Volume": 0.1,
+            "Looping": false,
+            "Type": "Music",
+            "MaxDistance": 5.0
+        }
+      },
+      {
+        "Name": "Fullscreen",
+        "Transform": {
+            "translation": [0.09, -0.025, 0],
+            "scale": [0.115, 0.065, 0],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/UI_Pause_Asset_Fullscreen.PNG",
+            "z_priority": 11.0,
+            "UVs": [0.0, 0.0, 0.33, 1.0],
+            "static": true
+        },
+        "Button": {
+            "Function": 15,
+            "BaseUV": [0.0, 0.0, 0.33, 1.0],
+            "VectorOffset": [0.33, 0.0, 0.0, 0.0]
+        },
+        "Sound": {
+            "Name": "Click",
+            "FilePath" : "./Audio/buttonSound.mp3",
+            "Volume": 0.1,
+            "Looping": false,
+            "Type": "Music",
+            "MaxDistance": 5.0
+        }
+      },
+      {
+        "Name": "Windowed",
+        "Transform": {
+            "translation": [0.09, -0.115, 0],
+            "scale": [0.115, 0.065, 0],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/UI_Pause_Asset_Windowed.PNG",
+            "z_priority": 11.0,
+            "UVs": [0.0, 0.0, 0.33, 1.0],
+            "static": true
+        },
+        "Button": {
+            "Function": 14,
+            "BaseUV": [0.0, 0.0, 0.33, 1.0],
+            "VectorOffset": [0.33, 0.0, 0.0, 0.0]
+        },
+        "Sound": {
+            "Name": "Click",
+            "FilePath" : "./Audio/buttonSound.mp3",
+            "Volume": 0.1,
+            "Looping": false,
+            "Type": "Music",
+            "MaxDistance": 5.0
+        }
+      }
+]

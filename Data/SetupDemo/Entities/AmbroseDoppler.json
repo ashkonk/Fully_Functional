@@ -1,0 +1,104 @@
+{
+    "Name": "Ambrose Doppler",
+    "Transform": {
+        "translation": [ 4.0, -0.4, 0 ],
+        "scale": [ 0.4, 0.4, 0 ],
+        "rotation": 0
+    },
+    "Sprite": {
+        "tex_path": "./Assets/ANI_Detec_FULL_SpriteSheet_001.PNG",
+        "z_priority": -4.9
+    },
+    "Animation": {
+        "Sequences": [
+            {
+                "Name": "FrontWalk",
+                "FrameDuration": 0.0625,
+                "Rows": 4.0,
+                "Columns": 4.0,
+                "SequenceUVs": [ 0.30769, 0.0, 0.30769, 0.30769 ]
+            },
+            {
+                "Name": "BackWalk",
+                "FrameDuration": 0.0625,
+                "Rows": 4.0,
+                "Columns": 4.0,
+                "SequenceUVs": [ 0, 0, 0.30769, 0.30769 ]
+            },
+            {
+                "Name": "SideWalk",
+                "FrameDuration": 0.0625,
+                "Rows": 2.0,
+                "Columns": 11.0,
+                "SequenceUVs": [ 0, 0.84615, 0.84615, 0.15385 ]
+            },
+            {
+                "Name": "FrontIdle",
+                "FrameDuration": 0.0625,
+                "Rows": 3.0,
+                "Columns": 5.0,
+                "SequenceUVs": [ 0, 0.30769, 0.38462, 0.23077 ]
+            },
+            {
+                "Name": "BackIdle",
+                "FrameDuration": 0.0625,
+                "Rows": 3.0,
+                "Columns": 5.0,
+                "SequenceUVs": [ 0.61538, 0, 0.38462, 0.23077 ]
+            },
+            {
+                "Name": "SideIdle",
+                "FrameDuration": 0.0625,
+                "Rows": 3.0,
+                "Columns": 5.0,
+                "SequenceUVs": [ 0.38462, 0.30769, 0.38462, 0.23077 ]
+            },
+            {
+                "Name": "FrontInteract",
+                "FrameDuration": 0.0625,
+                "Rows": 1.0,
+                "Columns": 11.0,
+                "SequenceUVs": [ 0, 0.76923, 0.84615, 0.07692 ]
+            },
+            {
+                "Name": "BackInteract",
+                "FrameDuration": 0.0625,
+                "Rows": 1.0,
+                "Columns": 10.0,
+                "SequenceUVs": [ 0, 0.69231, 0.76923, 0.07692 ]
+            },
+            {
+                "Name": "SideInteract",
+                "FrameDuration": 0.0625,
+                "Rows": 2.0,
+                "Columns": 6.0,
+                "SequenceUVs": [ 0, 0.53846, 0.46154, 0.15385 ]
+            }
+        ]
+    },
+    "Physics": {
+        "acceleration": [ 0.0, 0.0, 0 ],
+        "velocity": [ 0, 0, 0 ]
+    },
+    "PlayerController": {
+        "PlayerMovement": {
+            "MaxSpeed": 0.8,
+            "MoveState": 0
+        },
+        "PlayerVision": {
+            "VisionState": 0
+        }
+    },
+    "Collider": {
+        "Static": false,
+        "Solid": false,
+        "Type": "Circle",
+        "Radius": 0.15,
+        "Offset": [ 0.0, -0.15, 0.0 ]
+    },
+    "FootstepEmitter": {
+        "Timer": 3.0,
+        "SpawnRate": 0.4,
+        "tex_path": "./Assets/VFX_DetecVis_Step_001.png"
+    }
+}

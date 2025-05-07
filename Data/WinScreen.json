@@ -1,0 +1,73 @@
+[
+  {
+    "Name": "Main Camera",
+    "Transform": {
+        "translation": [ 0, 0, 0 ],
+        "scale": [ 1.0, 1.0, 1 ],
+        "rotation": 0
+    },
+    "Camera": {
+        "priority": 0
+    },
+    "Physics": {
+        "acceleration": [ 0.0, 0.0, 0 ],
+        "velocity": [ 0, 0, 0 ]
+    }
+  },
+  {
+    "Name": "MainBackground",
+    "Transform": {
+        "translation": [0.0, 0.0, 0],
+        "scale": [1.0, 1.0, 0],
+        "rotation": 0
+    },
+    "Sprite": {
+        "tex_path": "./Assets/UI_WinScreen_001.png",
+        "z_priority": 0.0
+    }
+  },
+  {
+    "Name": "Play",
+    "Transform": {
+        "translation": [0.0, 0.05, 0],
+        "scale": [0.15, 0.15, 0],
+        "rotation": 0
+    },
+    "Sprite": {
+        "tex_path": "./Assets/UI_MenuButton_Asset_Play.png",
+        "z_priority": 1.0,
+        "UVs": [0.0, 0.0, 1.0, 0.33]
+    },
+    "Button": {
+        "Function": 17,
+        "BaseUV": [0.0, 0.0, 1.0, 0.33],
+        "Offset": 0.33
+    }
+  }, 
+  {
+    "Name": "Quit",
+    "Transform": {
+        "translation": [0.0, -0.15, 0],
+        "scale": [0.15, 0.15, 0],
+        "rotation": 0
+    },
+    "Sprite": {
+        "tex_path": "./Assets/UI_MenuButton_Asset_Quit.png",
+        "z_priority": 1.0,
+        "UVs": [0.0, 0.22, 1.0, 0.11]
+    },
+    "Button": {
+        "Function": 1,
+        "BaseUV": [0.0, 0.0, 1.0, 0.33],
+        "Offset": 0.33
+    }
+  },
+  {
+      "Name": "SoundHold",
+      "SoundBehavior":{
+          "WaitTime": 0.0,
+          "FilePath": "./Data/Audio/Music/MenuMusic.json",
+          "InRange": true
+      }
+  }
+]

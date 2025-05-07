@@ -1,0 +1,92 @@
+{
+    "Name": "Attendant A",
+    "Transform": {
+        "translation": [ 2.1, -0.4, 0 ],
+        "scale": [ 0.2, 0.4, 1 ],
+        "rotation": 0
+    },
+    "Sprite": {
+        "tex_path": "./Assets/ANI_Attend_FULL_SpriteSheet_001.PNG",
+        "z_priority": -4.9
+    },
+    "Animation": {
+        "Sequences": [
+            {
+                "Name": "FrontWalk",
+                "Looping": true,
+                "FrameDuration": 0.0625,
+                "Rows": 4.0,
+                "Columns": 8.0,
+                "SequenceUVs": [ 0.0, 0.0, 0.5, 0.5 ]
+            },
+            {
+                "Name": "BackWalk",
+                "FrameDuration": 0.0625,
+                "Rows": 4.0,
+                "Columns": 8.0,
+                "SequenceUVs": [ 0.5, 0.0, 0.5, 0.5 ]
+            },
+            {
+                "Name": "SideWalk",
+                "FrameDuration": 0.0625,
+                "Rows": 4.0,
+                "Columns": 8.0,
+                "SequenceUVs": [ 0.0, 0.5, 0.5, 0.5 ]
+            },
+            {
+                "Name": "Dizzy",
+                "FrameDuration": 0.0625,
+                "Rows": 4.0,
+                "Columns": 8.0,
+                "SequenceUVs": [ 0.5, 0.5, 0.5, 0.5 ]
+            }
+        ]
+    },
+    "Physics": {
+        "acceleration": [ 0.0, 0.0, 0 ],
+        "velocity": [ 0, 0, 0 ]
+
+    },
+    "AttendantBehavior": {
+        "AttendantMovement": {
+            "MoveSpeed": 0.2,
+
+            "BehaviorState": 0,
+
+            "WalkingPoints": [
+                [ 2.15, 0.25, 0 ],
+                [ 1.75, 0.25, 0 ],
+                [ 1.75, -0.5, 0 ],
+                [ 2.15, -0.5, 0 ]
+            ]
+        }
+    },
+    "Collider": {
+        "Static": false,
+        "Solid": false,
+        "Type": "Box",
+        "Width": 0.5,
+        "Height": 0.25,
+        "Offset": [ 0.0, -0.25, 0 ]
+
+    },
+    "Detection": {
+        "tex_path": "./Assets/UI_Status_Seen_001.png",
+        "tex_path2": "./Assets/UI_Status_Caught_001.png"
+    },
+    "FootstepEmitter": {
+        "Timer": 3.0,
+        "SpawnRate": 0.4,
+        "tex_path": "./Assets/VFX_DetecVis_Step_001.png"
+    },
+    "Sound": {
+        "Name": "Walking",
+        "FilePath": "./Audio/attendantWalk.mp3",
+        "Volume": 1.0,
+        "Pitch": 1.0,
+        "Speed": 1.0,
+        "Looping": true,
+        "Type": "SFX",
+        "MaxDistance": 0.75
+    }
+}

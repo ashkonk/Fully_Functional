@@ -1,0 +1,32 @@
+
+[
+    {
+        "Name": "Main Camera",
+        "Transform": {
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1.0, 1.0, 1 ],
+            "rotation": 0
+        },
+        "Camera": {
+            "priority": 0
+        },
+        "Physics": {
+            "acceleration": [ 0.0, 0.0, 0 ],
+            "velocity": [ 0, 0, 0 ]
+        }
+      },
+      {
+        "Name": "MainBackground",
+        "Transform": {
+            "translation": [0.0, 0.0, 0],
+            "scale": [2.0, 2.0, 0],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/anim.png",
+            "z_priority": 300.0
+        },
+        "LoadBehavior": {       
+        }
+      }
+]

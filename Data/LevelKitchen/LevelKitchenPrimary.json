@@ -1,0 +1,4 @@
+{
+    "Entities": "./Data/LevelKitchen/Entities/LevelKitchen_EntitiesPrimary.json",
+    "Environment": "./Data/LevelKitchen/Environment/LevelKitchenEnviro.json"
+}

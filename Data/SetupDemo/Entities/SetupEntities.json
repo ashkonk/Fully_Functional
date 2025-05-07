@@ -1,0 +1,47 @@
+[
+    {
+        "Name": "Ambrose Doppler",
+        "FilePath": "./Data/SetupDemo/Entities/AmbroseDoppler.json"
+    },
+    {
+        "Name": "Attendant A",
+        "FilePath": "./Data/SetupDemo/Entities/AttendantA.json"
+    },
+    {
+        "Name": "Attendant A VisionCone",
+        "FilePath": "./Data/SetupDemo/Entities/AttendantVisionCone.json"
+    },
+    {
+        "Name": "Drone",
+        "FilePath": "./Data/SetupDemo/Entities/Drone.json"
+    },
+    {
+        "Name": "Lighter",
+        "FilePath": "./Data/SetupDemo/Entities/Lighter.json"
+    },
+    {
+        "Name": "TrashFire",
+        "FilePath": "./Data/SetupDemo/Entities/TrashFire.json"
+    },
+    {
+        "Name": "CCTV",
+        "FilePath": "./Data/SetupDemo/Entities/CCTV.json"
+    },
+    {
+        "Name": "Fusebox",
+        "FilePath": "./Data/SetupDemo/Entities/Fusebox.json"
+    },
+    {
+        "Name": "FuseboxKey",
+        "FilePath": "./Data/SetupDemo/Entities/FuseboxKey.json"
+    },
+    {
+        "Name": "Poison Vial",
+        "FilePath": "./Data/SetupDemo/Entities/PoisonVial.json"
+    },
+    {
+        "Name": "RunDoor",
+        "FilePath": "./Data/SetupDemo/Entities/RunDoor.json"
+    }
+]
+

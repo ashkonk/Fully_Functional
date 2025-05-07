@@ -1,0 +1,15 @@
+[
+
+    {
+        "Name": "LoseScene",
+        "Transform": {
+            "translation": [ 0.0, 0.0, 0 ],
+            "scale": [ 1.0, 1.0, 0 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/UI_LoseScreen_001.png",
+            "z_priority": 15.0
+        }
+    }
+]

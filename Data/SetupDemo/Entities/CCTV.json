@@ -1,0 +1,36 @@
+{
+    "Name": "CCTVBehavior",
+    "CCTVBehavior": {
+        "Active": false,
+        "RotateSpeed": 40.0,
+        "MaxRotation": 90.0,
+        "RotateDirection": 1.0
+    },
+    "Transform": {
+        "translation": [ -1.21, -0.16, 0 ],
+        "scale": [ 0.2, 0.2, 0 ],
+        "rotation": -45
+    },
+    "Collider": {
+        "Static": true,
+        "Solid": false,
+        "Type": "Shape",
+        "Mesh": [
+            [ 0.0, 0.0, 0.0 ],
+            [ 1.5, 1.5, 0.0 ],
+            [ 1.5, -1.5, 0.0 ]
+        ]
+    },
+    "Sprite": {
+        "tex_path": "./Assets/PROP_CCTV_Asset_002.png",
+        "z_priority": -2
+    },
+    "Physics": {
+        "acceleration": [ 0.0, 0.0, 0 ],
+        "velocity": [ 0, 0, 0 ]
+    },
+    "Detection": {
+        "tex_path": "./Assets/UI_Status_Seen_001.png",
+        "tex_path2": "./Assets/UI_Status_Caught_001.png"
+    }
+}

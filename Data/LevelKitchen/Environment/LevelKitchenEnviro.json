@@ -1,0 +1,844 @@
+[
+    {
+        "Name": "Main Camera",
+        "Transform": {
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 3.2004, 1.8, 1 ],
+            "rotation": 0
+        },
+        "Camera": {
+            "priority": 0
+        },
+        "Physics": {
+            "acceleration": [ 0.0, 0.0, 0 ],
+            "velocity": [ 0, 0, 0 ]
+        },
+        "CameraBehavior": {
+            "InitPosition": [ 0.6, -0.25, 0 ],
+            "Bounds": [ -0.425, -0.130, 2.55, 0.12 ]
+        },
+        "Sprite": {
+            "tex_path": "./Assets/DemoLevel/DetectiveModeBg_Base.png",
+            "z_priority": 0,
+            "opacity": 0
+        }
+    },
+    {
+        "Name": "BackgroundLeft",
+        "Transform": {
+            "translation": [ 2.04, 0.75, 0 ],
+            "scale": [ 0.77, 0.4, 0 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/KitchenLevel/ENV_SpriteSheet_KitchenCarBackground_001.png",
+            "z_priority": -1100
+        },
+        "Animation": {
+            "Sequences": [
+                {
+                    "Name": "TutBG",
+                    "FrameDuration": 0.0625,
+                    "Rows": 8.0,
+                    "Columns": 4.0,
+                    "Looping": true
+                }
+            ]
+        }
+    },   {
+        "Name": "BackgroundRight",
+        "Transform": {
+            "translation": [ 0.39, 0.75, 0 ],
+            "scale": [ 0.77, 0.4, 0 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/KitchenLevel/ENV_SpriteSheet_KitchenCarBackground_001.png",
+            "z_priority": -1100
+        },
+        "Animation": {
+            "Sequences": [
+                {
+                    "Name": "TutBG",
+                    "FrameDuration": 0.0625,
+                    "Rows": 8.0,
+                    "Columns": 4.0,
+                    "Looping": true
+                }
+            ]
+        }
+    },
+    {
+        "Name": "FadeIn",
+        "Transform": {
+            "translation": [ 0.0, 0.0, 0 ],
+            "scale": [ 2.0, 2.0, 0 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/black.png",
+            "z_priority": 1001,
+            "static": true
+        },
+        "FadeController": {
+            "duration": 2.0,
+            "scenePath": "./Data/WinScreenMain.json"
+        }
+    },
+    {
+        "Name": "BackgroundLeft",
+        "Transform": {
+            "translation": [ 2.04, 0.75, 0 ],
+            "scale": [ 0.77, 0.4, 0 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/KitchenLevel/ENV_SpriteSheet_KitchenCarBackground_001.png",
+            "z_priority": -1100
+        },
+        "Animation": {
+            "Sequences": [
+                {
+                    "Name": "TutBG",
+                    "FrameDuration": 0.0625,
+                    "Rows": 8.0,
+                    "Columns": 4.0,
+                    "Looping": true
+                }
+            ]
+        }
+    },   {
+        "Name": "BackgroundRight",
+        "Transform": {
+            "translation": [ -0.59, 0.75, 0 ],
+            "scale": [ 0.77, 0.4, 0 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/KitchenLevel/ENV_SpriteSheet_KitchenCarBackground_001.png",
+            "z_priority": -1100
+        },
+        "Animation": {
+            "Sequences": [
+                {
+                    "Name": "TutBG",
+                    "FrameDuration": 0.0625,
+                    "Rows": 8.0,
+                    "Columns": 4.0,
+                    "Looping": true
+                }
+            ]
+        }
+    },
+    {
+        "Name": "TeleportBG",
+        "Transform": {
+            "translation": [ 0.0, -0.425, 0 ],
+            "scale": [ 0.045, 0.15, 0 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/UI_DashIcon_Asset_001.png",
+            "z_priority": 10,
+            "static": true
+        }
+    },
+    {
+        "Name": "StealthbarBack",
+        "Transform": {
+            "translation": [ 0.0, 0.45, 0 ],
+            "scale": [ 0.2, 0.05, 0 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/UI_UndetectedMeter_Asset_001.png",
+            "z_priority": 101,
+            "static": true
+        }
+    },
+    {
+        "Name": "StealthEye",
+        "Transform": {
+            "translation": [ -0.13, 0.45, 0 ],
+            "scale": [ 0.05, 0.05, 0 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/UI_DetectEye_Asset_001.png",
+            "z_priority": 103,
+            "static": true
+        },
+        "StealthBarBG": {
+
+        }
+
+    },
+    {
+        "Name": "KitchenRoom1",
+        "Transform": {
+            "translation": [ -1.75, 0, 0 ],
+            "scale": [ 1, 2, 1 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/KitchenLevel/Kitchen_Room_1.png",
+            "z_priority": -1000
+        }
+    },
+    {
+        "Name": "KitchenRoom2",
+        "Transform": {
+            "translation": [ 0.75, 0, 0 ],
+            "scale": [ 5, 2, 1 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/KitchenLevel/Kitchen_Room_2_bg.png",
+            "z_priority": -1000
+        }
+    },
+    {
+        "Name": "LeftRow_Vertical",
+        "Transform": {
+            "translation": [ -1.6, -0.05, 0 ],
+            "scale": [ 0.3, 1.55, 1 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/KitchenLevel/P1/LeftRow_V.png",
+            "z_priority": -5.5
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 0.34,
+            "Height": 0.8,
+            "Offset": [ -0.1, 0, 0 ]
+        }
+    },
+    {
+        "Name": "MidRow_V",
+        "Transform": {
+            "translation": [ -0.35, -0.4, 0 ],
+            "scale": [ 0.3, 1.25, 1 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/KitchenLevel/P1/MidRow_V.png",
+            "z_priority": -5.5
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 0.28,
+            "Height": 0.9,
+            "Offset": [ -0.1, 0, 0 ]
+        }
+    },
+    {
+        "Name": "BottomRow_Horizontal",
+        "Transform": {
+            "translation": [ -1.236, -0.61, 0 ],
+            "scale": [ 0.6, 0.39, 1 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/KitchenLevel/P1/BottomRow_H.png",
+            "z_priority": -5
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 1.0,
+            "Height": 0.3,
+            "Offset": [ -0.15, -0.1, 0 ]
+        }
+    },
+    {
+        "Name": "MidRow_Horizontal",
+        "Transform": {
+            "translation": [ -0.78, -0.3, 0 ],
+            "scale": [ 0.7, 0.39, 1 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/KitchenLevel/P1/MidRow_H.png",
+            "z_priority": -5
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 0.8,
+            "Height": 0.2,
+            "Offset": [ 0.1, -0.2, 0 ]
+        }
+    },
+    {
+        "Name": "TopRow_H",
+        "Transform": {
+            "translation": [ -1.15, 0.078, 0 ],
+            "scale": [ 0.8, 0.39, 1 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/KitchenLevel/P1/TopRow_H.png",
+            "z_priority": -5
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 1.0,
+            "Height": 0.2,
+            "Offset": [ -0.12, -0.2, 0 ]
+        }
+    },
+    {
+        "Name": "BackTable",
+        "Transform": {
+            "translation": [ 0.485, 0.1825, 0 ],
+            "scale": [ 0.9, 1, 1 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/KitchenLevel/P1/BackTable.png",
+            "z_priority": -5.5
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 0.6,
+            "Height": 0.7,
+            "Offset": [ -0.12, -0.05, 0 ]
+        }
+    },
+    {
+        "Name": "BackRow",
+        "Transform": {
+            "translation": [ -0.805, 0.64, 0 ],
+            "scale": [ 1.9, 0.78, 1 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/KitchenLevel/P1/BackRow_H.png",
+            "z_priority": -5
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 1.5,
+            "Height": 0.2,
+            "Offset": [ 0.12, -0.2, 0 ]
+        }
+    },
+    {
+        "Name": "BottomNook",
+        "Transform": {
+            "translation": [ 0.374, -0.625, 0 ],
+            "scale": [ 0.75, 0.75, 1 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/KitchenLevel/P1/BottomNook.png",
+            "z_priority": -5.3
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 0.2,
+            "Height": 0.5,
+            "Offset": [ -0.3, -0.2, 0 ]
+        }
+    },
+    {
+        "Name": "BottomNookColl2",
+        "Transform": {
+            "translation": [ 0.374, -0.625, 0 ],
+            "scale": [ 0.75, 0.75, 1 ],
+            "rotation": 0
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 0.5,
+            "Height": 0.1,
+            "Offset": [ 0.0, 0.0, 0 ]
+        }
+    },
+    {
+        "Name": "BottomNookColl3",
+        "Transform": {
+            "translation": [ 0.374, -0.625, 0 ],
+            "scale": [ 0.75, 0.75, 1 ],
+            "rotation": 0
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 0.2,
+            "Height": 0.3,
+            "Offset": [ 0.35, -0.1, 0 ]
+        }
+    },
+    {
+        "Name": "BackProps_H",
+        "Transform": {
+            "translation": [ 2.05, 0.49, 0 ],
+            "scale": [ 2.4, 0.45, 1 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/KitchenLevel/P2/BackProps_H.png",
+            "z_priority": -5
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 1.1,
+            "Height": 0.2,
+            "Offset": [ 0, -0.2, 0 ]
+        }
+    },
+    {
+        "Name": "BackOvens",
+        "Transform": {
+            "translation": [ 2.05, 0.8, 0 ],
+            "scale": [ 2.5, 0.35, 1 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/KitchenLevel/P2/Oven_Prop.png",
+            "z_priority": -5
+        }
+    },
+    {
+        "Name": "Shelf1",
+        "Transform": {
+            "translation": [ 1.2, -0.2, 0 ],
+            "scale": [ 0.15, 1.1, 1 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/KitchenLevel/P2/Shelves.png",
+            "z_priority": -5
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 0.2,
+            "Height": 0.8,
+            "Offset": [ 0, -0.05, 0 ]
+        },
+        "Occluder": {
+            "Offset": [ 0, 0.02, 0 ],
+            "Width": 0.8,
+            "Height": 0.65,
+            "Depth": 0.5
+        },
+        "BrokenDoorBehavior": {
+            "DtThresh": 0.9
+        }
+    },
+    {
+        "Name": "Shelf2",
+        "Transform": {
+            "translation": [ 1.65, -0.2, 0 ],
+            "scale": [ 0.15, 1.1, 1 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/KitchenLevel/P2/Shelves.png",
+            "z_priority": -5
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 0.2,
+            "Height": 0.8,
+            "Offset": [ 0, -0.05, 0 ]
+        },
+        "Occluder": {
+            "Offset": [ 0, 0.02, 0 ],
+            "Width": 0.8,
+            "Height": 0.65,
+            "Depth": 0.5
+        },
+        "BrokenDoorBehavior": {
+            "DtThresh": 0.9
+        }
+    },
+    {
+        "Name": "Shelf3",
+        "Transform": {
+            "translation": [ 2.1, -0.2, 0 ],
+            "scale": [ 0.15, 1.1, 1 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/KitchenLevel/P2/Shelves.png",
+            "z_priority": -5
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 0.2,
+            "Height": 0.8,
+            "Offset": [ 0, -0.05, 0 ]
+        },
+        "Occluder": {
+            "Offset": [ 0, 0.02, 0 ],
+            "Width": 0.8,
+            "Height": 0.65,
+            "Depth": 0.5
+        },
+        "BrokenDoorBehavior": {
+            "DtThresh": 0.9
+        }
+    },
+    {
+        "Name": "Shelf4",
+        "Transform": {
+            "translation": [ 2.55, -0.2, 0 ],
+            "scale": [ 0.15, 1.1, 1 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/KitchenLevel/P2/Shelves.png",
+            "z_priority": -5
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 0.2,
+            "Height": 0.8,
+            "Offset": [ 0, -0.05, 0 ]
+        },
+        "Occluder": {
+            "Offset": [ 0, 0.02, 0 ],
+            "Width": 0.8,
+            "Height": 0.65,
+            "Depth": 0.5
+        },
+        "BrokenDoorBehavior": {
+            "DtThresh": 0.9
+        }
+    },
+    {
+        "Name": "Shelf5",
+        "Transform": {
+            "translation": [ 3.0, -0.2, 0 ],
+            "scale": [ 0.15, 1.1, 1 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/KitchenLevel/P2/Shelves.png",
+            "z_priority": -5
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 0.2,
+            "Height": 0.8,
+            "Offset": [ 0, -0.05, 0 ]
+        },
+        "BrokenDoorBehavior": {
+            "DtThresh": 0.9
+        }
+    },
+    {
+        "Name": "Crate1",
+        "Transform": {
+            "translation": [ 1.2, -0.75, 0 ],
+            "scale": [ 0.45, 0.45, 1 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/KitchenLevel/P2/Crate_1.png",
+            "z_priority": -5
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 0.5,
+            "Height": 0.8,
+            "Offset": [ 0, 0, 0 ]
+        }
+    },
+    {
+        "Name": "Crate2",
+        "Transform": {
+            "translation": [ 2.11, -0.8, 0 ],
+            "scale": [ 0.45, 0.55, 1 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/KitchenLevel/P2/Crate_2.png",
+            "z_priority": -5
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 0.6,
+            "Height": 0.4,
+            "Offset": [ 0, -0.1, 0 ]
+        }
+    },
+    {
+        "Name": "Crate3",
+        "Transform": {
+            "translation": [ 3.0, -0.75, 0 ],
+            "scale": [ 0.45, 0.45, 1 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/KitchenLevel/P2/Crate_3.png",
+            "z_priority": -5
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 0.5,
+            "Height": 0.8,
+            "Offset": [ 0, -0.1, 0 ]
+        }
+    },
+    {
+        "Name": "Cart1",
+        "Transform": {
+            "translation": [ 1.655, 0.3, 0 ],
+            "scale": [ 0.4, 0.4, 1 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/KitchenLevel/P2/PROP_Cart_Asset_001.png",
+            "z_priority": -5
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 0.5,
+            "Height": 0.2,
+            "Offset": [ 0, -0.1, 0 ]
+        }
+    },
+    {
+        "Name": "Cart2",
+        "Transform": {
+            "translation": [ 2.555, 0.3, 0 ],
+            "scale": [ 0.4, 0.4, 1 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/KitchenLevel/P2/PROP_Cart_Asset_001.png",
+            "z_priority": -5
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 0.5,
+            "Height": 0.2,
+            "Offset": [ 0, -0.1, 0 ]
+        }
+    },
+    {
+        "Name": "WallColliderBottom",
+        "Transform": {
+            "translation": [ -1.0, 0, 0 ],
+            "scale": [ 6, 2, 1 ],
+            "rotation": 0
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 1.7,
+            "Height": 0.1,
+            "Offset": [ 0.15, -0.55, 0 ]
+        },
+        "Occluder": {
+            "Offset": [ 0, -1.45, 0 ],
+            "Width": 1.0,
+            "Height": 0.5,
+            "Depth": 0.5
+        }
+    },
+    {
+        "Name": "WallColliderLeft",
+        "Transform": {
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 4, 2, 1 ],
+            "rotation": 0
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 0.05,
+            "Height": 1,
+            "Offset": [ -0.525, -0.08, 0 ]
+        }
+    },
+    {
+        "Name": "WallColliderRight",
+        "Transform": {
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 4, 2, 1 ],
+            "rotation": 0
+        },
+        "Collider": {
+            "Static": true,
+            "Solid": true,
+            "Type": "Box",
+            "Width": 0.05,
+            "Height": 1,
+            "Offset": [ 0.83, 0.08, 0 ]
+        }
+    },
+    {
+        "Name": "PlateOne",
+        "Transform": {
+            "translation": [ -1.18, -0.48, 0 ],
+            "scale": [ 0.2, 0.2, 0 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/PassengerLevel/PROP_ClocheServingDish_Asset_001.png",
+            "z_priority": -4.7
+        },
+        "Physics": {
+            "acceleration": [ 0.0, 0.0, 0 ],
+            "velocity": [ 0, 0, 0 ]
+        },
+        "Occluder": {
+            "Offset": [ 0, 0.02, 0 ],
+            "Width": 0.8,
+            "Height": 0.65,
+            "Depth": 0.5
+        }
+    },
+    {
+        "Name": "PlateTwo",
+        "Transform": {
+            "translation": [ -0.57, -0.18, 0 ],
+            "scale": [ 0.2, 0.2, 0 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/PassengerLevel/PROP_ClocheServingDish_Asset_001.png",
+            "z_priority": -4.7
+        },
+        "Physics": {
+            "acceleration": [ 0.0, 0.0, 0 ],
+            "velocity": [ 0, 0, 0 ]
+        },
+        "Occluder": {
+            "Offset": [ 0, 0.02, 0 ],
+            "Width": 0.8,
+            "Height": 0.65,
+            "Depth": 0.5
+        }
+    },
+    {
+        "Name": "PlateThree",
+        "Transform": {
+            "translation": [ -1.35, 0.2, 0 ],
+            "scale": [ 0.2, 0.2, 0 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/PassengerLevel/PROP_ClocheServingDish_Asset_001.png",
+            "z_priority": -4.7
+        },
+        "Physics": {
+            "acceleration": [ 0.0, 0.0, 0 ],
+            "velocity": [ 0, 0, 0 ]
+        },
+        "Occluder": {
+            "Offset": [ 0, 0.02, 0 ],
+            "Width": 0.8,
+            "Height": 0.65,
+            "Depth": 0.5
+        }
+    },
+    {
+        "Name": "PlateFour",
+        "Transform": {
+            "translation": [ -0.9, 0.2, 0 ],
+            "scale": [ 0.15, 0.15, 0 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/PassengerLevel/PROP_ClocheServingDish_Asset_001.png",
+            "z_priority": -4.7
+        },
+        "Physics": {
+            "acceleration": [ 0.0, 0.0, 0 ],
+            "velocity": [ 0, 0, 0 ]
+        },
+        "Occluder": {
+            "Offset": [ 0, 0.02, 0 ],
+            "Width": 0.8,
+            "Height": 0.65,
+            "Depth": 0.5
+        }
+    },
+    {
+        "Name": "FadeIn",
+        "Transform": {
+            "translation": [ 3.2, -0.5, 0 ],
+            "scale": [ 2.0, 2.0, 0 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/black.png",
+            "z_priority": 1001,
+            "static": true
+        },
+        "FadeController": {
+            "duration": 2.0,
+            "scenePath": "./Data/WinScreenMain.json"
+        }
+    },
+    {
+        "Name": "PlateFive",
+        "Transform": {
+            "translation": [ -1, -0.18, 0 ],
+            "scale": [ 0.15, 0.15, 0 ],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/PassengerLevel/PROP_ClocheServingDish_Asset_001.png",
+            "z_priority": -4.7
+        },
+        "Physics": {
+            "acceleration": [ 0.0, 0.0, 0 ],
+            "velocity": [ 0, 0, 0 ]
+        },
+        "Occluder": {
+            "Offset": [ 0, 0.02, 0 ],
+            "Width": 0.8,
+            "Height": 0.65,
+            "Depth": 0.5
+        }
+    }
+]

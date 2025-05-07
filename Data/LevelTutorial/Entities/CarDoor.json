@@ -1,0 +1,19 @@
+{
+    "Name": "DoorBehavior",
+    "DoorBehavior":
+  {
+    "Filepath": "./Data/LevelTutorial2/TutorialRoom2Primary.json",
+    "EntryPosition": [0.0, 0.0, 0]
+  },
+    "Transform": {
+      "translation": [ 2.437, -0.7, 0 ],
+      "scale": [0.2, 0.2, 0],
+      "rotation": 0
+    },
+    "Collider": {
+        "Static": true,
+        "Solid": false,
+        "Type": "Circle",
+        "Radius": 0.75
+    }
+  }

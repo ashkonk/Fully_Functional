@@ -1,0 +1,34 @@
+[
+    {
+        "Name": "Ambrose Doppler",
+        "FilePath": "./Data/LevelTutorial2/Entities/AmbroseDoppler.json"
+    },
+    {
+        "Name": "TeleportUI",
+        "FilePath": "./Data/LevelPassenger1/Entities/TeleportUI.json"
+    },
+    {
+        "Name": "CarDoor",
+        "FilePath": "./Data/LevelPassenger1/Entities/CarDoor.json"
+    },
+    {
+        "Name": "ShadowAmbrose",
+        "FilePath": "./Data/LevelPassenger1/Entities/ShadowAmbrose.json"
+    },
+    {
+        "Name": "TeleportBehavior",
+        "FilePath": "./Data/LevelTutorial/Entities/TeleportBehavior.json"
+    },
+    {
+        "Name": "Stealth Bar",
+        "FilePath": "./Data/LevelTutorial2/Entities/StealthBar.json"
+    },
+    {
+        "Name": "Antag",
+        "FilePath": "./Data/LevelPassenger1/Entities/Antag.json"
+    },
+    {
+        "Name": "ShadowAntag",
+        "FilePath": "./Data/LevelPassenger1/Entities/ShadowAntag.json"
+    }
+]

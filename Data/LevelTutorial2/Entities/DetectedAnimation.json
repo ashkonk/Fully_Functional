@@ -1,0 +1,16 @@
+{
+    "Name": "DetectedAnimation",
+    "Transform": {
+        "translation": [ 0.0, 0.0, 0 ],
+        "scale": [ 1.14, 1.0, 1 ],
+        "rotation": 0
+    },
+    "Sprite": {
+        "tex_path": "./Assets/UI_Damage_Overlay_001.png",
+        "z_priority": 120.0,
+        "opacity": 0.0,
+        "static": true
+    },
+    "Detected": {
+    }
+}

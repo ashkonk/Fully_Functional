@@ -1,0 +1,34 @@
+{
+    "Name": "LuggageOne",
+    "Transform": {
+        "translation": [ -1.79, 0.06, 0 ],
+        "scale": [ 0.2, 0.2, 0 ],
+        "rotation": 0
+    },
+    "Sprite": {
+        "tex_path": "./Assets/PassengerLevel/PROP_ClocheServingDish_Asset_001.png",
+        "z_priority": 10
+    },
+    "Physics": {
+        "acceleration": [ 0.0, 0.0, 0 ],
+        "velocity": [ 0, 0, 0 ]
+    },
+    "Occluder": {
+        "Offset": [ 0, 0.02, 0 ],
+        "Width": 0.8,
+        "Height": 0.65,
+        "Depth": 0.5
+    },
+    "MovingObject": {
+            "MoveSpeed": 0.2,
+            "WalkingPoints": [
+                [ -1.78, 0.05, 0 ],
+                [ -1.1, 0.05, 0 ],
+                [ -1.15, 0.05, 0 ],
+                [ -0.99, 0.05, 0]
+
+                
+	
+            ]
+    }
+}

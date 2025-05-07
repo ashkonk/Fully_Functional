@@ -1,0 +1,32 @@
+{
+    "Name": "FuseBoxBehavior",
+    "FuseBoxBehavior": {
+        "active": true
+    },
+    "Transform": {
+        "translation": [ -1.8, -0.22, 0 ],
+        "scale": [ 0.18, 0.18, 0 ],
+        "rotation": 0
+    },
+    "Collider": {
+        "Static": true,
+        "Solid": false,
+        "Type": "Box",
+        "Width": 0.5,
+        "Height": 0.5
+    },
+    "Sprite": {
+        "tex_path": "./Assets/PROP_FuseBox_Asset_001.png",
+        "z_priority": -5
+    },
+    "ParticleEmitter": {
+        "Timer": 0.05,
+        "SpawnRate": 0.02,
+        "tex_path": "./Assets/sparkTemp.png",
+        "LimitX": 0.01,
+        "LimitY": 0.01,
+        "scale": [0.03, 0.03, 0],
+        "MaxDuration": 1.0,
+        "Emit": false
+    }
+}

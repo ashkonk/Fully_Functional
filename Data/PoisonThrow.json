@@ -1,0 +1,22 @@
+{
+    "Name": "PoisonThrow",
+    "Transform": {
+        "translation": [ 1.0, 0.0, 0 ],
+        "scale": [ 0.25, 0.25, 0 ],
+        "rotation": 0
+    },
+    "Sprite": {
+        "tex_path": "./Assets/VFX_PoisonSplash_SpriteSheet_001.png",
+        "z_priority": 15.0
+    },
+    "Animation": {
+        "Sequences": [
+            {
+                "Name": "Active",
+                "FrameDuration": 0.25,
+                "Rows": 2.0,
+                "Columns": 4.0
+            }
+        ]
+    }
+}

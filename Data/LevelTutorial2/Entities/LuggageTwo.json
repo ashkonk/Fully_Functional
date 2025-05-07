@@ -1,0 +1,32 @@
+{
+    "Name": "LuggageTwo",
+    "Transform": {
+        "translation": [ 0.185, 0.8, 0 ],
+        "scale": [ 0.25, 0.25, 0 ],
+        "rotation": 0
+    },
+    "Sprite": {
+        "tex_path": "./Assets/TutorialRoom/PROP_Luggage_Asset_006_Colored.png",
+        "z_priority": -8
+    },
+    "Physics": {
+        "acceleration": [ 0.0, 0.0, 0 ],
+        "velocity": [ 0, 0, 0 ]
+    },
+    "Occluder": {
+        "Offset": [ 0, 0, 0 ],
+        "Width": 0.65,
+        "Height": 1,
+        "Depth": 0.5
+    },
+    "MovingObject": {
+            "MoveSpeed": 0.2,
+            "WalkingPoints": [
+                [ 0.175, 0.7, 0 ],
+				[0.175, 0.3, 0],
+				[0.175, 0.15, 0],
+				[0.3, 0.15, 0],
+				[1.75, 0.15, 0]
+            ]
+    }
+}

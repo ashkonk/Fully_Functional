@@ -1,0 +1,4 @@
+{
+  "Entities": "./Data/SetupDemo/Entities/SetupEntities.json",
+  "Environment": "./Data/SetupDemo/Environment/SetupEnviro.json"
+}

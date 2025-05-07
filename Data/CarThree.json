@@ -1,0 +1,34 @@
+[
+    {
+        "Name": "Train Car",
+        "Transform":
+        {
+            "translation": [0.7, 0.1, 0],
+            "scale": [3, 3, 0],
+            "rotation": 0
+        },
+        "Sprite":
+        {
+            "tex_path": "./Assets/ENV_DemoRoom_001.PNG",
+            "z_priority": -1000
+        }
+    },
+    {
+    "Name": "DoorBehavior",
+    "DoorBehavior":
+  {
+    "Filepath": "./Data/CarTwo.json"
+  },
+    "Transform": {
+      "translation":[-0.1, 0.2, 0],
+      "scale": [0.2, 0.2, 0],
+      "rotation": 0
+    },
+    "Collider": {
+        "Static": true,
+        "Solid": true,
+        "Type": "Circle",
+        "Radius": 0.25
+    }
+  }
+]

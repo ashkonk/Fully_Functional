@@ -1,0 +1,345 @@
+[
+    {
+      "Name": "Main Camera",
+      "Transform": {
+          "translation": [ 0, 0, 0 ],
+          "scale": [ 1.0, 1.0, 1 ],
+          "rotation": 0
+      },
+      "Camera": {
+          "priority": 0
+      },
+      "Physics": {
+          "acceleration": [ 0.0, 0.0, 0 ],
+          "velocity": [ 0, 0, 0 ]
+      }
+  },
+  {
+    "Name": "BlackBG",
+    "Transform": { 
+        "translation": [0.0, 0.0, 0],
+        "scale": [1.0, 1.0, 0],
+        "rotation": 0
+    },
+    "Sprite": {
+        "tex_path": "./Assets/demo_map_Storage_Cover.PNG",
+        "z_priority": 0.0,
+        "static": true
+    }
+  },
+  {
+    "Name": "Back",
+    "Transform": {
+        "translation": [-0.2, -0.45, 0],
+        "scale": [0.12, 0.125, 0],
+        "rotation": 0
+    },
+    "Sprite": {
+        "tex_path": "./Assets/UI_MenuButton_Asset_005.png",
+        "z_priority": 2.0,
+        "UVs": [0.0, 0.0, 1.0, 0.33]
+    },
+    "Button": {
+        "Function": 8,
+        "BaseUV": [0.0, 0.0, 1.0, 0.33],
+        "Offset": 0.33
+    },
+    "Sound": {
+        "Name": "Click",
+        "FilePath" : "./Audio/buttonSound.mp3",
+        "Volume": 0.1,
+        "Looping": false,
+        "Type": "Music",
+        "MaxDistance": 5.0
+    }
+  }, 
+  {
+    "Name": "Quit",
+    "Transform": {
+        "translation": [0.2, -0.45, 0],
+        "scale": [0.12, 0.12, 0],
+        "rotation": 0
+    },
+    "Sprite": {
+        "tex_path": "./Assets/UI_MenuButton_Asset_Quit.png",
+        "z_priority": 2.0,
+        "UVs": [0.0, 0.22, 1.0, 0.11]
+    },
+    "Button": {
+        "Function": 1,
+        "BaseUV": [0.0, 0.0, 1.0, 0.33],
+        "Offset": 0.33
+    },
+    "Sound": {
+        "Name": "Click",
+        "FilePath" : "./Audio/buttonSound.mp3",
+        "Volume": 0.1,
+        "Looping": false,
+        "Type": "Music",
+        "MaxDistance": 5.0
+    }
+  },
+  {
+    "Name": "TextBackground",
+    "Transform": {
+        "translation": [ 0.0, 0.05, 0],
+        "scale": [ 1.0, 0.9, 0],
+        "rotation": 0
+    },
+    "Sprite": {
+        "tex_path": "./Assets/UI_TextBox_Asset_001.PNG",
+        "z_priority": 1.0
+    }
+    },
+    {
+        "Name": "TextLine1",
+        "Transform": {
+            "translation": [ -0.14, 0.38, 0],
+            "scale": [0.05, 0.07, 0],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/Roboto_Mono_white.png",
+            "z_priority": 2.0,
+            "Rows": 8,
+            "Cols": 16,
+            "Text": "Credits"
+        }
+    },
+    {
+        "Name": "TeamName",
+        "Transform": {
+            "translation": [ -0.08, 0.26, 0],
+            "scale": [0.01, 0.02, 0],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/Roboto_Mono_white.png",
+            "z_priority": 2.0,
+            "Rows": 8,
+            "Cols": 16,
+            "Text": "Perfectly Normal"
+        }
+    },
+    {
+        "Name": "Tech",
+        "Transform": {
+            "translation": [ -0.4, 0.22, 0],
+            "scale": [0.01, 0.02, 0],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/Roboto_Mono_white.png",
+            "z_priority": 2.0,
+            "Rows": 8,
+            "Cols": 16,
+            "Text": "Producer: Alijah Rosner   Design Lead: Ashkon Khalkhali   Tech Lead: Jonathan Meyer"
+        }
+    },
+    {
+        "Name": "Tech2",
+        "Transform": {
+            "translation": [ -0.1, 0.18, 0],
+            "scale": [0.01, 0.02, 0],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/Roboto_Mono_white.png",
+            "z_priority": 2.0,
+            "Rows": 8,
+            "Cols": 16,
+            "Text": "Programmer: Mason Dulay"
+        }
+    },
+    {
+        "Name": "Art",
+        "Transform": {
+            "translation": [ -0.4, 0.14, 0],
+            "scale": [0.01, 0.02, 0],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/Roboto_Mono_white.png",
+            "z_priority": 2.0,
+            "Rows": 8,
+            "Cols": 16,
+            "Text": "Art Lead, Animator, Rigger, VFX: Owen Svoboda   Character and UI Artist: Christi Thai"
+        }
+    },
+    {
+        "Name": "Art2",
+        "Transform": {
+            "translation": [ -0.3, 0.1, 0],
+            "scale": [0.01, 0.02, 0],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/Roboto_Mono_white.png",
+            "z_priority": 2.0,
+            "Rows": 8,
+            "Cols": 16,
+            "Text": "Environment and Prop Artist: Jeff Chou   Artist: Madeline Montana"
+        }
+    },
+    {
+        "Name": "SpecialThanks",
+        "Transform": {
+            "translation": [ -0.13, 0.06, 0],
+            "scale": [0.01, 0.02, 0],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/Roboto_Mono_white.png",
+            "z_priority": 2.0,
+            "Rows": 8,
+            "Cols": 16,
+            "Text": "Special Thanks: Kenny Mecham"
+        }
+    },
+    {
+        "Name": "FacultyTitle",
+        "Transform": {
+            "translation": [ -0.1, 0.01, 0],
+            "scale": [0.01, 0.02, 0],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/Roboto_Mono_white.png",
+            "z_priority": 2.0,
+            "Rows": 8,
+            "Cols": 16,
+            "Text": "Faculty and Advisors"
+        }
+    },
+    {
+        "Name": "Faculty",
+        "Transform": {
+            "translation": [ -0.4, -0.03, 0],
+            "scale": [0.01, 0.02, 0],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/Roboto_Mono_white.png",
+            "z_priority": 2.0,
+            "Rows": 8,
+            "Cols": 16,
+            "Text": "Design and Production: Ellen Beeman, Rachel Rutherford, Jeremy Holcomb"
+        }
+    },
+    {
+        "Name": "Faculty2",
+        "Transform": {
+            "translation": [ -0.4, -0.07, 0],
+            "scale": [0.01, 0.02, 0],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/Roboto_Mono_white.png",
+            "z_priority": 2.0,
+            "Rows": 8,
+            "Cols": 16,
+            "Text": "Art: Rich Werner   Programming: Doug Schilling   Lab Management: Christopher Onorati"
+        }
+    },
+    {
+        "Name": "Faculty3",
+        "Transform": {
+            "translation": [ -0.25, -0.11, 0],
+            "scale": [0.01, 0.02, 0],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/Roboto_Mono_white.png",
+            "z_priority": 2.0,
+            "Rows": 8,
+            "Cols": 16,
+            "Text": "Audio: Lawrence Schwedler, Tacket Brown, Nick Wiswell"
+        }
+    },
+    {
+        "Name": "CreatedAtDigipen",
+        "Transform": {
+            "translation": [ -0.2, -0.16, 0],
+            "scale": [0.01, 0.02, 0],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/Roboto_Mono_white.png",
+            "z_priority": 2.0,
+            "Rows": 8,
+            "Cols": 16,
+            "Text": "Created at Digipen Institute of Technology"
+        }
+    },
+    {
+        "Name": "President",
+        "Transform": {
+            "translation": [ -0.1, -0.2, 0],
+            "scale": [0.01, 0.02, 0],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/Roboto_Mono_white.png",
+            "z_priority": 2.0,
+            "Rows": 8,
+            "Cols": 16,
+            "Text": "President: Claude Comair"
+        }
+    },
+    {
+        "Name": "FMODCopyright",
+        "Transform": {
+            "translation": [ -0.3, -0.26, 0],
+            "scale": [0.01, 0.02, 0],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/Roboto_Mono_white.png",
+            "z_priority": 2.0,
+            "Rows": 8,
+            "Cols": 16,
+            "Text": "FMOD Sound System   FireLight Technologies Pty Ltd (1998 - 2023)"
+        }
+    },
+    {
+        "Name": "DigipenCopyright",
+        "Transform": {
+            "translation": [ -0.1, -0.3, 0],
+            "scale": [0.01, 0.02, 0],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/Roboto_Mono_white.png",
+            "z_priority": 2.0,
+            "Rows": 8,
+            "Cols": 16,
+            "Text": "2023 DigiPen (USA) Corporation"
+        }
+    },
+    {
+        "Name": "FMODsymbol",
+        "Transform": { 
+            "translation": [-0.12, -0.26, 0],
+            "scale": [0.015, 0.02, 0],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/copyright.PNG",
+            "z_priority": 2.0,
+            "static": true
+        }
+    },
+    {
+        "Name": "Digisymbol",
+        "Transform": { 
+            "translation": [-0.12, -0.3, 0],
+            "scale": [0.015, 0.02, 0],
+            "rotation": 0
+        },
+        "Sprite": {
+            "tex_path": "./Assets/copyright.PNG",
+            "z_priority": 2.0,
+            "static": true
+        }
+    }
+]

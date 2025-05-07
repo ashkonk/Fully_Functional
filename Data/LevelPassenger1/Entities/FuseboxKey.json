@@ -1,0 +1,30 @@
+{
+    "Name": "FuseboxKeyBehavior",
+    "Transform": {
+        "translation": [ 0.2, 0.2, 0 ],
+        "scale": [ 0.2, 0.2, 1 ],
+        "rotation": 0
+    },
+    "Sprite": {
+        "tex_path": "./Assets/PROP_KEY_Asset_002.png",
+        "z_priority": 100
+    },
+    "FuseboxKeyBehavior": {
+        "pickup": false
+    },
+    "Collider": {
+        "Static": true,
+        "Solid": false,
+        "Type": "Box",
+        "Width": 0.5,
+        "Height": 0.5
+    },
+  "Armament": {
+    "Static": false,
+    "Offset": [ -0.13, -0.89, 0 ],
+    "TimeRate": [ 0.5, 2.0 ],
+    "Radius": [ 0.5, 0.5 ],
+    "Curve": [ 3.0, 2.0 ],
+    "ItemIndex": 0
+  }
+}

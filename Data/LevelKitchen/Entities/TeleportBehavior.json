@@ -1,0 +1,14 @@
+{
+    "Name": "TeleportBehavior",
+    "TeleportBehavior": {
+    },
+    "Transform": {
+        "translation": [ 0.0, 0.0, 0 ],
+        "scale": [ 1.75, 1.75, 0 ],
+        "rotation": 0
+    },
+    "Sprite": {
+        "tex_path": "./Assets/TutorialRoom/UI_TeleportRange_Asset_001.png",
+        "z_priority": 50
+    }
+}

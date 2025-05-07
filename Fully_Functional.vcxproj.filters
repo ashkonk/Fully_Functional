@@ -1,0 +1,590 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Math">
+      <UniqueIdentifier>{d6413e9a-cef1-4913-b6a8-187fd299437b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Entities">
+      <UniqueIdentifier>{8616b445-8a85-4be9-9c8e-3ccaa77466a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Debug">
+      <UniqueIdentifier>{b660bf7b-2ded-40ca-9f23-52249d67c1ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Scenes">
+      <UniqueIdentifier>{d95c10f5-b790-4ac1-9506-ff2050e9c321}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Scenes\SceneMain">
+      <UniqueIdentifier>{1f932fd4-56c2-4156-8ae9-1e04e9f707d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Factory">
+      <UniqueIdentifier>{40b8a878-e591-4883-97c5-d3a778d44c47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ECS">
+      <UniqueIdentifier>{645917c8-fad3-4c31-8766-22975b1a36f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Engine">
+      <UniqueIdentifier>{22201dce-703e-48c7-9f98-4a69e7f6b13f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Components">
+      <UniqueIdentifier>{b29af8a0-5a9a-440b-a1bf-32016641905b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Components\Transform">
+      <UniqueIdentifier>{41dc9c16-6f75-4d1a-a4e4-5b02e8ddc224}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Components\Physics">
+      <UniqueIdentifier>{0a4b7d8b-3d36-42f4-a3f8-bf4ca8d9319c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Components\Behaviors">
+      <UniqueIdentifier>{146d5f7a-78ff-414a-b445-05e80370523b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Components\Behaviors\Player">
+      <UniqueIdentifier>{6becb562-3818-41fb-a361-70d6b3fa8731}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Components\Colliders">
+      <UniqueIdentifier>{83e96b83-ad5a-43f9-931a-55f50756cc21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Components\Sprites">
+      <UniqueIdentifier>{bcda3b85-4ded-466b-bd14-1de60c07774d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Components\Animation">
+      <UniqueIdentifier>{4b720d17-8c69-45dd-becf-d79160521cfd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Systems">
+      <UniqueIdentifier>{8db8f460-f8c9-43d7-a237-404d59a76ba0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Systems\FMOD">
+      <UniqueIdentifier>{7221116d-57bd-415d-8235-4d3c35122139}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Systems\Graphics">
+      <UniqueIdentifier>{df5ec880-b1ae-4abc-a329-a2de73bb512d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Components\Behaviors\NPC">
+      <UniqueIdentifier>{8a83d977-903a-43bc-893f-c234ca82286e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Components\Behaviors\User-Interface">
+      <UniqueIdentifier>{22e5ceea-05d2-4898-9de6-1f3a866b860a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Components\Behaviors\ColliderBehaviors">
+      <UniqueIdentifier>{a1b279f2-cc40-4814-af62-f23e5911a4fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Components\Camera">
+      <UniqueIdentifier>{d0ca5d11-407d-4023-af84-6e7b26226ec5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Components\Behaviors\Interactables">
+      <UniqueIdentifier>{29e591b0-28ae-4a6b-a60f-b053c3cce563}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Components\Behaviors\Interactables\Pickup Items">
+      <UniqueIdentifier>{a6d6811a-fbd5-4f04-ba44-e09ff40d0bd7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Components\Particles">
+      <UniqueIdentifier>{eb43b28f-cff3-44dd-90cf-a5e9ae311b51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Components\Sound">
+      <UniqueIdentifier>{ad967121-d1d2-4f90-9743-fe4ea04114da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Components\Sight">
+      <UniqueIdentifier>{20c294bd-1912-42fd-8ecc-ba1511a290d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Components\Behaviors\FadeController">
+      <UniqueIdentifier>{bf376033-d09e-4dbf-bc9f-92a48ef959f0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="framework.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Fully_Functional.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\framework.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resource.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\stub.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\targetver.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Stream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\QuickMaths.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Physics.h">
+      <Filter>Source Files\Components\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Component.h">
+      <Filter>Source Files\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Transform.h">
+      <Filter>Source Files\Components\Transform</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Graphics.h">
+      <Filter>Source Files\Systems\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Renderer.h">
+      <Filter>Source Files\Systems\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Trace.h">
+      <Filter>Source Files\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\StateMachine.h">
+      <Filter>Source Files\Components\Behaviors</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene.h">
+      <Filter>Source Files\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Collider.h">
+      <Filter>Source Files\Components\Colliders</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Engine.h">
+      <Filter>Source Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\ISystem.h">
+      <Filter>Source Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\IComponentManager.h">
+      <Filter>Source Files\ECS</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\ComponentManager.h">
+      <Filter>Source Files\ECS</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\ECS.h">
+      <Filter>Source Files\ECS</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\SetupFactory.h">
+      <Filter>Source Files\Factory</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\SceneMain.h">
+      <Filter>Source Files\Scenes\SceneMain</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Sprite.h">
+      <Filter>Source Files\Components\Sprites</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\SceneLoader.h">
+      <Filter>Source Files\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\PlayerController.h">
+      <Filter>Source Files\Components\Behaviors\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Animation.h">
+      <Filter>Source Files\Components\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Factory.h">
+      <Filter>Source Files\Factory</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Entity.h">
+      <Filter>Source Files\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Input.h">
+      <Filter>Source Files\Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Window.h">
+      <Filter>Source Files\Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\AttendantA.h">
+      <Filter>Source Files\Components\Behaviors\NPC</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\EntityID.h">
+      <Filter>Source Files\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Manager.h">
+      <Filter>Source Files\Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\DoorBehavior.h">
+      <Filter>Source Files\Components\Behaviors\ColliderBehaviors</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Button.h">
+      <Filter>Source Files\Components\Behaviors\User-Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Camera.h">
+      <Filter>Source Files\Components\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Behavior.h">
+      <Filter>Source Files\Components\Behaviors</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CCTV.h">
+      <Filter>Source Files\Components\Behaviors\Interactables</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CameraBehavior.h">
+      <Filter>Source Files\Components\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\DoorCollider.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\GuardBehavior.h">
+      <Filter>Source Files\Components\Behaviors\NPC</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\RoomCover.h">
+      <Filter>Source Files\Components\Behaviors\ColliderBehaviors</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\TrashFire.h">
+      <Filter>Source Files\Components\Behaviors\Interactables</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\VisionCone.h">
+      <Filter>Source Files\Components\Behaviors</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\FuseboxKey.h">
+      <Filter>Source Files\Components\Behaviors\Interactables\Pickup Items</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\PoisonVial.h">
+      <Filter>Source Files\Components\Behaviors\Interactables\Pickup Items</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Lighter.h">
+      <Filter>Source Files\Components\Behaviors\Interactables\Pickup Items</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\FootstepEmitter.h">
+      <Filter>Source Files\Components\Particles</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Inventory.h">
+      <Filter>Source Files\Components\Behaviors\User-Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Inventory.h">
+      <Filter>Source Files\Components\Behaviors\User-Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Disruptions.h">
+      <Filter>Source Files\Components\Behaviors\User-Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\ParticleEmitter.h">
+      <Filter>Source Files\Components\Particles</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\VisionMode.h">
+      <Filter>Source Files\Components\Behaviors\User-Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Detection.h">
+      <Filter>Source Files\Components\Particles</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\IBehavior.h">
+      <Filter>Source Files\Components\Behaviors</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\TendrilBehavior.h">
+      <Filter>Source Files\Components\Behaviors\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Interactable.h">
+      <Filter>Source Files\Components\Behaviors\User-Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Armament.h">
+      <Filter>Source Files\Components\Behaviors\Interactables</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\InteractableState.h">
+      <Filter>Source Files\Components\Behaviors\Interactables</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\StealthBar.h">
+      <Filter>Source Files\Components\Behaviors\User-Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\StealthBarBG.h">
+      <Filter>Source Files\Components\Behaviors\User-Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\MovingObject.h">
+      <Filter>Source Files\Components\Behaviors\Interactables</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Occluder.h">
+      <Filter>Source Files\Components\Sight</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Vision.h">
+      <Filter>Source Files\Components\Sight</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\TutorialText.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Sound.h">
+      <Filter>Source Files\Components\Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Audio.h">
+      <Filter>Source Files\Systems\FMOD</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Sound.h">
+      <Filter>Source Files\Systems\FMOD</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Teleport.h">
+      <Filter>Source Files\Components\Behaviors\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Detected.h">
+      <Filter>Source Files\Components\Behaviors\User-Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\AntagBehavior.h">
+      <Filter>Source Files\Components\Behaviors\NPC</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\LoadBehavior.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Volume.h">
+      <Filter>Source Files\Components\Behaviors\User-Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Shadow.h">
+      <Filter>Source Files\Components\Behaviors\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\TeleportUI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\BrokenDoorBehavior.h">
+      <Filter>Source Files\Components\Behaviors\Interactables</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\TeleportUI.h">
+      <Filter>Source Files\Components\Behaviors\User-Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\SoundBehavior.h">
+      <Filter>Source Files\Components\Behaviors</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\DestroyTimer.h">
+      <Filter>Source Files\Components\Behaviors</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\FadeController.h">
+      <Filter>Source Files\Components\Behaviors\FadeController</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\stub.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Stream.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\QuickMaths.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Physics.cpp">
+      <Filter>Source Files\Components\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Component.cpp">
+      <Filter>Source Files\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Transform.cpp">
+      <Filter>Source Files\Components\Transform</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Renderer.cpp">
+      <Filter>Source Files\Systems\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Trace.cpp">
+      <Filter>Source Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\StateMachine.cpp">
+      <Filter>Source Files\Components\Behaviors</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene.cpp">
+      <Filter>Source Files\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Collider.cpp">
+      <Filter>Source Files\Components\Colliders</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Engine.cpp">
+      <Filter>Source Files\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\ISystem.cpp">
+      <Filter>Source Files\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\SetupFactory.cpp">
+      <Filter>Source Files\Factory</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\SceneMain.cpp">
+      <Filter>Source Files\Scenes\SceneMain</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Sprite.cpp">
+      <Filter>Source Files\Components\Sprites</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\SceneLoader.cpp">
+      <Filter>Source Files\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\PlayerController.cpp">
+      <Filter>Source Files\Components\Behaviors\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Animation.cpp">
+      <Filter>Source Files\Components\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Factory.cpp">
+      <Filter>Source Files\Factory</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Entity.cpp">
+      <Filter>Source Files\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Input.cpp">
+      <Filter>Source Files\Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Window.cpp">
+      <Filter>Source Files\Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\AttendantA.cpp">
+      <Filter>Source Files\Components\Behaviors\NPC</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Button.cpp">
+      <Filter>Source Files\Components\Behaviors\User-Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Camera.cpp">
+      <Filter>Source Files\Components\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\DoorBehavior.cpp">
+      <Filter>Source Files\Components\Behaviors\ColliderBehaviors</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CameraBehavior.cpp">
+      <Filter>Source Files\Components\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CCTV.cpp">
+      <Filter>Source Files\Components\Behaviors\Interactables</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GuardBehavior.cpp">
+      <Filter>Source Files\Components\Behaviors\NPC</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\ECS.cpp">
+      <Filter>Source Files\ECS</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\RoomCover.cpp">
+      <Filter>Source Files\Components\Behaviors\ColliderBehaviors</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Manager.cpp">
+      <Filter>Source Files\Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\ComponentManager.cpp">
+      <Filter>Source Files\ECS</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\TrashFire.cpp">
+      <Filter>Source Files\Components\Behaviors\Interactables</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\VisionCone.cpp">
+      <Filter>Source Files\Components\Behaviors</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\FuseboxKey.cpp">
+      <Filter>Source Files\Components\Behaviors\Interactables\Pickup Items</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\PoisonVial.cpp">
+      <Filter>Source Files\Components\Behaviors\Interactables\Pickup Items</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Lighter.cpp">
+      <Filter>Source Files\Components\Behaviors\Interactables\Pickup Items</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\FootstepEmitter.cpp">
+      <Filter>Source Files\Components\Particles</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Inventory.cpp">
+      <Filter>Source Files\Components\Behaviors\User-Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Inventory.cpp">
+      <Filter>Source Files\Components\Behaviors\User-Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Disruptions.cpp">
+      <Filter>Source Files\Components\Behaviors\User-Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\ParticleEmitter.cpp">
+      <Filter>Source Files\Components\Particles</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\VisionMode.cpp">
+      <Filter>Source Files\Components\Behaviors\User-Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Detection.cpp">
+      <Filter>Source Files\Components\Particles</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\TendrilBehavior.cpp">
+      <Filter>Source Files\Components\Behaviors\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Interactable.cpp">
+      <Filter>Source Files\Components\Behaviors\User-Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Armament.cpp">
+      <Filter>Source Files\Components\Behaviors\Interactables</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\InteractableState.cpp">
+      <Filter>Source Files\Components\Behaviors\Interactables</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\StealthBar.cpp">
+      <Filter>Source Files\Components\Behaviors\User-Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\StealthBarBG.cpp">
+      <Filter>Source Files\Components\Behaviors\User-Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\MovingObject.cpp">
+      <Filter>Source Files\Components\Behaviors\Interactables</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Occluder.cpp">
+      <Filter>Source Files\Components\Sight</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Vision.cpp">
+      <Filter>Source Files\Components\Sight</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\TutorialText.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Sound.cpp">
+      <Filter>Source Files\Components\Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Audio.cpp">
+      <Filter>Source Files\Systems\FMOD</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Sound.cpp">
+      <Filter>Source Files\Systems\FMOD</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Teleport.cpp">
+      <Filter>Source Files\Components\Behaviors\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Detected.cpp">
+      <Filter>Source Files\Components\Behaviors\User-Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\AntagBehavior.cpp">
+      <Filter>Source Files\Components\Behaviors\NPC</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\LoadBehavior.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Volume.cpp">
+      <Filter>Source Files\Components\Behaviors\User-Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Shadow.cpp">
+      <Filter>Source Files\Components\Behaviors\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\SetupFactoryEngine.cpp">
+      <Filter>Source Files\Factory</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\TeleportUI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\BrokenDoorBehavior.cpp">
+      <Filter>Source Files\Components\Behaviors\Interactables</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\TeleportUI.cpp">
+      <Filter>Source Files\Components\Behaviors\User-Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\SoundBehavior.cpp">
+      <Filter>Source Files\Components\Behaviors</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Graphics.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\DestroyTimer.cpp">
+      <Filter>Source Files\Components\Behaviors</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\FadeController.cpp">
+      <Filter>Source Files\Components\Behaviors\FadeController</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="small.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Fully_Functional.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

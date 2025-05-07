@@ -1,0 +1,58 @@
+{
+    "Name": "GuardBehavior",
+    "Transform": {
+        "translation": [ -1.0, 0.0, 0 ],
+        "scale": [ 0.5, 0.5, 0 ],
+        "rotation": 0
+    },
+    "Sprite": {
+        "tex_path": "./Assets/ANI_Chef_FULL_SpriteSheet_001.png",
+        "z_priority": -3
+    },
+    "Animation": {
+        "Sequences": [
+            {
+                "Name": "Walk",
+                "FrameDuration": 0.0625,
+                "Rows": 3.0,
+                "Columns": 11.0
+            }
+        ]
+    },
+    "Physics": {
+        "acceleration": [ 0.0, 0.0, 0 ],
+        "velocity": [ 0, 0, 0 ]
+    },
+    "GuardBehavior": {
+        "GuardMovement": {
+            "MoveSpeed": 0.25,
+            "DetectTime": 1.5,
+
+            "BehaviorState": 0,
+
+            "WalkingPoints": [
+                [ 0.5, 0.5, 0 ],
+                [ -0.5, 0.5, 0 ],
+                [-0.5, -0.65, 0],
+                [ 0.5, -0.65, 0 ]
+
+            ]
+        }
+    },
+    "Collider": {
+        "Static": true,
+        "Solid": false,
+        "Type": "Circle",
+        "Radius": 1.00
+    },
+    "Detection": {
+        "tex_path": "./Assets/UI_Status_Seen_002.png",
+        "tex_path2": "./Assets/UI_Status_Caught_002.png"
+    },
+    "Vision":  {
+        "Angle":  0,
+        "Distance":  0.666,
+        "FOV":   360
+    }
+
+}

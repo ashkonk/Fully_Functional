@@ -1,0 +1,191 @@
+[
+    {
+      "Name": "Main Camera",
+      "Transform": {
+          "translation": [ 0, 0, 0 ],
+          "scale": [ 1.0, 1.0, 1 ],
+          "rotation": 0
+      },
+      "Camera": {
+          "priority": 0
+      },
+      "Physics": {
+          "acceleration": [ 0.0, 0.0, 0 ],
+          "velocity": [ 0, 0, 0 ]
+      }
+  },
+  {
+    "Name": "BlackBG",
+    "Transform": { 
+        "translation": [0.0, 0.0, 0],
+        "scale": [1.0, 1.0, 0],
+        "rotation": 0
+    },
+    "Sprite": {
+        "tex_path": "./Assets/demo_map_Storage_Cover.PNG",
+        "z_priority": 9.0,
+        "static": true
+    }
+  },
+  {
+    "Name": "Notebook",
+    "Transform": {
+        "translation": [0.0, 0.0, 0],
+        "scale": [0.5, 0.5, 0],
+        "rotation": 0
+    },
+    "Sprite": {
+        "tex_path": "./Assets/UI_Pause_Asset_002.PNG",
+        "z_priority": 10.0,
+        "static": true
+    }
+  },
+  {
+    "Name": "Pause",
+    "Transform": { 
+        "translation": [-0.08, 0.18, 0],
+        "scale": [0.09, 0.07, 0],
+        "rotation": 0
+    },
+    "Sprite": {
+        "tex_path": "./Assets/UI_Pause_Asset_PAUSE.PNG",
+        "z_priority": 11.0,
+        "static": true
+    }
+  },
+  {
+    "Name": "Resume",
+    "Transform": {
+        "translation": [-0.07, 0.105, 0],
+        "scale": [0.08, 0.055, 0],
+        "rotation": 0
+    },
+    "Sprite": {
+        "tex_path": "./Assets/UI_Pause_Asset_LS.PNG",
+        "z_priority": 11.0,
+        "UVs": [0.0, 0.0, 0.33, 0.33],
+        "static": true
+    },
+    "Button": {
+        "Function": 5,
+        "BaseUV": [0.0, 0.0, 0.33, 0.33],
+        "VectorOffset": [0.33, 0.0, 0.0, 0.0]
+    },
+    "Sound": {
+        "Name": "Click",
+        "FilePath" : "./Audio/buttonSound.mp3",
+        "Volume": 0.1,
+        "Looping": false,
+        "Type": "Music",
+        "MaxDistance": 5.0
+    }
+  },
+  {
+    "Name": "Credits",
+    "Transform": {
+        "translation": [-0.069, 0.025, 0],
+        "scale": [0.085, 0.06, 0],
+        "rotation": 0
+    },
+    "Sprite": {
+        "tex_path": "./Assets/UI_Pause_Asset_005.PNG",
+        "z_priority": 11.0,
+        "UVs": [0.0, 0.0, 0.33, 1.0],
+        "static": true
+    },
+    "Button": {
+        "Function": 11,
+        "BaseUV": [0.0, 0.0, 0.33, 1.0],
+        "VectorOffset": [0.33, 0.0, 0.0, 0.0]
+    },
+    "Sound": {
+        "Name": "Click",
+        "FilePath" : "./Audio/buttonSound.mp3",
+        "Volume": 0.1,
+        "Looping": false,
+        "Type": "Music",
+        "MaxDistance": 5.0
+    }
+  }, 
+  {
+    "Name": "Controls",
+    "Transform": {
+        "translation": [0.08, 0.21, 0],
+        "scale": [0.11, 0.045, 0],
+        "rotation": 0
+    },
+    "Sprite": {
+        "tex_path": "./Assets/UI_Pause_Asset_Controls.PNG",
+        "z_priority": 11.0,
+        "UVs": [0.0, 0.0, 0.33, 1.0],
+        "static": true
+    },
+    "Button": {
+        "Function": 13,
+        "BaseUV": [0.0, 0.0, 0.33, 1.0],
+        "VectorOffset": [0.33, 0.0, 0.0, 0.0]
+    },
+    "Sound": {
+        "Name": "Click",
+        "FilePath" : "./Audio/buttonSound.mp3",
+        "Volume": 0.1,
+        "Looping": false,
+        "Type": "Music",
+        "MaxDistance": 5.0
+    }
+  }, 
+  {
+    "Name": "Settings",
+    "Transform": {
+        "translation": [-0.087, -0.06, 0],
+        "scale": [0.09, 0.065, 0],
+        "rotation": 0
+    },
+    "Sprite": {
+        "tex_path": "./Assets/UI_Pause_Asset_006.PNG",
+        "z_priority": 11.0,
+        "UVs": [0.0, 0.0, 0.33, 1.0],
+        "static": true
+    },
+    "Button": {
+        "Function": 12,
+        "BaseUV": [0.0, 0.0, 0.33, 1.0],
+        "VectorOffset": [0.33, 0.0, 0.0, 0.0]
+    },
+    "Sound": {
+        "Name": "Click",
+        "FilePath" : "./Audio/buttonSound.mp3",
+        "Volume": 0.1,
+        "Looping": false,
+        "Type": "Music",
+        "MaxDistance": 5.0
+    }
+  }, 
+  {
+    "Name": "Quit",
+    "Transform": {
+        "translation": [-0.085, -0.16, 0],
+        "scale": [0.075, 0.065, 0],
+        "rotation": 0
+    },
+    "Sprite": {
+        "tex_path": "./Assets/UI_Pause_Asset_LSQUIT.PNG",
+        "z_priority": 11.0,
+        "UVs": [0.0, 0.0, 0.33, 1.0],
+        "static": true
+    },
+    "Button": {
+        "Function": 1,
+        "BaseUV": [0.0, 0.0, 0.33, 1.0],
+        "VectorOffset": [0.33, 0.0, 0.0, 0.0]
+    },
+    "Sound": {
+        "Name": "Click",
+        "FilePath" : "./Audio/buttonSound.mp3",
+        "Volume": 0.1,
+        "Looping": false,
+        "Type": "Music",
+        "MaxDistance": 5.0
+    }
+  }
+]

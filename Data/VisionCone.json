@@ -1,0 +1,25 @@
+{
+    "Name": "VisionCone",
+    "Transform": {
+        "translation": [ 0.0, 0.0, 0 ],
+        "scale": [ 0.25, 0.25, 0 ],
+        "rotation": 0
+    },
+    "Physics": {
+        "acceleration": [ 0.0, 0.0, 0 ],
+        "velocity": [ 0, 0, 0 ]
+    },
+    "VisionConeBehavior": {
+
+    },
+    "Collider": {
+        "Static": false,
+        "Solid": false,
+        "Type": "Shape",
+        "Mesh": [
+            [ 0.0, 0.0, 0.0 ],
+            [ 1.5, 1.5, 0.0 ],
+            [ 1.5, -1.5, 0.0 ]
+        ]
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "Name": "PoisonVFX",
+    "Transform": {
+        "translation": [ 0.5, 0.0, 0 ],
+        "scale": [ 0.075, 0.1, 0 ],
+        "rotation": 0
+    },
+    "Sprite": {
+        "tex_path": "./Assets/PROP_Lighter_Asset_001.png",
+        "z_priority": 120.0,
+        "static": true
+    }
+}
